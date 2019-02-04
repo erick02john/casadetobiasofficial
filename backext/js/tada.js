@@ -1,0 +1,3 @@
+function change(){
+    $(".katawan").fadeToggle();
+}

@@ -1,0 +1,243 @@
+[16-Feb-2018 17:08:34 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/fti5sw4rvtc1/public_html/RRH/Admin/index.php on line 131
+[16-Feb-2018 17:08:37 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/fti5sw4rvtc1/public_html/RRH/Admin/displayreservation.php on line 53
+[16-Feb-2018 17:08:53 UTC] PHP Warning:  include(displayCheck-in.php ): failed to open stream: No such file or directory in /home/fti5sw4rvtc1/public_html/RRH/Admin/Check-in.php on line 136
+[16-Feb-2018 17:08:53 UTC] PHP Warning:  include(): Failed opening 'displayCheck-in.php ' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/fti5sw4rvtc1/public_html/RRH/Admin/Check-in.php on line 136
+[16-Feb-2018 17:10:24 UTC] PHP Warning:  include(displayCheck-in.php ): failed to open stream: No such file or directory in /home/fti5sw4rvtc1/public_html/RRH/Admin/Check-in.php on line 136
+[16-Feb-2018 17:10:24 UTC] PHP Warning:  include(): Failed opening 'displayCheck-in.php ' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/fti5sw4rvtc1/public_html/RRH/Admin/Check-in.php on line 136
+[16-Feb-2018 17:11:32 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/fti5sw4rvtc1/public_html/RRH/Admin/index.php on line 131
+[16-Feb-2018 17:11:58 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/fti5sw4rvtc1/public_html/RRH/Admin/displayreservation.php on line 53
+[16-Feb-2018 17:12:00 UTC] PHP Warning:  include(displayCheck-in.php ): failed to open stream: No such file or directory in /home/fti5sw4rvtc1/public_html/RRH/Admin/Check-in.php on line 136
+[16-Feb-2018 17:12:00 UTC] PHP Warning:  include(): Failed opening 'displayCheck-in.php ' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/fti5sw4rvtc1/public_html/RRH/Admin/Check-in.php on line 136
+[16-Feb-2018 17:18:10 UTC] PHP Notice:  Undefined index: bid in /home/fti5sw4rvtc1/public_html/RRH/Admin/samplepdf.php on line 10
+[16-Feb-2018 17:18:10 UTC] PHP Notice:  Undefined index: rid in /home/fti5sw4rvtc1/public_html/RRH/Admin/samplepdf.php on line 11
+[16-Feb-2018 17:46:20 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/fti5sw4rvtc1/public_html/RRH/Admin/index.php on line 131
+[16-Feb-2018 18:01:53 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/Billing.php on line 4
+[16-Feb-2018 18:02:01 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/fti5sw4rvtc1/public_html/RRH/Admin/index.php on line 131
+[16-Feb-2018 18:03:33 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/fti5sw4rvtc1/public_html/RRH/Admin/displayreservation.php on line 53
+[16-Feb-2018 18:03:49 UTC] PHP Warning:  include(displayCheck-in.php ): failed to open stream: No such file or directory in /home/fti5sw4rvtc1/public_html/RRH/Admin/Check-in.php on line 136
+[16-Feb-2018 18:03:49 UTC] PHP Warning:  include(): Failed opening 'displayCheck-in.php ' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/fti5sw4rvtc1/public_html/RRH/Admin/Check-in.php on line 136
+[16-Feb-2018 18:07:11 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/Check-in.php on line 5
+[16-Feb-2018 18:07:11 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Check-in.php on line 6
+[16-Feb-2018 18:07:20 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/fti5sw4rvtc1/public_html/RRH/Admin/index.php on line 131
+[16-Feb-2018 18:08:47 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/fti5sw4rvtc1/public_html/RRH/Admin/index.php on line 131
+[16-Feb-2018 18:20:30 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/fti5sw4rvtc1/public_html/RRH/Admin/index.php on line 131
+[16-Feb-2018 20:00:52 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/index.php on line 5
+[16-Feb-2018 20:00:52 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/Rooms.php on line 5
+[16-Feb-2018 21:03:51 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/index.php on line 5
+[16-Feb-2018 21:12:09 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/fti5sw4rvtc1/public_html/RRH/Admin/displayreservation.php on line 53
+[16-Feb-2018 21:13:51 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/fti5sw4rvtc1/public_html/RRH/Admin/displayreservation.php on line 53
+[16-Feb-2018 23:40:52 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/Billing.php on line 4
+[16-Feb-2018 23:40:52 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/Accounts.php on line 5
+[16-Feb-2018 23:40:52 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/index.php on line 5
+[16-Feb-2018 23:40:52 UTC] PHP Notice:  Undefined index: bid in /home/fti5sw4rvtc1/public_html/RRH/Admin/discount.php on line 3
+[16-Feb-2018 23:40:52 UTC] PHP Notice:  Undefined index: rid in /home/fti5sw4rvtc1/public_html/RRH/Admin/discount.php on line 4
+[16-Feb-2018 23:40:52 UTC] PHP Notice:  Undefined index: dtPs in /home/fti5sw4rvtc1/public_html/RRH/Admin/discount.php on line 6
+[16-Feb-2018 23:40:52 UTC] PHP Notice:  Undefined index: dtPd in /home/fti5sw4rvtc1/public_html/RRH/Admin/discount.php on line 7
+[16-Feb-2018 23:40:52 UTC] PHP Notice:  Undefined index: dtSs in /home/fti5sw4rvtc1/public_html/RRH/Admin/discount.php on line 8
+[16-Feb-2018 23:40:52 UTC] PHP Notice:  Undefined index: dtSd in /home/fti5sw4rvtc1/public_html/RRH/Admin/discount.php on line 9
+[16-Feb-2018 23:40:52 UTC] PHP Notice:  Undefined index: quantityps in /home/fti5sw4rvtc1/public_html/RRH/Admin/discount.php on line 56
+[16-Feb-2018 23:40:52 UTC] PHP Notice:  Undefined index: quantitypd in /home/fti5sw4rvtc1/public_html/RRH/Admin/discount.php on line 57
+[16-Feb-2018 23:40:52 UTC] PHP Notice:  Undefined index: quantityss in /home/fti5sw4rvtc1/public_html/RRH/Admin/discount.php on line 58
+[16-Feb-2018 23:40:52 UTC] PHP Notice:  Undefined index: quantitysd in /home/fti5sw4rvtc1/public_html/RRH/Admin/discount.php on line 59
+[16-Feb-2018 23:40:52 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/Discounts.php on line 4
+[16-Feb-2018 23:40:52 UTC] PHP Notice:  Undefined index: bid in /home/fti5sw4rvtc1/public_html/RRH/Admin/addAmenity.php on line 8
+[16-Feb-2018 23:40:52 UTC] PHP Notice:  Undefined index: rid in /home/fti5sw4rvtc1/public_html/RRH/Admin/addAmenity.php on line 9
+[16-Feb-2018 23:40:52 UTC] PHP Notice:  Undefined index: amenitytype in /home/fti5sw4rvtc1/public_html/RRH/Admin/addAmenity.php on line 10
+[16-Feb-2018 23:40:52 UTC] PHP Notice:  Undefined index: description in /home/fti5sw4rvtc1/public_html/RRH/Admin/addAmenity.php on line 11
+[16-Feb-2018 23:40:52 UTC] PHP Notice:  Undefined index: quantity in /home/fti5sw4rvtc1/public_html/RRH/Admin/addAmenity.php on line 12
+[16-Feb-2018 23:40:52 UTC] PHP Notice:  Undefined index: price in /home/fti5sw4rvtc1/public_html/RRH/Admin/addAmenity.php on line 13
+[16-Feb-2018 23:40:57 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reserved.php on line 5
+[16-Feb-2018 23:40:57 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reserved.php on line 6
+[16-Feb-2018 23:40:57 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/Check-out.php on line 5
+[16-Feb-2018 23:40:57 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Check-out.php on line 6
+[16-Feb-2018 23:40:57 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/fti5sw4rvtc1/public_html/RRH/Admin/displayreservation.php on line 53
+[16-Feb-2018 23:40:57 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/Check-in.php on line 5
+[16-Feb-2018 23:40:57 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Check-in.php on line 6
+[16-Feb-2018 23:40:58 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/Pending.php on line 5
+[16-Feb-2018 23:40:58 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Pending.php on line 6
+[17-Feb-2018 00:42:43 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/index.php on line 5
+[17-Feb-2018 00:49:42 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/fti5sw4rvtc1/public_html/RRH/Admin/displayreservation.php on line 53
+[17-Feb-2018 00:53:43 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/fti5sw4rvtc1/public_html/RRH/Admin/displayreservation.php on line 53
+[17-Feb-2018 00:53:52 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/fti5sw4rvtc1/public_html/RRH/Admin/displayreservation.php on line 53
+[17-Feb-2018 00:56:01 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/fti5sw4rvtc1/public_html/RRH/Admin/displayreservation.php on line 53
+[17-Feb-2018 01:35:34 UTC] PHP Notice:  Undefined index: bid in /home/fti5sw4rvtc1/public_html/RRH/Admin/addAmenity.php on line 8
+[17-Feb-2018 01:35:34 UTC] PHP Notice:  Undefined index: rid in /home/fti5sw4rvtc1/public_html/RRH/Admin/addAmenity.php on line 9
+[17-Feb-2018 01:35:34 UTC] PHP Notice:  Undefined index: amenitytype in /home/fti5sw4rvtc1/public_html/RRH/Admin/addAmenity.php on line 10
+[17-Feb-2018 01:35:34 UTC] PHP Notice:  Undefined index: description in /home/fti5sw4rvtc1/public_html/RRH/Admin/addAmenity.php on line 11
+[17-Feb-2018 01:35:34 UTC] PHP Notice:  Undefined index: quantity in /home/fti5sw4rvtc1/public_html/RRH/Admin/addAmenity.php on line 12
+[17-Feb-2018 01:35:34 UTC] PHP Notice:  Undefined index: price in /home/fti5sw4rvtc1/public_html/RRH/Admin/addAmenity.php on line 13
+[17-Feb-2018 01:47:22 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/index.php on line 5
+[17-Feb-2018 03:25:19 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/index.php on line 5
+[17-Feb-2018 03:25:20 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reserved.php on line 5
+[17-Feb-2018 03:25:20 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reserved.php on line 6
+[17-Feb-2018 03:25:20 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/Pending.php on line 5
+[17-Feb-2018 03:25:20 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Pending.php on line 6
+[17-Feb-2018 03:25:39 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/Billing.php on line 4
+[17-Feb-2018 03:25:39 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/Check-in.php on line 5
+[17-Feb-2018 03:25:39 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Check-in.php on line 6
+[17-Feb-2018 03:25:41 UTC] PHP Notice:  Undefined index: reservationid in /home/fti5sw4rvtc1/public_html/RRH/Admin/UpdateCheck-in.php on line 4
+[17-Feb-2018 03:25:41 UTC] PHP Notice:  Undefined index: status in /home/fti5sw4rvtc1/public_html/RRH/Admin/UpdateCheck-in.php on line 5
+[17-Feb-2018 03:55:51 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/Pending.php on line 5
+[17-Feb-2018 03:55:51 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Pending.php on line 6
+[17-Feb-2018 03:55:51 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/index.php on line 5
+[17-Feb-2018 03:55:51 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/Check-in.php on line 5
+[17-Feb-2018 03:55:51 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Check-in.php on line 6
+[17-Feb-2018 03:55:52 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reserved.php on line 5
+[17-Feb-2018 03:55:52 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reserved.php on line 6
+[17-Feb-2018 03:55:54 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/index.php on line 5
+[17-Feb-2018 03:56:04 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/Check-out.php on line 5
+[17-Feb-2018 03:56:04 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Check-out.php on line 6
+[17-Feb-2018 03:56:05 UTC] PHP Notice:  Undefined index: type in /home/fti5sw4rvtc1/public_html/RRH/Admin/reservationpdf.php on line 3
+[17-Feb-2018 03:56:05 UTC] PHP Notice:  Undefined index: status in /home/fti5sw4rvtc1/public_html/RRH/Admin/reservationpdf.php on line 23
+[17-Feb-2018 03:56:05 UTC] PHP Notice:  Undefined index: status in /home/fti5sw4rvtc1/public_html/RRH/Admin/reservationpdf.php on line 26
+[17-Feb-2018 03:56:05 UTC] PHP Notice:  Undefined variable: date in /home/fti5sw4rvtc1/public_html/RRH/Admin/reservationpdf.php on line 41
+[17-Feb-2018 03:56:05 UTC] PHP Notice:  Undefined index: status in /home/fti5sw4rvtc1/public_html/RRH/Admin/reservationpdf.php on line 80
+[17-Feb-2018 03:56:05 UTC] PHP Notice:  Undefined variable: types in /home/fti5sw4rvtc1/public_html/RRH/Admin/reservationpdf.php on line 80
+[17-Feb-2018 03:56:05 UTC] PHP Notice:  Undefined variable: date in /home/fti5sw4rvtc1/public_html/RRH/Admin/reservationpdf.php on line 130
+[17-Feb-2018 05:18:31 UTC] PHP Notice:  Undefined index: type in /home/fti5sw4rvtc1/public_html/RRH/Admin/reservationpdf.php on line 3
+[17-Feb-2018 05:18:31 UTC] PHP Notice:  Undefined index: status in /home/fti5sw4rvtc1/public_html/RRH/Admin/reservationpdf.php on line 23
+[17-Feb-2018 05:18:31 UTC] PHP Notice:  Undefined index: status in /home/fti5sw4rvtc1/public_html/RRH/Admin/reservationpdf.php on line 26
+[17-Feb-2018 05:18:31 UTC] PHP Notice:  Undefined variable: date in /home/fti5sw4rvtc1/public_html/RRH/Admin/reservationpdf.php on line 41
+[17-Feb-2018 05:18:31 UTC] PHP Notice:  Undefined index: status in /home/fti5sw4rvtc1/public_html/RRH/Admin/reservationpdf.php on line 80
+[17-Feb-2018 05:18:31 UTC] PHP Notice:  Undefined variable: types in /home/fti5sw4rvtc1/public_html/RRH/Admin/reservationpdf.php on line 80
+[17-Feb-2018 05:18:31 UTC] PHP Notice:  Undefined variable: date in /home/fti5sw4rvtc1/public_html/RRH/Admin/reservationpdf.php on line 130
+[17-Feb-2018 05:18:40 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reserved.php on line 5
+[17-Feb-2018 05:18:40 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reserved.php on line 6
+[17-Feb-2018 05:18:40 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/index.php on line 5
+[17-Feb-2018 05:18:40 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/Rooms.php on line 5
+[18-Feb-2018 05:56:24 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/index.php on line 5
+[18-Feb-2018 05:57:54 UTC] PHP Warning:  A non-numeric value encountered in /home/fti5sw4rvtc1/public_html/RRH/Admin/updatereservation.php on line 112
+[18-Feb-2018 05:57:54 UTC] PHP Warning:  A non-numeric value encountered in /home/fti5sw4rvtc1/public_html/RRH/Admin/updatereservation.php on line 113
+[18-Feb-2018 05:58:25 UTC] PHP Warning:  A non-numeric value encountered in /home/fti5sw4rvtc1/public_html/RRH/Admin/updatereservation.php on line 112
+[18-Feb-2018 05:58:25 UTC] PHP Warning:  A non-numeric value encountered in /home/fti5sw4rvtc1/public_html/RRH/Admin/updatereservation.php on line 113
+[18-Feb-2018 06:28:24 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 46
+[18-Feb-2018 06:28:45 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 46
+[18-Feb-2018 06:36:59 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 39
+[18-Feb-2018 06:44:39 UTC] PHP Notice:  Undefined variable: date in /home/fti5sw4rvtc1/public_html/RRH/Admin/updatereservation.php on line 93
+[18-Feb-2018 06:49:27 UTC] PHP Notice:  Undefined variable: date in /home/fti5sw4rvtc1/public_html/RRH/Admin/updatereservation.php on line 93
+[18-Feb-2018 06:49:35 UTC] PHP Notice:  Undefined variable: date in /home/fti5sw4rvtc1/public_html/RRH/Admin/updatereservation.php on line 93
+[18-Feb-2018 06:49:48 UTC] PHP Notice:  Undefined variable: date in /home/fti5sw4rvtc1/public_html/RRH/Admin/updatereservation.php on line 93
+[18-Feb-2018 07:03:59 UTC] PHP Notice:  Undefined index: firstName in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 33
+[18-Feb-2018 07:03:59 UTC] PHP Notice:  Undefined index: middleName in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 33
+[18-Feb-2018 07:03:59 UTC] PHP Notice:  Undefined index: lastName in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 33
+[18-Feb-2018 07:03:59 UTC] PHP Notice:  Undefined index: address in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 34
+[18-Feb-2018 07:03:59 UTC] PHP Notice:  Undefined index: email in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 35
+[18-Feb-2018 07:03:59 UTC] PHP Notice:  Undefined index: contactNum in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 36
+[18-Feb-2018 07:03:59 UTC] PHP Notice:  Undefined index: adult in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 37
+[18-Feb-2018 07:03:59 UTC] PHP Notice:  Undefined index: adultadd in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 38
+[18-Feb-2018 07:03:59 UTC] PHP Notice:  Undefined index: adultadd in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 39
+[18-Feb-2018 07:03:59 UTC] PHP Notice:  Undefined index: from in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 46
+[18-Feb-2018 07:03:59 UTC] PHP Notice:  Undefined index: to in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 47
+[18-Feb-2018 07:03:59 UTC] PHP Notice:  Undefined index: totalnights in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 48
+[18-Feb-2018 07:03:59 UTC] PHP Notice:  Undefined index: presSNum in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 51
+[18-Feb-2018 07:03:59 UTC] PHP Notice:  Undefined index: presSNum in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 54
+[18-Feb-2018 07:03:59 UTC] PHP Notice:  Undefined index: rmspName in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 54
+[18-Feb-2018 07:03:59 UTC] PHP Notice:  Undefined index: presSReservedTotal in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 54
+[18-Feb-2018 07:03:59 UTC] PHP Notice:  Undefined index: presSReservedTotal in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 55
+[18-Feb-2018 07:03:59 UTC] PHP Notice:  Undefined index: presDNum in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 57
+[18-Feb-2018 07:03:59 UTC] PHP Notice:  Undefined index: presDNum in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 60
+[18-Feb-2018 07:03:59 UTC] PHP Notice:  Undefined index: rmdpName in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 60
+[18-Feb-2018 07:03:59 UTC] PHP Notice:  Undefined index: presDReservedTotal in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 60
+[18-Feb-2018 07:03:59 UTC] PHP Notice:  Undefined index: presDReservedTotal in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 61
+[18-Feb-2018 07:03:59 UTC] PHP Notice:  Undefined index: supSNum in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 63
+[18-Feb-2018 07:03:59 UTC] PHP Notice:  Undefined index: supSNum in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 66
+[18-Feb-2018 07:03:59 UTC] PHP Notice:  Undefined index: rmssName in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 66
+[18-Feb-2018 07:03:59 UTC] PHP Notice:  Undefined index: supSReservedTotal in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 66
+[18-Feb-2018 07:03:59 UTC] PHP Notice:  Undefined index: supSReservedTotal in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 67
+[18-Feb-2018 07:03:59 UTC] PHP Notice:  Undefined index: supDNum in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 69
+[18-Feb-2018 07:03:59 UTC] PHP Notice:  Undefined index: supDNum in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 72
+[18-Feb-2018 07:03:59 UTC] PHP Notice:  Undefined index: rmdsName in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 72
+[18-Feb-2018 07:03:59 UTC] PHP Notice:  Undefined index: supDReservedTotal in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 72
+[18-Feb-2018 07:03:59 UTC] PHP Notice:  Undefined index: supDReservedTotal in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 73
+[18-Feb-2018 07:03:59 UTC] PHP Notice:  Undefined index: totalnights in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 80
+[18-Feb-2018 07:03:59 UTC] PHP Notice:  Undefined index: adultadd in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 85
+[18-Feb-2018 07:03:59 UTC] PHP Notice:  Undefined index: adultadd in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 88
+[18-Feb-2018 07:03:59 UTC] PHP Notice:  Undefined index: adultadd in /home/fti5sw4rvtc1/public_html/RRH/Admin/summary.php on line 90
+[18-Feb-2018 08:57:06 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/Rooms.php on line 5
+[18-Feb-2018 09:58:53 UTC] PHP Notice:  Undefined index: roomphoto in /home/fti5sw4rvtc1/public_html/RRH/Admin/updateRooms.php on line 10
+[18-Feb-2018 09:58:53 UTC] PHP Notice:  Undefined index: roomphoto in /home/fti5sw4rvtc1/public_html/RRH/Admin/updateRooms.php on line 11
+[18-Feb-2018 10:03:36 UTC] PHP Notice:  Undefined index: roomphoto in /home/fti5sw4rvtc1/public_html/RRH/Admin/updateRooms.php on line 10
+[18-Feb-2018 10:03:36 UTC] PHP Notice:  Undefined index: roomphoto in /home/fti5sw4rvtc1/public_html/RRH/Admin/updateRooms.php on line 11
+[18-Feb-2018 12:55:11 UTC] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in /home/fti5sw4rvtc1/public_html/RRH/Admin/addupdaterooms.php on line 2
+[18-Feb-2018 13:01:42 UTC] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in /home/fti5sw4rvtc1/public_html/RRH/Admin/addupdaterooms.php on line 2
+[18-Feb-2018 13:01:53 UTC] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in /home/fti5sw4rvtc1/public_html/RRH/Admin/addupdaterooms.php on line 2
+[18-Feb-2018 13:02:27 UTC] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in /home/fti5sw4rvtc1/public_html/RRH/Admin/addupdaterooms.php on line 2
+[18-Feb-2018 13:02:29 UTC] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in /home/fti5sw4rvtc1/public_html/RRH/Admin/addupdaterooms.php on line 2
+[18-Feb-2018 13:02:57 UTC] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in /home/fti5sw4rvtc1/public_html/RRH/Admin/addupdaterooms.php on line 2
+[18-Feb-2018 13:03:45 UTC] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in /home/fti5sw4rvtc1/public_html/RRH/Admin/addupdaterooms.php on line 2
+[18-Feb-2018 13:04:29 UTC] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in /home/fti5sw4rvtc1/public_html/RRH/Admin/addupdaterooms.php on line 2
+[18-Feb-2018 13:04:49 UTC] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in /home/fti5sw4rvtc1/public_html/RRH/Admin/addupdaterooms.php on line 2
+[18-Feb-2018 13:04:52 UTC] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in /home/fti5sw4rvtc1/public_html/RRH/Admin/addupdaterooms.php on line 2
+[18-Feb-2018 13:05:21 UTC] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in /home/fti5sw4rvtc1/public_html/RRH/Admin/addupdaterooms.php on line 2
+[18-Feb-2018 13:06:30 UTC] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in /home/fti5sw4rvtc1/public_html/RRH/Admin/addupdaterooms.php on line 2
+[18-Feb-2018 13:07:33 UTC] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in /home/fti5sw4rvtc1/public_html/RRH/Admin/addupdaterooms.php on line 2
+[18-Feb-2018 13:07:37 UTC] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in /home/fti5sw4rvtc1/public_html/RRH/Admin/addupdaterooms.php on line 2
+[18-Feb-2018 13:17:04 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/fti5sw4rvtc1/public_html/RRH/Admin/addupdaterooms.php on line 26
+[18-Feb-2018 13:24:00 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/fti5sw4rvtc1/public_html/RRH/Admin/addupdaterooms.php on line 27
+[19-Feb-2018 07:43:03 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/index.php on line 5
+[19-Feb-2018 07:51:36 UTC] PHP Notice:  Undefined variable: date in /home/fti5sw4rvtc1/public_html/RRH/Admin/updatereservation.php on line 93
+[19-Feb-2018 08:12:02 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/fti5sw4rvtc1/public_html/RRH/Admin/updatenoshow.php on line 9
+[19-Feb-2018 08:13:12 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/fti5sw4rvtc1/public_html/RRH/Admin/updatenoshow.php on line 9
+[19-Feb-2018 08:23:17 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/fti5sw4rvtc1/public_html/RRH/Admin/updatenoshow.php on line 9
+[19-Feb-2018 08:23:39 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/fti5sw4rvtc1/public_html/RRH/Admin/updatenoshow.php on line 9
+[20-Feb-2018 08:29:57 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/index.php on line 5
+[20-Feb-2018 08:30:12 UTC] PHP Notice:  Undefined variable: name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reports.php on line 170
+[20-Feb-2018 08:30:12 UTC] PHP Notice:  Undefined variable: name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reports.php on line 219
+[20-Feb-2018 08:30:12 UTC] PHP Notice:  Undefined variable: name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reports.php on line 266
+[20-Feb-2018 08:30:12 UTC] PHP Notice:  Undefined variable: name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reports.php on line 324
+[20-Feb-2018 08:30:12 UTC] PHP Notice:  Undefined variable: name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reports.php on line 491
+[20-Feb-2018 08:30:12 UTC] PHP Notice:  Undefined variable: name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reports.php on line 535
+[20-Feb-2018 08:30:12 UTC] PHP Notice:  Undefined variable: name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reports.php on line 576
+[20-Feb-2018 08:30:12 UTC] PHP Notice:  Undefined variable: name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reports.php on line 627
+[20-Feb-2018 08:33:14 UTC] PHP Notice:  Undefined variable: name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reports.php on line 170
+[20-Feb-2018 08:33:14 UTC] PHP Notice:  Undefined variable: name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reports.php on line 219
+[20-Feb-2018 08:33:14 UTC] PHP Notice:  Undefined variable: name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reports.php on line 266
+[20-Feb-2018 08:33:14 UTC] PHP Notice:  Undefined variable: name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reports.php on line 324
+[20-Feb-2018 08:33:14 UTC] PHP Notice:  Undefined variable: name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reports.php on line 491
+[20-Feb-2018 08:33:14 UTC] PHP Notice:  Undefined variable: name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reports.php on line 535
+[20-Feb-2018 08:33:14 UTC] PHP Notice:  Undefined variable: name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reports.php on line 576
+[20-Feb-2018 08:33:14 UTC] PHP Notice:  Undefined variable: name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reports.php on line 627
+[20-Feb-2018 08:33:45 UTC] PHP Notice:  Undefined variable: name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reports.php on line 170
+[20-Feb-2018 08:33:45 UTC] PHP Notice:  Undefined variable: name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reports.php on line 219
+[20-Feb-2018 08:33:45 UTC] PHP Notice:  Undefined variable: name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reports.php on line 266
+[20-Feb-2018 08:33:45 UTC] PHP Notice:  Undefined variable: name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reports.php on line 324
+[20-Feb-2018 08:33:45 UTC] PHP Notice:  Undefined variable: name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reports.php on line 491
+[20-Feb-2018 08:33:45 UTC] PHP Notice:  Undefined variable: name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reports.php on line 535
+[20-Feb-2018 08:33:45 UTC] PHP Notice:  Undefined variable: name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reports.php on line 576
+[20-Feb-2018 08:33:45 UTC] PHP Notice:  Undefined variable: name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reports.php on line 627
+[20-Feb-2018 09:25:28 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/fti5sw4rvtc1/public_html/RRH/Admin/AddRooms.php on line 72
+[20-Feb-2018 09:30:57 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/fti5sw4rvtc1/public_html/RRH/Admin/AddRooms.php on line 68
+[20-Feb-2018 09:33:16 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/fti5sw4rvtc1/public_html/RRH/Admin/AddRooms.php on line 68
+[20-Feb-2018 09:34:38 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/fti5sw4rvtc1/public_html/RRH/Admin/AddRooms.php on line 68
+[20-Feb-2018 09:35:20 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/fti5sw4rvtc1/public_html/RRH/Admin/AddRooms.php on line 68
+[20-Feb-2018 10:22:54 UTC] PHP Notice:  Undefined variable: date in /home/fti5sw4rvtc1/public_html/RRH/Admin/updatereservation.php on line 93
+[20-Feb-2018 10:33:48 UTC] PHP Notice:  Undefined index: from in /home/fti5sw4rvtc1/public_html/RRH/Admin/selectroom.php on line 4
+[20-Feb-2018 10:33:48 UTC] PHP Notice:  Undefined index: to in /home/fti5sw4rvtc1/public_html/RRH/Admin/selectroom.php on line 5
+[20-Feb-2018 10:33:56 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reports.php on line 4
+[20-Feb-2018 10:33:56 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reports.php on line 6
+[20-Feb-2018 10:34:22 UTC] PHP Notice:  Undefined variable: date in /home/fti5sw4rvtc1/public_html/RRH/Admin/updatereservation.php on line 93
+[18-Mar-2018 11:43:24 UTC] PHP Notice:  Undefined variable: date in /home/fti5sw4rvtc1/public_html/RRH/Admin/updatereservation.php on line 93
+[18-Mar-2018 11:44:30 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reserved.php on line 5
+[18-Mar-2018 11:44:30 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reserved.php on line 6
+[18-Mar-2018 13:08:06 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/Pending.php on line 5
+[18-Mar-2018 13:08:06 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Pending.php on line 6
+[18-Mar-2018 13:08:06 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reserved.php on line 5
+[18-Mar-2018 13:08:06 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/index.php on line 5
+[18-Mar-2018 13:08:06 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reserved.php on line 6
+[18-Mar-2018 13:08:06 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/Discounts.php on line 4
+[18-Mar-2018 13:08:06 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/Billing.php on line 4
+[18-Mar-2018 13:08:06 UTC] PHP Notice:  Undefined index: bid in /home/fti5sw4rvtc1/public_html/RRH/Admin/samplepdf.php on line 10
+[18-Mar-2018 13:08:06 UTC] PHP Notice:  Undefined index: rid in /home/fti5sw4rvtc1/public_html/RRH/Admin/samplepdf.php on line 11
+[18-Mar-2018 13:08:06 UTC] PHP Notice:  Undefined index: bid in /home/fti5sw4rvtc1/public_html/RRH/Admin/samplepdf.php on line 26
+[18-Mar-2018 13:08:06 UTC] PHP Notice:  Undefined index: rid in /home/fti5sw4rvtc1/public_html/RRH/Admin/samplepdf.php on line 27
+[18-Mar-2018 13:08:06 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reports.php on line 4
+[18-Mar-2018 13:08:06 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reports.php on line 6
+[18-Mar-2018 13:08:08 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/index.php on line 5
+[18-Mar-2018 13:08:11 UTC] PHP Notice:  Undefined index: reservationid in /home/fti5sw4rvtc1/public_html/RRH/Admin/updatereservation.php on line 4
+[18-Mar-2018 13:08:11 UTC] PHP Notice:  Undefined index: status in /home/fti5sw4rvtc1/public_html/RRH/Admin/updatereservation.php on line 5
+[18-Mar-2018 14:56:45 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/index.php on line 5
+[18-Mar-2018 16:57:32 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/index.php on line 5
+[19-Mar-2018 02:19:16 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/index.php on line 5
+[19-Mar-2018 02:27:26 UTC] PHP Notice:  Undefined variable: date in /home/fti5sw4rvtc1/public_html/RRH/Admin/updatereservation.php on line 93
+[19-Mar-2018 02:31:57 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reserved.php on line 5
+[19-Mar-2018 02:31:57 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Admin/Reserved.php on line 6

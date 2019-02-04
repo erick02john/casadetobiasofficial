@@ -1,0 +1,170 @@
+[16-Feb-2018 16:59:03 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/index.php on line 127
+[16-Feb-2018 16:59:08 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/displayreservation.php on line 53
+[16-Feb-2018 17:02:01 UTC] PHP Warning:  include(displayCheck-in.php ): failed to open stream: No such file or directory in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-in.php on line 121
+[16-Feb-2018 17:02:01 UTC] PHP Warning:  include(): Failed opening 'displayCheck-in.php ' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-in.php on line 121
+[16-Feb-2018 17:02:13 UTC] PHP Warning:  include(../admin/displayBilling.php): failed to open stream: No such file or directory in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Billing.php on line 121
+[16-Feb-2018 17:02:13 UTC] PHP Warning:  include(): Failed opening '../admin/displayBilling.php' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Billing.php on line 121
+[16-Feb-2018 17:02:19 UTC] PHP Warning:  include(../admin/displayBilling.php): failed to open stream: No such file or directory in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Billing.php on line 121
+[16-Feb-2018 17:02:19 UTC] PHP Warning:  include(): Failed opening '../admin/displayBilling.php' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Billing.php on line 121
+[16-Feb-2018 17:03:40 UTC] PHP Warning:  include(displayCheck-in.php ): failed to open stream: No such file or directory in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-in.php on line 121
+[16-Feb-2018 17:03:40 UTC] PHP Warning:  include(): Failed opening 'displayCheck-in.php ' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-in.php on line 121
+[16-Feb-2018 17:03:47 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/displayreservation.php on line 53
+[16-Feb-2018 17:03:51 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/displayreservation.php on line 53
+[16-Feb-2018 17:03:58 UTC] PHP Warning:  include(displayCheck-in.php ): failed to open stream: No such file or directory in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-in.php on line 121
+[16-Feb-2018 17:03:58 UTC] PHP Warning:  include(): Failed opening 'displayCheck-in.php ' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-in.php on line 121
+[16-Feb-2018 17:07:01 UTC] PHP Warning:  include(displayCheck-in.php ): failed to open stream: No such file or directory in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-in.php on line 121
+[16-Feb-2018 17:07:01 UTC] PHP Warning:  include(): Failed opening 'displayCheck-in.php ' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-in.php on line 121
+[16-Feb-2018 17:07:06 UTC] PHP Warning:  include(displayCheck-in.php ): failed to open stream: No such file or directory in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-in.php on line 121
+[16-Feb-2018 17:07:06 UTC] PHP Warning:  include(): Failed opening 'displayCheck-in.php ' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-in.php on line 121
+[16-Feb-2018 17:07:57 UTC] PHP Warning:  include(displayCheck-in.php ): failed to open stream: No such file or directory in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-in.php on line 121
+[16-Feb-2018 17:07:57 UTC] PHP Warning:  include(): Failed opening 'displayCheck-in.php ' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-in.php on line 121
+[16-Feb-2018 17:09:13 UTC] PHP Warning:  include(../admin/displayBilling.php): failed to open stream: No such file or directory in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Billing.php on line 121
+[16-Feb-2018 17:09:13 UTC] PHP Warning:  include(): Failed opening '../admin/displayBilling.php' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Billing.php on line 121
+[16-Feb-2018 17:10:23 UTC] PHP Warning:  include(../admin/displayBilling.php): failed to open stream: No such file or directory in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Billing.php on line 121
+[16-Feb-2018 17:10:23 UTC] PHP Warning:  include(): Failed opening '../admin/displayBilling.php' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Billing.php on line 121
+[16-Feb-2018 17:10:44 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/index.php on line 127
+[16-Feb-2018 17:10:47 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/displayreservation.php on line 53
+[16-Feb-2018 17:10:58 UTC] PHP Warning:  include(displayCheck-in.php ): failed to open stream: No such file or directory in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-in.php on line 121
+[16-Feb-2018 17:10:58 UTC] PHP Warning:  include(): Failed opening 'displayCheck-in.php ' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-in.php on line 121
+[16-Feb-2018 17:11:17 UTC] PHP Warning:  include(displayCheck-in.php ): failed to open stream: No such file or directory in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-in.php on line 121
+[16-Feb-2018 17:11:17 UTC] PHP Warning:  include(): Failed opening 'displayCheck-in.php ' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-in.php on line 121
+[16-Feb-2018 17:13:13 UTC] PHP Warning:  include(../admin/displayBilling.php): failed to open stream: No such file or directory in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Billing.php on line 121
+[16-Feb-2018 17:13:13 UTC] PHP Warning:  include(): Failed opening '../admin/displayBilling.php' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Billing.php on line 121
+[16-Feb-2018 17:13:17 UTC] PHP Warning:  include(displayCheck-in.php ): failed to open stream: No such file or directory in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-in.php on line 121
+[16-Feb-2018 17:13:17 UTC] PHP Warning:  include(): Failed opening 'displayCheck-in.php ' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-in.php on line 121
+[16-Feb-2018 17:13:21 UTC] PHP Warning:  include(../admin/displayBilling.php): failed to open stream: No such file or directory in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Billing.php on line 121
+[16-Feb-2018 17:13:21 UTC] PHP Warning:  include(): Failed opening '../admin/displayBilling.php' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Billing.php on line 121
+[16-Feb-2018 17:17:48 UTC] PHP Warning:  include(displayCheck-in.php ): failed to open stream: No such file or directory in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-in.php on line 121
+[16-Feb-2018 17:17:48 UTC] PHP Warning:  include(): Failed opening 'displayCheck-in.php ' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-in.php on line 121
+[16-Feb-2018 17:17:51 UTC] PHP Warning:  include(displayCheck-in.php ): failed to open stream: No such file or directory in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-in.php on line 121
+[16-Feb-2018 17:17:51 UTC] PHP Warning:  include(): Failed opening 'displayCheck-in.php ' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-in.php on line 121
+[16-Feb-2018 17:18:39 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/index.php on line 127
+[16-Feb-2018 17:18:42 UTC] PHP Warning:  include(displayCheck-in.php ): failed to open stream: No such file or directory in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-in.php on line 121
+[16-Feb-2018 17:18:42 UTC] PHP Warning:  include(): Failed opening 'displayCheck-in.php ' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-in.php on line 121
+[16-Feb-2018 17:19:13 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/displayreservation.php on line 53
+[16-Feb-2018 17:19:26 UTC] PHP Warning:  include(../admin/displayBilling.php): failed to open stream: No such file or directory in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Billing.php on line 121
+[16-Feb-2018 17:19:26 UTC] PHP Warning:  include(): Failed opening '../admin/displayBilling.php' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Billing.php on line 121
+[16-Feb-2018 17:20:05 UTC] PHP Warning:  include(displayCheck-in.php ): failed to open stream: No such file or directory in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-in.php on line 121
+[16-Feb-2018 17:20:05 UTC] PHP Warning:  include(): Failed opening 'displayCheck-in.php ' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-in.php on line 121
+[16-Feb-2018 17:21:44 UTC] PHP Warning:  include(../admin/displayBilling.php): failed to open stream: No such file or directory in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Billing.php on line 121
+[16-Feb-2018 17:21:44 UTC] PHP Warning:  include(): Failed opening '../admin/displayBilling.php' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Billing.php on line 121
+[16-Feb-2018 17:22:21 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/displayreservation.php on line 53
+[16-Feb-2018 17:22:36 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/displayreservation.php on line 53
+[16-Feb-2018 17:46:00 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/index.php on line 127
+[16-Feb-2018 17:46:51 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/displayreservation.php on line 53
+[16-Feb-2018 18:44:49 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Pending.php on line 5
+[16-Feb-2018 18:44:49 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Pending.php on line 6
+[16-Feb-2018 18:44:49 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-in.php on line 5
+[16-Feb-2018 18:44:49 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-in.php on line 6
+[16-Feb-2018 18:44:49 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-out.php on line 5
+[16-Feb-2018 18:44:49 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-out.php on line 6
+[16-Feb-2018 18:44:49 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Billing.php on line 5
+[16-Feb-2018 18:44:49 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Billing.php on line 6
+[16-Feb-2018 18:44:49 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Rooms.php on line 5
+[16-Feb-2018 18:44:49 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Rooms.php on line 6
+[16-Feb-2018 18:44:50 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Reserved.php on line 5
+[16-Feb-2018 18:44:50 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Reserved.php on line 6
+[16-Feb-2018 18:44:50 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/displayreservation.php on line 53
+[16-Feb-2018 18:45:23 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/index.php on line 5
+[16-Feb-2018 18:45:23 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/index.php on line 6
+[16-Feb-2018 18:45:24 UTC] PHP Notice:  Undefined index: reservationid in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/updatereservation.php on line 4
+[16-Feb-2018 18:45:24 UTC] PHP Notice:  Undefined index: status in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/updatereservation.php on line 5
+[17-Feb-2018 00:46:16 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/displayreservation.php on line 53
+[17-Feb-2018 00:46:19 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/displayreservation.php on line 53
+[17-Feb-2018 00:46:38 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/displayreservation.php on line 53
+[17-Feb-2018 00:54:25 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/displayreservation.php on line 53
+[17-Feb-2018 00:55:31 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/displayreservation.php on line 53
+[17-Feb-2018 00:57:07 UTC] PHP Warning:  A non-numeric value encountered in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/updatereservation.php on line 112
+[17-Feb-2018 00:57:07 UTC] PHP Warning:  A non-numeric value encountered in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/updatereservation.php on line 113
+[17-Feb-2018 01:02:24 UTC] PHP Notice:  Undefined index: reservationid in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/UpdateCheck-in.php on line 4
+[17-Feb-2018 01:02:24 UTC] PHP Notice:  Undefined index: status in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/UpdateCheck-in.php on line 5
+[17-Feb-2018 01:02:24 UTC] PHP Notice:  Undefined index: fdoname in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/UpdateCheck-in.php on line 6
+[17-Feb-2018 03:25:19 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Reserved.php on line 5
+[17-Feb-2018 03:25:19 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Reserved.php on line 6
+[17-Feb-2018 03:28:08 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Reserved.php on line 5
+[17-Feb-2018 03:28:08 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Reserved.php on line 6
+[17-Feb-2018 03:28:08 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-in.php on line 5
+[17-Feb-2018 03:28:08 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-in.php on line 6
+[17-Feb-2018 03:37:45 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-in.php on line 5
+[17-Feb-2018 03:37:45 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-in.php on line 6
+[17-Feb-2018 03:55:52 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/index.php on line 5
+[17-Feb-2018 03:55:52 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/index.php on line 6
+[17-Feb-2018 03:55:53 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Pending.php on line 5
+[17-Feb-2018 03:55:53 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Pending.php on line 6
+[17-Feb-2018 03:55:53 UTC] PHP Notice:  Undefined index: resID in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/getdate.php on line 4
+[17-Feb-2018 03:55:53 UTC] PHP Notice:  Undefined index: checkIn in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/getdate.php on line 5
+[17-Feb-2018 03:55:53 UTC] PHP Notice:  Undefined index: checkOut in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/getdate.php on line 6
+[17-Feb-2018 03:55:53 UTC] PHP Notice:  Undefined index: from in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Modifyroomdate.php on line 6
+[17-Feb-2018 03:55:53 UTC] PHP Notice:  Undefined index: to in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Modifyroomdate.php on line 7
+[17-Feb-2018 04:19:54 UTC] PHP Notice:  Undefined index: firstName in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/summary.php on line 33
+[17-Feb-2018 04:19:54 UTC] PHP Notice:  Undefined index: middleName in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/summary.php on line 33
+[17-Feb-2018 04:19:54 UTC] PHP Notice:  Undefined index: lastName in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/summary.php on line 33
+[17-Feb-2018 04:19:54 UTC] PHP Notice:  Undefined index: address in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/summary.php on line 34
+[17-Feb-2018 04:19:54 UTC] PHP Notice:  Undefined index: email in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/summary.php on line 35
+[17-Feb-2018 04:19:54 UTC] PHP Notice:  Undefined index: contactNum in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/summary.php on line 36
+[17-Feb-2018 04:19:54 UTC] PHP Notice:  Undefined index: adult in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/summary.php on line 37
+[17-Feb-2018 04:19:54 UTC] PHP Notice:  Undefined index: adultadd in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/summary.php on line 38
+[17-Feb-2018 04:19:54 UTC] PHP Notice:  Undefined index: adultadd in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/summary.php on line 39
+[17-Feb-2018 04:19:54 UTC] PHP Notice:  Undefined index: from in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/summary.php on line 46
+[17-Feb-2018 04:19:54 UTC] PHP Notice:  Undefined index: to in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/summary.php on line 47
+[17-Feb-2018 04:19:54 UTC] PHP Notice:  Undefined index: totalnights in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/summary.php on line 48
+[17-Feb-2018 04:19:54 UTC] PHP Notice:  Undefined index: presSNum in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/summary.php on line 51
+[17-Feb-2018 04:19:54 UTC] PHP Notice:  Undefined index: presSNum in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/summary.php on line 54
+[17-Feb-2018 04:19:54 UTC] PHP Notice:  Undefined index: rmspName in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/summary.php on line 54
+[17-Feb-2018 04:19:54 UTC] PHP Notice:  Undefined index: presSReservedTotal in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/summary.php on line 54
+[17-Feb-2018 04:19:54 UTC] PHP Notice:  Undefined index: presSReservedTotal in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/summary.php on line 55
+[17-Feb-2018 04:19:54 UTC] PHP Notice:  Undefined index: presDNum in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/summary.php on line 57
+[17-Feb-2018 04:19:54 UTC] PHP Notice:  Undefined index: presDNum in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/summary.php on line 60
+[17-Feb-2018 04:19:54 UTC] PHP Notice:  Undefined index: rmdpName in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/summary.php on line 60
+[17-Feb-2018 04:19:54 UTC] PHP Notice:  Undefined index: presDReservedTotal in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/summary.php on line 60
+[17-Feb-2018 04:19:54 UTC] PHP Notice:  Undefined index: presDReservedTotal in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/summary.php on line 61
+[17-Feb-2018 04:19:54 UTC] PHP Notice:  Undefined index: supSNum in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/summary.php on line 63
+[17-Feb-2018 04:19:54 UTC] PHP Notice:  Undefined index: supSNum in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/summary.php on line 66
+[17-Feb-2018 04:19:54 UTC] PHP Notice:  Undefined index: rmssName in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/summary.php on line 66
+[17-Feb-2018 04:19:54 UTC] PHP Notice:  Undefined index: supSReservedTotal in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/summary.php on line 66
+[17-Feb-2018 04:19:54 UTC] PHP Notice:  Undefined index: supSReservedTotal in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/summary.php on line 67
+[17-Feb-2018 04:19:54 UTC] PHP Notice:  Undefined index: supDNum in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/summary.php on line 69
+[17-Feb-2018 04:19:54 UTC] PHP Notice:  Undefined index: supDNum in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/summary.php on line 72
+[17-Feb-2018 04:19:54 UTC] PHP Notice:  Undefined index: rmdsName in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/summary.php on line 72
+[17-Feb-2018 04:19:54 UTC] PHP Notice:  Undefined index: supDReservedTotal in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/summary.php on line 72
+[17-Feb-2018 04:19:54 UTC] PHP Notice:  Undefined index: supDReservedTotal in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/summary.php on line 73
+[17-Feb-2018 04:19:54 UTC] PHP Notice:  Undefined index: totalnights in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/summary.php on line 80
+[17-Feb-2018 04:19:54 UTC] PHP Notice:  Undefined index: adultadd in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/summary.php on line 84
+[17-Feb-2018 04:19:54 UTC] PHP Notice:  Undefined index: adultadd in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/summary.php on line 87
+[17-Feb-2018 04:19:54 UTC] PHP Notice:  Undefined index: adultadd in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/summary.php on line 88
+[17-Feb-2018 04:22:08 UTC] PHP Notice:  Undefined index: gender in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/guestform.php on line 83
+[17-Feb-2018 04:26:15 UTC] PHP Warning:  A non-numeric value encountered in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/updatereservation.php on line 112
+[17-Feb-2018 04:26:15 UTC] PHP Warning:  A non-numeric value encountered in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/updatereservation.php on line 113
+[17-Feb-2018 04:29:30 UTC] PHP Warning:  A non-numeric value encountered in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/updatereservation.php on line 112
+[17-Feb-2018 04:29:30 UTC] PHP Warning:  A non-numeric value encountered in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/updatereservation.php on line 113
+[18-Feb-2018 07:20:34 UTC] PHP Warning:  A non-numeric value encountered in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/updatereservation.php on line 124
+[18-Feb-2018 07:20:34 UTC] PHP Warning:  A non-numeric value encountered in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/updatereservation.php on line 125
+[18-Feb-2018 07:33:27 UTC] PHP Warning:  A non-numeric value encountered in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/updatereservation.php on line 124
+[18-Feb-2018 07:33:27 UTC] PHP Warning:  A non-numeric value encountered in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/updatereservation.php on line 125
+[18-Feb-2018 09:11:20 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Billing.php on line 5
+[18-Feb-2018 09:11:20 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Billing.php on line 6
+[18-Feb-2018 09:43:38 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Rooms.php on line 5
+[18-Feb-2018 09:43:38 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Rooms.php on line 6
+[18-Feb-2018 11:06:00 UTC] PHP Notice:  Undefined variable: rmstring in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-in_Registration.php on line 280
+[18-Feb-2018 11:06:00 UTC] PHP Notice:  Undefined variable: ttlrms in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-in_Registration.php on line 283
+[18-Feb-2018 12:00:07 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Pending.php on line 5
+[18-Feb-2018 12:00:07 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Pending.php on line 6
+[14-Mar-2018 11:19:05 UTC] PHP Notice:  Undefined index: reservationid in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/updatereservation.php on line 4
+[14-Mar-2018 11:19:05 UTC] PHP Notice:  Undefined index: status in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/updatereservation.php on line 5
+[14-Mar-2018 11:19:07 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Reserved.php on line 5
+[14-Mar-2018 11:19:07 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Reserved.php on line 6
+[18-Mar-2018 13:08:08 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Pending.php on line 5
+[18-Mar-2018 13:08:08 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Pending.php on line 6
+[18-Mar-2018 13:08:08 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-out.php on line 5
+[18-Mar-2018 13:08:08 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-out.php on line 6
+[18-Mar-2018 13:08:08 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Billing.php on line 5
+[18-Mar-2018 13:08:08 UTC] PHP Notice:  Undefined index: reservationid in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/UpdateCheck-in.php on line 4
+[18-Mar-2018 13:08:08 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Reserved.php on line 5
+[18-Mar-2018 13:08:08 UTC] PHP Notice:  Undefined index: status in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/UpdateCheck-in.php on line 5
+[18-Mar-2018 13:08:08 UTC] PHP Notice:  Undefined index: fdoname in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/UpdateCheck-in.php on line 6
+[18-Mar-2018 13:08:08 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Reserved.php on line 6
+[18-Mar-2018 13:08:08 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Billing.php on line 6
+[18-Mar-2018 13:08:08 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/index.php on line 5
+[18-Mar-2018 13:08:08 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/index.php on line 6
+[18-Mar-2018 13:08:11 UTC] PHP Notice:  Undefined index: UserType in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-in.php on line 5
+[18-Mar-2018 13:08:11 UTC] PHP Notice:  Undefined index: Name in /home/fti5sw4rvtc1/public_html/RRH/Frontdesk/Check-in.php on line 6
