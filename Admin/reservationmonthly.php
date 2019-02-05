@@ -4,11 +4,11 @@
 class PDF extends FPDF {
 		function Header(){
 			$this->SetFont('Arial','B',14);
-			$this->Cell(130 ,5, 'Rosario Resort and Hotel',0,0);
+			$this->Cell(130 ,5, 'Casa de Tobias Mountain Resort',0,0);
 				$this->Cell(59 ,5,'Reservation Report',0,0);//end of line
 				$this->Cell(25 ,5,'',0,1);
 			$this->SetFont('Arial','',12);
-			$this->Cell(130 ,5,'National Highway, Brgy Quilib',0,0);
+			$this->Cell(130 ,5,'Alibungbungan, Nagcarlan, Laguna',0,0);
 			$this->Cell(20 ,5,'Date',0,0);
 			$this->Cell(34 ,5,date("Y-m-d"),0,1);//end of line
 			$this->Cell(25 ,5,'',0,0);
@@ -18,21 +18,20 @@ class PDF extends FPDF {
 			$this->Cell(25 ,5,'',0,0);
 			$this->Cell(34 ,5,'',0,1);//end of line
 			$this->Cell(130 ,5,'(043) 740 4698',0,0);
-			
+
 			$this->Cell(59 ,5,'',0,1);//end of line
 			//$this->Cell(59 ,5,$day.' ReservationReport',0,1);
 		}
 		function Footer(){
 			$name = $_POST['id'];
 			$this->SetFont('Arial','B',14);
-			
+
 			$this->Cell(130 ,5,'',0,1);//end of line
 			$this->Cell(130,10, 'Prepared For: '.$name,0,1);
 
 			$this->Cell(130,10, '_________________',0,1);
 			$this->Cell(130,0, '          Signature',0,1);
-			
-			//$this->Cell(130 ,5, 'Rosario Resort and Hotel',0,1);
+
 			//$this->Cell(59 ,5,$day.' ReservationReport',0,1);
 		}
 
@@ -65,7 +64,7 @@ class PDF extends FPDF {
 		$type = "December";
 	}
 		$date=date("Y-" . $month);
-	
+
 		//$date=date('m/', strtotime($dates));
 
 	if($_POST['status'] == 'All Reservation'){
@@ -76,7 +75,7 @@ class PDF extends FPDF {
 
 	$querycount = mysqli_query($conn, "SELECT * FROM reservation where ReservationDate LIKE '%{$date}%' and Status LIKE '%{$status}%'") or die("error");
 	$counts = mysqli_num_rows($querycount);
-	
+
 	$sum = 0;
 	$sums = 0.0;
 	$sumguest = 0;
@@ -89,7 +88,7 @@ class PDF extends FPDF {
 				$sumguest += $row['NumberOfAdult'];
 				$sums += $row['TotalAmount'];
 		}
-	
+
 
 	$pdf=new PDF();
 $datetoday = date("Y-m-d");
@@ -98,8 +97,6 @@ $datetoday = date("Y-m-d");
 $pdf->SetFont('Arial','B',14);
 
 // //Cell(width , height , text , border , end line , [align] )
-// $pdf->Cell(130 ,5, 'Rosario Resort and Hotel',0,0);
- //$pdf->Cell(130 ,5, ' ',0,0);
 
 
 //set font to arial, regular, 12pt
@@ -107,8 +104,6 @@ $pdf->SetFont('Arial','B',14);
 
 // $pdf->Cell(130 ,5,'National Highway, Brgy Quilib',0,0);
 // $pdf->Cell(59 ,5,'',0,1);//end of line
-
-// $pdf->Cell(130 ,5,'Rosario Batangas Philippines',0,0);
 // $pdf->Cell(25 ,5,'Date',0,0);
 // $pdf->Cell(34 ,5,$datetoday,0,1);//end of line
 
@@ -186,5 +181,5 @@ $pdf->SetFont('Arial','B',6);
 
 	$pdf->AddPage();
 		$pdf->Output();
-	
+
 ?>

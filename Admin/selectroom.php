@@ -23,7 +23,7 @@ $to = $_SESSION['to'];
 if(empty($from) AND empty($to)){
 	echo "<script language='JavaScript'>
 							window.alert('Please select date first')
-							
+
 							window.location.href='datepickerform.php';
 							</SCRIPT>";
 
@@ -71,7 +71,7 @@ echo "<script language='JavaScript'>
 		 	echo("<script language='JavaScript'>
 				window.location.href='guestform.php';
 			</SCRIPT>");
-	 
+
 }
 
 ?>
@@ -121,7 +121,7 @@ echo "<script language='JavaScript'>
 
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-      <a class="navbar-brand mr-1" href="index.php">Rosario Resort and Hotel</a>
+      <a class="navbar-brand mr-1" href="index.php">Casa de Tobias Mountain Resort</a>
 
       <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
         <i class="fas fa-bars"></i>
@@ -141,8 +141,8 @@ echo "<script language='JavaScript'>
 
       <!-- Navbar -->
       <ul class="navbar-nav ml-auto ml-md-0">
-        
-        
+
+
         <li class="nav-item dropdown no-arrow">
           <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fas fa-user-circle fa-fw"></i>
@@ -235,7 +235,7 @@ echo "<script language='JavaScript'>
         <footer class="sticky-footer">
           <div class="container my-auto">
             <div class="copyright text-center my-auto">
-              <span>Copyright © Rosario Resort and Hotel 2018</span>
+              <span>Copyright © Casa de Tobias Mountain Resort 2019</span>
             </div>
           </div>
         </footer>
@@ -244,10 +244,10 @@ echo "<script language='JavaScript'>
 
 				<form method="POST" action="selectroom.php">
 			<div class="title">
-				
+
 				<h1><center>SELECT ROOM</center></h1>
 			</div>
-				
+
 				<table class="tablecon" align="center">
 
 
@@ -257,7 +257,7 @@ echo "<script language='JavaScript'>
 
 						<?php
 						$record = mysqli_query($conn, "SELECT DISTINCT RoomType FROM roomtype");
-						
+
 						$roomcount = mysqli_num_rows($record);
  						while($row=mysqli_fetch_assoc($record)){
  							$counts[]= str_replace(" ","*",$row['RoomType']);
@@ -266,10 +266,10 @@ echo "<script language='JavaScript'>
 
  						$ctr=0;
 						?>
-							
+
 						<?php
 						while($ctr < $roomcount){
-							
+
 							$data = mysqli_query($conn, "SELECT * FROM roomtype WHERE RoomType = '$counter[$ctr]'");
 							$rmdt = mysqli_fetch_array($data);
 						?>
@@ -285,22 +285,22 @@ echo "<script language='JavaScript'>
 
 						<div style="margin-top: -190px; "><font size="5">Room Capacity: Up to <?php echo $rmdt['RoomCapacity']?> persons<br><br>
 						Room Rate: <?php echo 'P'.number_format($rmdt['RoomRate'])?> <font size="2">(Per night)</div></font>
-						<div style="text-align: right; margin-right: 80px; margin-top: -80px; "><select name="<?php echo $counts[$ctr]?>" style="width: 150px;"><option value=0>&nbsp;</option>	
+						<div style="text-align: right; margin-right: 80px; margin-top: -80px; "><select name="<?php echo $counts[$ctr]?>" style="width: 150px;"><option value=0>&nbsp;</option>
 
 						?>
 						<?php
-							$countpsreserved = mysqli_query($conn, "SELECT * from roominventory ri join roomtype rt on ri.RoomID = rt.RoomID where (Status = 'Reserved' or Status = 'Pending' or Status = 'Checked-in') AND RoomType = '{$counter[$ctr]}'  AND 
+							$countpsreserved = mysqli_query($conn, "SELECT * from roominventory ri join roomtype rt on ri.RoomID = rt.RoomID where (Status = 'Reserved' or Status = 'Pending' or Status = 'Checked-in') AND RoomType = '{$counter[$ctr]}'  AND
 							((CheckInDate >= '$checkIn' and CheckInDate < '$checkOut' )
 						or (CheckOutDate > '$checkIn'and CheckOutDate < '$checkOut' ) or (CheckOutDate >= '$checkOut')and(CheckInDate < '$checkIn'))");
-			
-						
+
+
 						$presSrow = mysqli_num_rows($countpsreserved);
 						$totalpsrow = mysqli_num_rows($data);
 						$presScount = $totalpsrow - $presSrow;
-						
+
 						for ($x = 1; $x <= $presScount; $x++) {
 								echo "<option value='$x'>$x</option>";
-							} 
+							}
 						?>
 						</select><font size="2"><?php
 						if($presScount <= 0){
@@ -315,17 +315,17 @@ echo "<script language='JavaScript'>
 						?></div></font>
 						</td>
 						</tr>
-						
+
 						<?php $ctr++;} ?>
- 				
-					
-				
+
+
+
 				</table>
 				<br>
 				<div style="margin-left: 150px; margin-right: 150px;">
 					<input type="submit" class="btn btn-outline btn-success btn-lg btn-block" name="reserve" value="Next"/>
 				</div>
-				
+
 				</form>
 		</div>
 	</br>
@@ -354,8 +354,8 @@ echo "<script language='JavaScript'>
       </div>
     </div>
 
-        
-     
+
+
 <!-- Bootstrap core JavaScript-->
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -373,7 +373,7 @@ echo "<script language='JavaScript'>
     <!-- Demo scripts for this page-->
     <script src="../js/demo/datatables-demo.js"></script>
 
-    
+
 
 		<script type="text/javascript">
 
@@ -394,18 +394,18 @@ echo "<script language='JavaScript'>
         onSelect: function(selected) {
            $("#from").datepicker("option", selecd)
         }
-    }); 
+    });
 });
 
-    
-  
+
+
 </script>
 
 
 
 </body>
 </html>
-					
 
-<?php endif; 
+
+<?php endif;
 }?>

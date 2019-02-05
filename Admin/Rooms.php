@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 include("../dbconn.php");
 
@@ -28,7 +28,7 @@ if($type != 'Admin' AND $type != 'Frontdesk'){
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>RRH - Rooms</title>
+    <title>Casadetobias - Rooms</title>
 
     <!-- Bootstrap core CSS-->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -43,12 +43,14 @@ if($type != 'Admin' AND $type != 'Frontdesk'){
     <link href="../css/sb-admin.css" rel="stylesheet">
 
   </head>
+<style>
 
+</style>
   <body id="page-top">
 
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-      <a class="navbar-brand mr-1" href="index.php">Rosario Resort and Hotel</a>
+      <a class="navbar-brand mr-1" href="index.php">Casa de Tobias Mountain Resort</a>
 
       <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
         <i class="fas fa-bars"></i>
@@ -68,8 +70,8 @@ if($type != 'Admin' AND $type != 'Frontdesk'){
 
       <!-- Navbar -->
       <ul class="navbar-nav ml-auto ml-md-0">
-        
-        
+
+
         <li class="nav-item dropdown no-arrow">
           <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fas fa-user-circle fa-fw"></i>
@@ -162,14 +164,14 @@ if($type != 'Admin' AND $type != 'Frontdesk'){
         <footer class="sticky-footer">
           <div class="container my-auto">
             <div class="copyright text-center my-auto">
-              <span>Copyright © Rosario Resort and Hotel 2018</span>
+              <span>Copyright © Casa de Tobias Mountain Resort 2019</span>
             </div>
           </div>
         </footer>
 
         <div class="row">
             <div class="col-xl-4 col-sm-4 mb-4">
-              <div class="card text-white bg-primary o-hidden h-100">
+              <div class="card text-white bg-success o-hidden h-100">
                 <div class="card-body">
                   <div class="card-body-icon">
                     <i class="fas fa-fw fa-edit"></i>
@@ -185,7 +187,7 @@ if($type != 'Admin' AND $type != 'Frontdesk'){
               </div>
             </div>
             <div class="col-xl-4 col-sm-4 mb-4">
-              <div class="card text-white bg-primary o-hidden h-100">
+              <div class="card text-white bg-success o-hidden h-100">
                 <div class="card-body">
                   <div class="card-body-icon">
                     <i class="fas fa-fw fa-edit"></i>
@@ -202,7 +204,7 @@ if($type != 'Admin' AND $type != 'Frontdesk'){
             </div>
 
             <div class="col-xl-4 col-sm-4 mb-4">
-              <div class="card text-white bg-primary o-hidden h-100">
+              <div class="card text-white bg-success o-hidden h-100">
                 <div class="card-body">
                   <div class="card-body-icon">
                     <i class="fas fa-fw fa-edit"></i>
@@ -221,9 +223,9 @@ if($type != 'Admin' AND $type != 'Frontdesk'){
 
 
 
- 
+
     <div>
-    <?php include 'displayRooms.php'; ?> 
+    <?php include 'displayRooms.php'; ?>
     </div>
 
   <!-- Scroll to Top Button-->
@@ -250,7 +252,7 @@ if($type != 'Admin' AND $type != 'Frontdesk'){
       </div>
     </div>
 
-  
+
 <!-- Bootstrap core JavaScript-->
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -268,7 +270,7 @@ if($type != 'Admin' AND $type != 'Frontdesk'){
     <!-- Demo scripts for this page-->
     <script src="../js/demo/datatables-demo.js"></script>
 
-     
+
 
 </body>
 </html>

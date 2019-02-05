@@ -7,13 +7,13 @@ $to = $_SESSION['to'];
 if(empty($from) AND empty($to)){
 	echo "<script language='JavaScript'>
 							window.alert('Please select date first')
-							
+
 							window.location.href='datepickerform.php';
 							</SCRIPT>";
 
 }
 else{
-	
+
 
 
 $checkIn = $_SESSION['from'];
@@ -58,14 +58,14 @@ echo "<script language='JavaScript'>
 		 	echo("<script language='JavaScript'>
 				window.location.href='guestform.php';
 			</SCRIPT>");
-	 
+
 }
 
 ?>
 <?php else: ?>
 <!DOCTYPE html>
 <html>
-<title>Rosario Resort and Hotel</title>
+<title>Casa de Tobias Mountain Resort</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -89,7 +89,7 @@ body, html {
     background-size: cover;
     background-image: url("images/images/gallery (22).jpg");
     min-height: 100%;
-    
+
 }
 .w3-bar .w3-button {
     padding: 16px;
@@ -161,7 +161,7 @@ body, html {
 }
 #progressbar li:first-child:after {
   /*connector not needed before the first step*/
-  content: none; 
+  content: none;
 }
 /*marking active/completed steps green*/
 /*The number of the step and the connector before it = green*/
@@ -175,7 +175,7 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="index.php#home" class="w3-bar-item w3-button w3-wide">ROSARIO RESORT AND HOTEL</a>
+    <a href="index.php#home" class="w3-bar-item w3-button w3-wide">Casa de Tobias Mountain Resort</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="index.php#about" class="w3-bar-item w3-button">ABOUT</a>
@@ -203,14 +203,14 @@ body, html {
   <a href="Guest/_log-in.php" onclick="w3_close()" class="w3-bar-item w3-button">LOG-IN</a>
   <a href="datepickerform.php" onclick="w3_close()" class="w3-bar-item w3-button" style="background: #FFF; color: #000;">BOOK NOW</a>
 </nav>
-			
+
 
 	<form method="POST" action="selectroom.php">
 
 			<!-- Room Section -->
 			<div class="w3-container" style="padding:120px 16px">
 			<div id="msform">
-     
+
       			<ul id="progressbar">
         			<li class="active"><a href="datepickerform.php">Select Dates</a></li>
         			<li class="active">Select Rooms</li>
@@ -224,7 +224,7 @@ body, html {
 
   					<?php
             			$record = mysqli_query($conn, "SELECT DISTINCT RoomType FROM roomtype");
-            
+
             			$roomcount = mysqli_num_rows($record);
             			while($row=mysqli_fetch_assoc($record)){
               				$counts[]= str_replace(" ","*",$row['RoomType']);
@@ -232,36 +232,37 @@ body, html {
             			}
 
             			$ctr=0;
-            
+
             			while($ctr < $roomcount){
-              
+
               				$data = mysqli_query($conn, "SELECT * FROM roomtype WHERE RoomType = '$counter[$ctr]'");
               				$rmdt = mysqli_fetch_array($data);
           			?>
-    				<div class="w3-col l3 m6 w3-margin-bottom">
-      					<div class="w3-card">
-        					<img src="Admin/upload/<?php echo $rmdt['RoomPhoto']?>" alt="<?php echo $rmdt['RoomPhoto']?>" style="width:100%">
-        					<div class="w3-container">
+    				<div class="w3-row m6 w3-margin-bottom w3-border" style"width:100%">
+        					<div class="w3-col l6 w3-padding">
+        						<img src="Admin/upload/<?php echo $rmdt['RoomPhoto']?>" alt="<?php echo $rmdt['RoomPhoto']?>" style="width:100%">
+        					</div>
+        					<div class="w3-col l6 w3-padding">
           						<h4><b><?php echo $counter[$ctr]?></b></h4>
           						<p class="w3-opacity">(Airconditioned room) Good For 2 Persons</p>
           						<p class="w3-opacity"> Capacity up to <?php echo $rmdt['RoomCapacity']?> persons</p>
           						<p><?php echo $rmdt['Description'] ?></p>
           						<h5>&#8369;<?php echo number_format($rmdt['RoomRate'])?>(Per night)</h5>
-          						<p><select name="<?php echo $counts[$ctr]?>" style="width: 150px;"><option value=0>&nbsp;</option> 
+          						<p><select name="<?php echo $counts[$ctr]?>" style="width: 150px;"><option value=0>&nbsp;</option>
 
             				<?php
-              					$countpsreserved = mysqli_query($conn, "SELECT * from roominventory ri join roomtype rt on ri.RoomID = rt.RoomID where (Status = 'Reserved' or Status = 'Pending' or Status = 'Checked-in') AND RoomType = '{$counter[$ctr]}'  AND 
+              					$countpsreserved = mysqli_query($conn, "SELECT * from roominventory ri join roomtype rt on ri.RoomID = rt.RoomID where (Status = 'Reserved' or Status = 'Pending' or Status = 'Checked-in') AND RoomType = '{$counter[$ctr]}'  AND
               ((CheckInDate >= '$checkIn' and CheckInDate < '$checkOut' )
             or (CheckOutDate > '$checkIn'and CheckOutDate < '$checkOut' ) or (CheckOutDate >= '$checkOut')and(CheckInDate < '$checkIn'))");
-      
-            
+
+
             					$presSrow = mysqli_num_rows($countpsreserved);
             					$totalpsrow = mysqli_num_rows($data);
             					$presScount = $totalpsrow - $presSrow;
-            
+
             						for ($x = 1; $x <= $presScount; $x++) {
                 						echo "<option value='$x'>$x</option>";
-              						} 
+              						}
             				?>
             					</select><font size="2">
             						<?php
@@ -276,9 +277,8 @@ body, html {
             						}
             						?></font>
         					</div>
-      					</div>
     				</div>
-    
+
     				<?php $ctr++;} ?>
   				</div>
   			<div align="right">
@@ -287,7 +287,7 @@ body, html {
 			</div>
 
 
-		
+
 		</form>
 
 
@@ -299,21 +299,21 @@ body, html {
     <a href="https://www.google.com.ph/search?q=Rosario+Resort+and+Hotel&oq=Rosario+Resort+and+Hotel&aqs=chrome..69i57l2j69i60l4.9849j0j4&sourceid=chrome&ie=UTF-8"><i class="fa fa-google w3-hover-opacity"></i></a>
 
   </div>
-  <p>Copyright © Rosario Resort and Hotel 2018</p>
+  <p>Copyright © Casa de Tobias Mountain Resort 2019</p>
 </footer>
- 
+
 
  <script type="text/javascript">
-	
+
 	 var time = new Date().getTime();
      $(document.body).bind( function(e) {
          time = new Date().getTime();
      });
 
      function refresh() {
-         if(new Date().getTime() - time >= 60000) 
+         if(new Date().getTime() - time >= 60000)
              window.location.reload(true);
-         else 
+         else
              setTimeout(refresh, 10000);
      }
 
@@ -350,7 +350,7 @@ $(document).ready(function(){
         onSelect: function(selected) {
            $("#from").datepicker("option", selected)
         }
-    }); 
+    });
 });
 
 
@@ -374,6 +374,6 @@ function w3_close() {
 
 </body>
 </html>
-					
-<?php endif; 
+
+<?php endif;
 }?>

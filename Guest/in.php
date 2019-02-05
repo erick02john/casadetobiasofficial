@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 include("dbconn.php");
 
@@ -62,11 +62,11 @@ if(!empty($_SESSION['Email'])){
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Rosario Resort and Hotel</a>
+                <a class="navbar-brand" href="index.html">Casa de Tobias Mountain Resort</a>
             </div>
             <!-- /.navbar-header -->
 
-           
+
             <!-- /.navbar-top-links -->
 
             <div class="navbar-default sidebar" role="navigation">
@@ -84,8 +84,8 @@ if(!empty($_SESSION['Email'])){
                         <li>
                             <a href="index.html"><i class="fa fa-history fa-fw"></i>Check-in History</a>
                         </li>
-                     
-                        
+
+
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->
@@ -126,7 +126,7 @@ if(!empty($_SESSION['Email'])){
                                     </tr>
                                 </thead>
                                 <tbody>
-        <?php 
+        <?php
               $i=1;
       while ($row = mysqli_fetch_array($query)) {
         echo "<tr>
@@ -186,8 +186,8 @@ if(!empty($_SESSION['Email'])){
     "; ?> <?php include 'Admin/displayRecit.php' ?> <?php echo"
     </div>
     </div>
-    </div>              
-        
+    </div>
+
         <div class='modal-footer'>
         <a class='btn btn-default' data-dismiss='modal'/>Cancel</a>
         <input type='submit' class='btn btn-warning' name='print' value='Print' />
@@ -201,8 +201,8 @@ if(!empty($_SESSION['Email'])){
           echo "</td> </tr>";
           $i++;
             }?>
-            
-                                   
+
+
                                 </tbody>
                             </table>
                             <!-- /.table-responsive -->
@@ -222,7 +222,7 @@ if(!empty($_SESSION['Email'])){
         <!-- /#page-wrapper -->
 
     </div>
-    
+
     <!-- /#wrapper -->
 
     <!-- jQuery -->

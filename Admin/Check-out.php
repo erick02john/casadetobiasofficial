@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 include("../dbconn.php");
 
@@ -49,7 +49,7 @@ if($type != 'Admin' AND $type != 'Frontdesk'){
 
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-      <a class="navbar-brand mr-1" href="index.php">Rosario Resort and Hotel</a>
+      <a class="navbar-brand mr-1" href="index.php">Casa de Tobias Mountain Resort</a>
 
       <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
         <i class="fas fa-bars"></i>
@@ -69,8 +69,8 @@ if($type != 'Admin' AND $type != 'Frontdesk'){
 
       <!-- Navbar -->
       <ul class="navbar-nav ml-auto ml-md-0">
-        
-        
+
+
         <li class="nav-item dropdown no-arrow">
           <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fas fa-user-circle fa-fw"></i>
@@ -163,14 +163,14 @@ if($type != 'Admin' AND $type != 'Frontdesk'){
         <footer class="sticky-footer">
           <div class="container my-auto">
             <div class="copyright text-center my-auto">
-              <span>Copyright © Rosario Resort and Hotel 2018</span>
+              <span>Copyright © Casa de Tobias Mountain Resort 2019</span>
             </div>
           </div>
         </footer>
 
 
     <?php include 'displayCheck-out.php'; ?>
- 
+
   <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
       <i class="fas fa-angle-up"></i>

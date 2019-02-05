@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>ROSARIO RESORT AND HOTEL</title>
+        <title>Casa de Tobias Mountain Resort</title>
 
     <!--WEBSITE CSS/JS -->
     <link rel= "stylesheet" href="css/mystyle.css">
@@ -138,7 +138,7 @@ html, body {
     <div id="wrapper">
       <div id="header">
         <div class="topnav" id="myTopnav">
-        <a class="navbar-brand" href="../index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; float: left;margin-left: 10px;">Rosario Resort and Hotel</a>
+        <a class="navbar-brand" href="../index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; float: left;margin-left: 10px;">Casa de Tobias Mountain Resort</a>
   <a href="datepickerform.php">Reserve</a>
   <a href = "Guest/_log-in.php">Log-In</a>
   <a href="contact.php" style=" font-size: 17px;">Contact</a>
@@ -158,7 +158,7 @@ html, body {
 
 <div class="row">
 
-  
+
   <div class="col-md-6">
     <div align = "center">
     <img src="images/images/room (3).jpg" alt="small room" class="form-controls" border="5" width="80%">
@@ -186,7 +186,7 @@ html, body {
 
 
 <a style="color:red;">
-*Note: 
+*Note:
 <br>
 Room reservation is available in this website. Furthermore, rooms are subject to availability.
 <br>
@@ -207,14 +207,14 @@ ADDITIONAL BED = 800 pesos</a>
       <div class="container">
         <div class="row">
             <h4>Contact Us</h4>
-            <p><i class="fa fa-home fa-lg" aria-hidden="true"></i> National Highway, Brgy. Quilib, Rosario, 4222 Batangas </p>
-            <p><i class="fa fa-envelope fa-lg" aria-hidden="true"></i> reserve.rosario@gmail.com</p>
+            <p><i class="fa fa-home fa-lg" aria-hidden="true"></i> Alibungbungan, Nagcarlan, Laguna </p>
+            <p><i class="fa fa-envelope fa-lg" aria-hidden="true"></i> casadetobiasmountainresort@gmail.com</p>
             <p><i class="fa fa-phone fa-lg" aria-hidden="true"></i> (043) 740 4813 </p>
             <p><i class="fa fa-globe fa-lg" aria-hidden="true"></i> website </p>
           </div>
         </div>
       </div>
-      
+
 
   </div>
 

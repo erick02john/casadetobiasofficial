@@ -2,10 +2,10 @@
 
 if(isset($_POST['submit'])){
   $message = $_POST['message'];
-  $to = "davepaulgarciaaa@gmail.com";
+  $to = "casadetobiasmountainresort@gmail.com";
   $from = $_POST['email'];
-  $subject = "Contact Form | Rosario Resort and Hotel";
-  
+  $subject = "Contact Form | Casa de Tobias Mountain Resort";
+
 $headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 // More headers
@@ -14,7 +14,7 @@ $headers .= 'Cc: $from' . "\r\n";
 
 
   mail($to,$subject,$message,$headers);
-} 
+}
 
 
 
@@ -26,7 +26,7 @@ $headers .= 'Cc: $from' . "\r\n";
 ?>
 <!DOCTYPE html>
 <head>
-	
+
 	<title>Contact</title>
 
 	<!--CSS-->
@@ -146,12 +146,12 @@ html, body {
 	margin-top: 50px;
 }
 
-.gmap { 
-	background: white; 
-	border: 1px solid #ccc; 
-	padding: 4px; 
-	width: 100%; 
-	height: 374px; 
+.gmap {
+	background: white;
+	border: 1px solid #ccc;
+	padding: 4px;
+	width: 100%;
+	height: 374px;
 }
 
 .footer {
@@ -202,7 +202,7 @@ html, body {
 	<div id="wrapper">
       <div id="header">
         <div class="topnav" id="myTopnav">
-        <a class="navbar-brand" href="index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; float: left;margin-left: 10px;">Rosario Resort and Hotel</a>
+        <a class="navbar-brand" href="index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; float: left;margin-left: 10px;">Casa de Tobias Mountain Resort</a>
   <a href="datepickerform.php">Reserve</a>
   <a href = "Guest/_log-in.php">Log-In</a>
   <a href="Contact.php">Contact</a>
@@ -248,7 +248,7 @@ html, body {
           <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15494.586961859659!2d121.206586!3d13.860231!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd45d9221f9f1ea35!2sRosario+Resort+and+Hotel!5e0!3m2!1sen!2sph!4v1517279324056" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
       </div>
-        
+
     </div>
 
      <div class="grid">
@@ -259,8 +259,8 @@ html, body {
       <div class="container">
         <div class="row">
             <h4>Contact Us</h4>
-            <p><i class="fa fa-home fa-lg" aria-hidden="true"></i> National Highway, Brgy. Quilib, Rosario, 4222 Batangas </p>
-            <p><i class="fa fa-envelope fa-lg" aria-hidden="true"></i> reserve.rosario@gmail.com</p>
+            <p><i class="fa fa-home fa-lg" aria-hidden="true"></i> Alibungbungan, Nagcarlan, Laguna </p>
+            <p><i class="fa fa-envelope fa-lg" aria-hidden="true"></i> casadetobiasmountainresort.com</p>
             <p><i class="fa fa-phone fa-lg" aria-hidden="true"></i> (043) 740 4813 </p>
             <p><i class="fa fa-globe fa-lg" aria-hidden="true"></i> website </p>
           </div>
@@ -281,7 +281,7 @@ function myFunction() {
 </script>
 
 <script>
-$(document).ready(function(){ 
+$(document).ready(function(){
     $('#characterLeft').text('150 characters left');
     $('#message').keydown(function () {
         var max = 150;
@@ -289,15 +289,15 @@ $(document).ready(function(){
         if (len >= max) {
             $('#characterLeft').text('You have reached the limit');
             $('#characterLeft').addClass('red');
-            $('#btnSubmit').addClass('disabled');            
-        } 
+            $('#btnSubmit').addClass('disabled');
+        }
         else {
             var ch = max - len;
             $('#characterLeft').text(ch + ' characters left');
             $('#btnSubmit').removeClass('disabled');
-            $('#characterLeft').removeClass('red');            
+            $('#characterLeft').removeClass('red');
         }
-    });    
+    });
 });
 
 </script>

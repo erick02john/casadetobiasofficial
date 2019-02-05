@@ -31,12 +31,12 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="Frontdesk.php">Rosario Resort and Hotel</a>
+            <a class="navbar-brand" href="Frontdesk.php">Casa de Tobias Mountain Resort</a>
           </div>
            </div>
     </div>
 
-  
+
           <br><br><br><br><br><br><br>
     <div id="frm">
       <form action="login.php" method="POST">

@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 include("../dbconn.php");
 $name = $_SESSION['Name'];
@@ -51,17 +51,17 @@ body{
 <div class="wrap">
   <nav class="nav-bar navbar-inverse" role="navigation">
       <div id ="top-menu" class="container-fluid active">
-          <a class="navbar-brand" href="index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; margin-left: 80px;">Rosario Resort and Hotel</a>
-          <ul class="nav navbar-nav">        
-              
+          <a class="navbar-brand" href="index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; margin-left: 80px;">Casa de Tobias Mountain Resort</a>
+          <ul class="nav navbar-nav">
+
               <li class="dropdown movable">
-                  
+
                       <li><a href="../Admin/logout.php" class="view btn-sm active" data-toggle="modal"  style="font-size: 15px; margin-top: 13px;"><i class="glyphicon glyphicon-log-out"></i>&nbsp;Log Out</a></li>
                   </ul>
               </li>
-              
+
           </ul>
-      </div>      
+      </div>
   </nav>
 
   <aside id="side-menu" class="aside" role="navigation">
@@ -69,14 +69,14 @@ body{
       <li><img src="../images/logos/admin.png" width="100px" height="100px" style="margin-left: 50px;"></li>
       <li style="margin-left: 70px; font-family: Arial Black, Helvetica, sans-serif; font-size: 15px;">Admin</li>
    </ul>
-   <ul class="nav nav-list accordion">                    
+   <ul class="nav nav-list accordion">
           <li class="nav-header">
             <div class="link"><i class="fa fa-lg fa-globe"></i>Transactions<i class="fa fa-chevron-down"></i></div>
             <ul class="submenu">
-              <li><a href="Reserved.php">Reserved</a></li>  
+              <li><a href="Reserved.php">Reserved</a></li>
               <li><a href="Pending.php">Pending</a></li>
-              <li><a href="Check-in.php">Check-in</a></li>  
-              <li><a href="Check-out.php">Check-out</a></li>  
+              <li><a href="Check-in.php">Check-in</a></li>
+              <li><a href="Check-out.php">Check-out</a></li>
             </ul>
           </li>
       </ul>
@@ -85,7 +85,7 @@ body{
             <a href="Rooms.php">Rooms</a>
           </li>
       </ul>
-      
+
       <ul class="nav nav-list accordion">
           <li class="one">
             <a href="Billing.php">Billing</a>
@@ -112,14 +112,14 @@ body{
           </li>
       </ul>
   </aside>
-  
+
   <div class="content">
-    <div class="top-bar">       
-      <a href="#menu" class="side-menu-link burger"> 
+    <div class="top-bar">
+      <a href="#menu" class="side-menu-link burger">
         <span class='burger_inside' id='bgrOne'></span>
         <span class='burger_inside' id='bgrTwo'></span>
         <span class='burger_inside' id='bgrThree'></span>
-      </a>      
+      </a>
     </div>
     <section class="content-inner">
 
@@ -141,7 +141,7 @@ body{
            <hr style="padding: 1px;">
      <!-- <a href="#allreservation" data-toggle="modal" class="btn btn-lg btn-primary" >all</a> -->
 
-    
+
    <br>
       <h2>Billing</h2>
    <!--  <a href="#billing" data-toggle="modal" class="btn btn-lg btn-primary" >Billing Transactions</a> -->
@@ -151,7 +151,7 @@ body{
      <a href="#yearlybilling" data-toggle="modal" class="btn btn-lg btn-primary" >Yearly</a>
      <!--<a href="#billing" data-toggle="modal" class="btn btn-lg btn-primary" >overall</a>-->
     <!-- <a href="#sales" data-toggle="modal" class="btn btn-lg btn-primary" >Point of sales</a> -->
-        
+
     </div>
     </div>
   </div>
@@ -181,7 +181,7 @@ body{
             <option value="Sunday">Sunday</option>
             </select>
           </br>
-          
+
            <select class="form-control" name = "status" onchange = "filterFunction2();">
             <option value='All Reservation' SELECTED>All Reservation</option>
             <option value='Pending'>Pending</option>
@@ -194,7 +194,7 @@ body{
     </table>
     </div>
     </div>
-    </div>        
+    </div>
         <div class='modal-footer'>
                     <a class='btn btn-default' data-dismiss='modal'>Cancel</a>
                     <input type='submit' class='btn btn-warning' name='Generate' value='Generate' />
@@ -227,7 +227,7 @@ body{
             <option value="fourth">Fourth Week</option>
             </select>
           </br>
-          
+
            <select class="form-control" name = "status" onchange = "filterFunction2();">
             <option value='All Reservation' SELECTED>All Reservation</option>
             <option value='Pending'>Pending</option>
@@ -240,7 +240,7 @@ body{
     </table>
     </div>
     </div>
-    </div>        
+    </div>
         <div class='modal-footer'>
                     <a class='btn btn-default' data-dismiss='modal'>Cancel</a>
                     <input type='submit' class='btn btn-warning' name='Generate' value='Generate' />
@@ -267,7 +267,7 @@ body{
            <input type="hidden" name="id"  value="<?php echo $name; ?>" >
           <h3>Select Month of this year:</h3>
           <br>
-      
+
           <select class="form-control" name = "month">
         <option value='01'>January</option>
             <option value="02">February</option>
@@ -283,8 +283,8 @@ body{
             <option value="12">December</option>
           </select>
           </br>
-       
-          
+
+
            <select class="form-control" name = "status" onchange = "filterFunction2();">
             <option value='All Reservation' SELECTED>All Reservation</option>
             <option value='Pending'>Pending</option>
@@ -297,7 +297,7 @@ body{
     </table>
     </div>
     </div>
-    </div>        
+    </div>
         <div class='modal-footer'>
                     <a class='btn btn-default' data-dismiss='modal'>Cancel</a>
                     <input type='submit' class='btn btn-warning' name='Generate' value='Generate' />
@@ -323,11 +323,11 @@ body{
     <table class="table">
        <form method="post" target="_blank" action="reservationyearly.php">
           <input type="hidden" name="id"  value="<?php echo $name; ?>" >
-      
+
         <h3>Select year:</h3>
           <br>
           <select class="form-control" id="filter" name="year">
-            <?php 
+            <?php
               for ($year = date('Y') + 1; $year >= 2015; $year--) {
                 echo "<option value='$year'>$year</option>";
               }
@@ -385,7 +385,7 @@ body{
           </br>
            <h3>Select Month:</h3>
           <br>
-      
+
           <select class="form-control" name = "month">
         <option value='01'>January</option>
             <option value="02">February</option>
@@ -401,19 +401,19 @@ body{
             <option value="12">December</option>
           </select>
           </br>
-      
+
         <h3>Select year:</h3>
           <br>
           <select class="form-control" id="filter" name="year">
-            <?php 
+            <?php
               // for ($year = date('Y'); $year >= 2015; $year--) {
               //   echo "<option value='$year'>$year</option>";
               //}
             ?>
           </select>
           <br>
-       
-          
+
+
            <select class="form-control" name = "status" onchange = "filterFunction2();">
             <option value='All Reservation' SELECTED>All Reservation</option>
             <option value='Pending'>Pending</option>
@@ -450,9 +450,9 @@ body{
     <div class='table-responsive'>
     <table class="table">
        <form method="post" target="_blank" action="reservationpdf.php">
-        
+
             <input class="form-control" type='text' name='type' value="All Transaction" required />
-         
+
           </br>
            <select class="form-control" name = "status" onchange = "filterFunction2();">
             <option value='All Reservation' SELECTED>All Reservation</option>
@@ -466,7 +466,7 @@ body{
     </table>
     </div>
     </div>
-    </div>        
+    </div>
         <div class='modal-footer'>
                     <a class='btn btn-default' data-dismiss='modal'>Cancel</a>
                     <input type='submit' class='btn btn-warning' name='Generate' value='Generate' />
@@ -510,7 +510,7 @@ body{
     </table>
     </div>
     </div>
-    </div>        
+    </div>
         <div class='modal-footer'>
                     <a class='btn btn-default' data-dismiss='modal'>Cancel</a>
                     <input type='submit' class='btn btn-warning' name='Generate' value='Generate' />
@@ -551,7 +551,7 @@ body{
     </table>
     </div>
     </div>
-    </div>        
+    </div>
         <div class='modal-footer'>
                     <a class='btn btn-default' data-dismiss='modal'>Cancel</a>
                     <input type='submit' class='btn btn-warning' name='Generate' value='Generate' />
@@ -577,7 +577,7 @@ body{
            <input type="hidden" name="id"  value="<?php echo $name; ?>" >
           <h3>Select Month of this year:</h3>
           <br>
-      
+
           <select class="form-control" name = "month">
         <option value='01'>January</option>
             <option value="02">February</option>
@@ -593,7 +593,7 @@ body{
             <option value="12">December</option>
           </select>
           </br>
-          
+
              <select class="form-control" name = "billingstatus" onchange = "filterFunction2();">
             <option value='All Billing Transactions' SELECTED>All Billing Transactions</option>
             <option value='Pending'>Pending</option>
@@ -602,7 +602,7 @@ body{
     </table>
     </div>
     </div>
-    </div>        
+    </div>
         <div class='modal-footer'>
                     <a class='btn btn-default' data-dismiss='modal'>Cancel</a>
                     <input type='submit' class='btn btn-warning' name='Generate' value='Generate' />
@@ -626,13 +626,13 @@ body{
     <table class="table">
        <form method="post" target="_blank" action="billingyearly.php">
           <input type="hidden" name="id"  value="<?php echo $name; ?>" >
-      
+
         <h3>Select year:</h3>
           <br>
           <select class="form-control" id="filter" name="year">
-            <?php 
-            
-            
+            <?php
+
+
               for ($year = date('Y') + 1; $year >= 2015; $year--) {
                 echo "<option value='$year'>$year</option>";
               }
@@ -688,7 +688,7 @@ body{
     </table>
     </div>
     </div>
-    </div>        
+    </div>
         <div class='modal-footer'>
                     <a class='btn btn-default' data-dismiss='modal'>Cancel</a>
                     <input type='submit' class='btn btn-warning' name='Generate' value='Generate' />

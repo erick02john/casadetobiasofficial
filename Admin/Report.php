@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 include("../dbconn.php");
 $name = $_SESSION['Name'];
@@ -30,9 +30,9 @@ while($row = mysqli_fetch_array($sql)){
   $date = date('F', mktime(0,0,0,$row['months']))." ".$row['years'];
   $query = mysqli_query($conn, "SELECT * from reservation r join billing b on r.reservationID=b.ReservationID  where MONTH(ReservationDate)='$month' and YEAR(ReservationDate)='$year'") or die("errrr");
   $resnum = mysqli_num_rows($query);
-  $dates = $dates.'"'.$date.'", '; 
+  $dates = $dates.'"'.$date.'", ';
   $reservation = $reservation.$resnum.', ';
-  
+
 }
 $dates = trim($dates, ",");
 $reservation = trim($reservation, ",");
@@ -68,7 +68,7 @@ $reservation = trim($reservation, ",");
 
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-      <a class="navbar-brand mr-1" href="index.php">Rosario Resort and Hotel</a>
+      <a class="navbar-brand mr-1" href="index.php">Casa de Tobias Mountain Resort</a>
 
       <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
         <i class="fas fa-bars"></i>
@@ -88,8 +88,8 @@ $reservation = trim($reservation, ",");
 
       <!-- Navbar -->
       <ul class="navbar-nav ml-auto ml-md-0">
-        
-        
+
+
         <li class="nav-item dropdown no-arrow">
           <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fas fa-user-circle fa-fw"></i>
@@ -207,7 +207,7 @@ $reservation = trim($reservation, ",");
                </select>
             </td>
             </tr>
-           
+
                 <tr>
                   <td>
                      <div class="form-group">
@@ -268,8 +268,8 @@ $reservation = trim($reservation, ",");
       </div>
     </div>
 
-        
-     
+
+
 <!-- Bootstrap core JavaScript-->
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -344,7 +344,7 @@ var myLineChart = new Chart(ctx, {
     }
   }
 });
-</script> 
+</script>
 
 </body>
 </html>

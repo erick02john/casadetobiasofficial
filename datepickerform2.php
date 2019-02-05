@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 include('scriptvalidation.php');
 if (!empty($_POST)):
@@ -9,14 +9,14 @@ session_start();
     $date = strtotime(date('m/d/Y'));
     $start = strtotime($_POST['Check-inDate']);
     $end = strtotime($_POST['Check-outDate']);
-    
+
     if($start >= $date){
-      
+
       $timediff = abs($end - $start);
-      
+
       $out = $timediff/86400;
         if($out == 0){
-           
+
           print ("<script language='JavaScript'>
                     window.alert('You shoud stay atleast 1 night')
                     window.location.href='datepickerform.php';
@@ -46,7 +46,7 @@ session_start();
 
 <!DOCTYPE html>
 <html>
-<title>Welcome to Rosario Resort and Hotel</title>
+<title>Welcome to Casa de Tobias Mountain Resort</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -54,7 +54,7 @@ session_start();
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script type="text/javascript" src="http://www.hasseb.fi/bookingcalendar/demo/jquery-ui.js"></script>
 <link rel="stylesheet" type="text/css" href="http://www.hasseb.fi/bookingcalendar/demo/jquery-ui.css">
-   
+
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 body, html {
@@ -67,7 +67,7 @@ body, html {
     background-size: cover;
     background-color: white;
     min-height: 100%;
-    
+
 }
 .w3-bar .w3-button {
     padding: 16px;
@@ -139,7 +139,7 @@ body, html {
 }
 #progressbar li:first-child:after {
   /*connector not needed before the first step*/
-  content: none; 
+  content: none;
 }
 /*marking active/completed steps green*/
 /*The number of the step and the connector before it = green*/
@@ -153,7 +153,7 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="index.php" class="w3-bar-item w3-button w3-wide">ROSARIO RESORT AND HOTEL</a>
+    <a href="index.php" class="w3-bar-item w3-button w3-wide">Casa de Tobias Mountain Resort</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="index.php#about" class="w3-bar-item w3-button">ABOUT</a>
@@ -184,12 +184,12 @@ body, html {
 
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-left w3-text-white" style="padding:48px">
-    
+
     <span class="w3-large"></span>
-  </div> 
+  </div>
   <div class="w3-display-middle w3-text-grey w3-large" style="padding:24px 48px">
     <div id="msform">
-     
+
       <ul id="progressbar">
         <li class="active">Select Dates</li>
         <li>Select Rooms</li>
@@ -219,7 +219,7 @@ body, html {
   </div>
 </header>
 
-        
+
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
@@ -228,9 +228,9 @@ body, html {
     <a href="https://www.google.com.ph/search?q=Rosario+Resort+and+Hotel&oq=Rosario+Resort+and+Hotel&aqs=chrome..69i57l2j69i60l4.9849j0j4&sourceid=chrome&ie=UTF-8"><i class="fa fa-google w3-hover-opacity"></i></a>
 
   </div>
-  <p>Copyright © Rosario Resort and Hotel 2018</p>
+  <p>Copyright © Casa de Tobias Mountain Resort 2019</p>
 </footer>
- 
+
 <script type="text/javascript">
 //Datepicker JavaScript
 $(document).ready(function(){
@@ -250,9 +250,9 @@ $(document).ready(function(){
         onSelect: function(selected) {
            $("#from").datepicker("option", selected)
         }
-    }); 
+    });
 });
-     
+
   </script>
 
    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
@@ -288,7 +288,7 @@ function w3_close() {
     mySidebar.style.display = "none";
 }
    </script>
-      
+
 
 </body>
 </html>

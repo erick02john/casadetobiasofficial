@@ -66,7 +66,7 @@ $monday->modify('+1 day');
 $pdf->SetFont('Arial','B',14);
 
 //Cell(width , height , text , border , end line , [align] )
-$pdf->Cell(130 ,5, 'Rosario Resort and Hotel',0,0);
+$pdf->Cell(130 ,5, 'Casa de Tobias Mountain Resort',0,0);
 $pdf->Cell(59 ,5,$type.' BillingReport',0,1);//end of line
 
 //set font to arial, regular, 12pt
@@ -75,7 +75,7 @@ $pdf->SetFont('Arial','',12);
 $pdf->Cell(130 ,5,'National Highway, Brgy Quilib',0,0);
 $pdf->Cell(59 ,5,'',0,1);//end of line
 
-$pdf->Cell(130 ,5,'Rosario Batangas Philippines',0,0);
+$pdf->Cell(130 ,5,'Casa de Tobias Nagcarlan',0,0);
 $pdf->Cell(25 ,5,'Date',0,0);
 $pdf->Cell(34 ,5,$datetoday,0,1);//end of line
 $pdf->Cell(189 ,10,'',0,1);//en);//end of line

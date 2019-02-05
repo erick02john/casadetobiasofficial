@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 include("../dbconn.php");
 $type = $_SESSION['UserType'];
@@ -50,7 +50,7 @@ $rid = $_SESSION['resid'];
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php" style="color: #fff";>Rosario Resort and Hotel</a>
+            <a class="navbar-brand" href="index.php" style="color: #fff";>Casa de Tobias Mountain Resort</a>
           </div>
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -58,7 +58,7 @@ $rid = $_SESSION['resid'];
               <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: #fff;"><span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="Profile.php">Profile</a></li>
-                <li><a href="../Admin/logout.php" class="view btn-sm active" data-toggle="modal" ><i class="glyphicon glyphicon-log-out"></i>&nbsp;&nbsp;Log Out</a></li>                       
+                <li><a href="../Admin/logout.php" class="view btn-sm active" data-toggle="modal" ><i class="glyphicon glyphicon-log-out"></i>&nbsp;&nbsp;Log Out</a></li>
               </ul>
             </li>
           </ul>
@@ -91,8 +91,8 @@ $rid = $_SESSION['resid'];
         </div>
         <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
           <h1>Amenity</h1><br><br>
-          <?php 
-            
+          <?php
+
             // error_reporting(0);
             // ini_set('display_errors', 0);
             ?>
@@ -106,7 +106,7 @@ $rid = $_SESSION['resid'];
               <input type="text" name="price" />
               <input type="submit" name="add" value="Add">
             </form>
-          <?php 
+          <?php
           function addAmenity(){
             include 'dbconn.php';
             $type = $_POST['type'];

@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 include("../dbconn.php");
 
@@ -50,14 +50,14 @@ body{
 <div class="wrap">
   <nav class="nav-bar navbar-inverse" role="navigation">
       <div id ="top-menu" class="container-fluid active">
-          <a class="navbar-brand" href="index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; margin-left: 80px;">Rosario Resort and Hotel</a>
-          <ul class="nav navbar-nav">        
+          <a class="navbar-brand" href="index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; margin-left: 80px;">Casa de Tobias Mountain Resort</a>
+          <ul class="nav navbar-nav">
               <br>
               <li class="dropdown movable">
               <li><a style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif;"><?php echo "$name"; ?></a></li>
           </li>
         </ul>
-      </div>      
+      </div>
   </nav>
 
   <aside id="side-menu" class="aside" role="navigation">
@@ -65,12 +65,12 @@ body{
     <li><img src="../images/logos/fd.png" width="100px" height="100px" style="margin-left: 50px;"></li>
     <li style="margin-left: 30px; font-family: Arial Black, Helvetica, sans-serif; font-size: 15px;">Frontdesk Officer</li>
    </ul>
-    <ul class="nav nav-list accordion">                    
+    <ul class="nav nav-list accordion">
           <li class="nav-header">
             <div class="link"><i class="fa fa-lg fa-globe"></i>Reservation<i class="fa fa-chevron-down"></i></div>
             <ul class="submenu">
-              <li><a href="Reserved.php">Reserved</a></li>  
-              <li><a href="Pending.php">Pending</a></li>  
+              <li><a href="Reserved.php">Reserved</a></li>
+              <li><a href="Pending.php">Pending</a></li>
             </ul>
           </li>
       </ul>
@@ -104,21 +104,21 @@ body{
       </ul>
   </aside>
   <div class="content">
-    <div class="top-bar">       
-      <a href="#menu" class="side-menu-link burger"> 
+    <div class="top-bar">
+      <a href="#menu" class="side-menu-link burger">
         <span class='burger_inside' id='bgrOne'></span>
         <span class='burger_inside' id='bgrTwo'></span>
         <span class='burger_inside' id='bgrThree'></span>
-      </a>      
+      </a>
     </div>
     <section class="content-inner">
             <div class="well" style="margin-top:5px">
          <h1>Pending</h1>
-    <hr class="style-four"> 
+    <hr class="style-four">
     <div class="row">
     <div>
     <?php include 'displayPending.php'; ?>
-        
+
     </div>
     </div>
   </div>

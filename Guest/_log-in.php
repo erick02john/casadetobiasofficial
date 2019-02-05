@@ -6,9 +6,9 @@ session_start();
 	include('dbconn.php');
 
 
-	
+
 		$checkLoginName = mysqli_query($conn, "SELECT * FROM guest WHERE Email ='$email'");
-		$numrows = mysqli_num_rows($checkLoginName); 
+		$numrows = mysqli_num_rows($checkLoginName);
 		if($numrows!=0){
 				while($row = mysqli_fetch_assoc($checkLoginName)){
 					$dbEmail = $row['Email'];
@@ -16,20 +16,20 @@ session_start();
 					$dbGuestID = $row['GuestId'];
 				}
 				if($email==$dbEmail and $password==$dbPassword){
-						print ("<script language='JavaScript'> 
+						print ("<script language='JavaScript'>
 									window.location.href='index.php';
 									</SCRIPT>");
 									$_SESSION['Email'] = $dbEmail;
 									$_SESSION['Passwords'] = $dbPassword;
 									$_SESSION['guestid'] = $dbGuestID;
-							
-					
+
+
 				}else{
 					print "<script language='JavaScript'>
 					window.alert('Incorrect Username or Password!')
 					window.location.href='_log-in.php';
 					</SCRIPT>";
-					
+
 				}
 		}else{
 			print ("<script language='JavaScript'>
@@ -37,7 +37,7 @@ session_start();
 				window.location.href='_log-in.php';
 				</SCRIPT>");
 		}
-	
+
 ?>
 <?php else: ?>
 <!DOCTYPE html>
@@ -46,11 +46,11 @@ session_start();
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Rosario Resort and Hotel</title>
+    <title>Casa de Tobias Mountain Resort</title>
     <link href="../bootstrap/css/bootstrap.css" rel="stylesheet" />
 	<link href="../bootstrap/css/bootstrap-theme.css" rel="stylesheet" />
 	<link rel="stylesheet" type="text/css" media="screen" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
-    
+
     <link rel="stylesheet" type="text/css" href="../css/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/website/bootstrap.min.css">
 
@@ -83,7 +83,7 @@ session_start();
 
 	.topnav {
   	overflow: hidden;
-  	background-color: #003366;
+  	background-color: #158f53;
 	}
 
 	.topnav a {
@@ -199,7 +199,7 @@ session_start();
   /* border: 1px solid #3079ed; */
   border: 0px;
   color: #fff;
-  text-shadow: 0 1px rgba(0,0,0,0.1); 
+  text-shadow: 0 1px rgba(0,0,0,0.1);
   background-color: #003366;
   padding: 17px 0px;
 
@@ -219,7 +219,7 @@ session_start();
   /* border: 1px solid #3079ed; */
   border: 0px;
   color: #fff;
-  text-shadow: 0 1px rgba(0,0,0,0.1); 
+  text-shadow: 0 1px rgba(0,0,0,0.1);
   background-color: #2ecc71;
   padding: 17px 0px;
 
@@ -243,7 +243,7 @@ session_start();
   display: inline-block;
   opacity: 0.6;
   transition: opacity ease 0.5s;
-} 
+}
 
 .login-help{
   font-size: 14px;
@@ -294,13 +294,13 @@ session_start();
 }
   </style>
   </head>
-  
+
   <body>
   <script src="bootstrap/js/bootstrap.min.js"></script>
  <div id="wrapper">
     <div id="header">
       <div class="topnav" id="myTopnav">
-        <a class="navbar-brand" href="../index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; float: left;margin-left: 10px;">Rosario Resort and Hotel</a>
+        <a class="navbar-brand" href="../index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; float: left;margin-left: 10px;">Casa de Tobias Mountain Resort</a>
   <a href="../datepickerform.php" style=" font-size: 17px;">Reserve</a>
   <a href = "_log-in.php" style="cursor: pointer; font-size: 17px;">Log-In</a>
 
@@ -311,10 +311,10 @@ session_start();
   <a href="../index.php" class="active" style=" font-size: 17px;">Home</a>
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
-    
 
 
- 
+
+
 <div class="modal-dialog">
 				<div class="loginmodal-container">
 					<h1>Log-in</h1><br>
@@ -326,7 +326,7 @@ session_start();
 				  <form action="../sign-up.php">
 				  	<input type="submit" name="signup" class="login signmodal-submit" value="Sign Up">
 				  </form>
-					
+
 				  <div class="login-help">
 					<a href="../forgot.php" style="color:red;">Forgot Password?</a>
 				  </div>
@@ -341,8 +341,8 @@ session_start();
       <div class="container">
         <div class="row">
             <h4>Contact Us</h4>
-            <p><i class="fa fa-home fa-lg" aria-hidden="true"></i> National Highway, Brgy. Quilib, Rosario, 4222 Batangas </p>
-            <p><i class="fa fa-envelope fa-lg" aria-hidden="true"></i> reserve.rosario@gmail.com</p>
+            <p><i class="fa fa-home fa-lg" aria-hidden="true"></i> Alibungbungan, Nagcarlan, Laguna </p>
+            <p><i class="fa fa-envelope fa-lg" aria-hidden="true"></i> casadetobiasmountainresort@gmail.com</p>
             <p><i class="fa fa-phone fa-lg" aria-hidden="true"></i> (043) 740 4813 </p>
             <p><i class="fa fa-globe fa-lg" aria-hidden="true"></i> website </p>
           </div>
@@ -365,7 +365,7 @@ function myFunction() {
 
 </body>
 </html>
-   
+
   </body>
 </html>
 

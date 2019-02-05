@@ -1,4 +1,4 @@
-<?php 
+<?php
 //if(isset($_POST['print'])){
 	include "../pdf/fpdf.php";
 	include "dbconn.php";
@@ -39,7 +39,7 @@
 	$sd = mysqli_query($conn, "SELECT * from room r join roominventory ri on r.RoomID = ri.RoomID join roomtype rt on rt.RoomID = r.RoomID where ReservationID = '$resID' and Roomtype = 'Superior(Twin Sized-Bed)'") or die ("error");
 	$tgq = mysqli_query($conn, "SELECT * from reservation where ReservationID = '$resID'") or die ("error");
 
-	//bil 
+	//bil
 	$bill = mysqli_fetch_array($amount);
     $billing = $bill['TotalAmount'];
 	//nightcont
@@ -88,16 +88,16 @@ $pdf->SetFont('Arial','B',14);
 
 //Cell(width , height , text , border , end line , [align] )
 
-$pdf->Cell(130 ,5, 'Rosario Resort and Hotel',0,0);
+$pdf->Cell(130 ,5, 'Casa de Tobias Mountain Resort',0,0);
 $pdf->Cell(59 ,5,'INVOICE',0,1);//end of line
 
 //set font to arial, regular, 12pt
 $pdf->SetFont('Arial','',12);
 
-$pdf->Cell(130 ,5,'National Highway, Brgy Quilib',0,0);
+$pdf->Cell(130 ,5,'Alibungbungan Nagcarlan Laguna',0,0);
 $pdf->Cell(59 ,5,'',0,1);//end of line
 
-$pdf->Cell(130 ,5,'Rosario Batangas Philippines',0,0);
+$pdf->Cell(130 ,5,'Casa de Tobias Nagcarlan',0,0);
 $pdf->Cell(25 ,5,'Date',0,0);
 $pdf->Cell(34 ,5,$date,0,1);//end of line
 
@@ -179,7 +179,7 @@ $pdf->Cell(34 ,5,$pdPrice,1,0,'C');
 			$pdf->Cell(25 ,5,$nightcount,1,0,'C');
 			$pdf->Cell(34 ,5,$tgPrice,1,0,'C');
 			$pdf->Cell(34 ,5,$totalg,1,1,'R');//end of PDF_lineto(p, x, y)
-}	  		
+}
 
 			$amenitys = 0;
 		  $amenityss = 0;
@@ -191,7 +191,7 @@ $pdf->Cell(34 ,5,$pdPrice,1,0,'C');
 			$pdf->Cell(25 ,5,' ',1,0,'C');
 			$pdf->Cell(34 ,5,$amenity['AmenityPrice'],1,0,'C');
 			$pdf->Cell(34 ,5,$amenitys,1,1,'R');
-		   
+
 		}
 		$total += $amenityss;
 //summary

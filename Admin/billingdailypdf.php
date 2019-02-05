@@ -3,11 +3,11 @@
 	class PDF extends FPDF {
 		function Header(){
 			$this->SetFont('Arial','B',14);
-			$this->Cell(130 ,5, 'Rosario Resort and Hotel',0,0);
+			$this->Cell(130 ,5, 'Casa de Tobias Mountain Resort',0,0);
 				$this->Cell(59 ,5,'Reservation Report',0,0);//end of line
 				$this->Cell(25 ,5,'',0,1);
 			$this->SetFont('Arial','',12);
-			$this->Cell(130 ,5,'National Highway, Brgy Quilib',0,0);
+			$this->Cell(130 ,5,'Alibungbungan, Nagcarlan, Laguna',0,0);
 			$this->Cell(20 ,5,'Date',0,0);
 			$this->Cell(34 ,5,date("Y-m-d"),0,1);//end of line
 			$this->Cell(25 ,5,'',0,0);
@@ -17,22 +17,21 @@
 			$this->Cell(25 ,5,'',0,0);
 			$this->Cell(34 ,5,'',0,1);//end of line
 			$this->Cell(130 ,5,'(043) 740 4698',0,0);
-			
+
 			$this->Cell(59 ,5,'',0,1);//end of line
 			//$this->Cell(59 ,5,$day.' ReservationReport',0,1);
 		}
 		function Footer(){
 			$name = $_POST['id'];
 			$this->SetFont('Arial','B',14);
-			
+
 			$this->Cell(130 ,5,'',0,1);//end of line
 			$this->Cell(130,10, 'Prepared For: '.$name,0,1);
 
 			$this->Cell(130,10, '_________________',0,1);
 			$this->Cell(130,0, '          Signature',0,1);
-			
-			//$this->Cell(130 ,5, 'Rosario Resort and Hotel',0,1);
-			//$this->Cell(59 ,5,$day.' ReservationReport',0,1);
+
+
 		}
 
 	}
@@ -87,8 +86,6 @@ $pdf->Cell(59 ,5,'For '.$dates."($day)",0,1);//end of line
 
 // $pdf->Cell(130 ,5,'National Highway, Brgy Quilib',0,0);
 // $pdf->Cell(59 ,5,'',0,1);//end of line
-
-// $pdf->Cell(130 ,5,'Rosario Batangas Philippines',0,0);
 
 $pdf->Cell(189 ,10,'',0,1);//en);//end of line
 // $pdf->Cell(130 ,5d of line

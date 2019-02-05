@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-	
+
 	<title>Contact</title>
 
 	<!--CSS-->
@@ -120,12 +120,12 @@ html, body {
 	margin-top: 50px;
 }
 
-.gmap { 
-	background: white; 
-	border: 1px solid #ccc; 
-	padding: 4px; 
-	width: 100%; 
-	height: 374px; 
+.gmap {
+	background: white;
+	border: 1px solid #ccc;
+	padding: 4px;
+	width: 100%;
+	height: 374px;
 }
 
 .footer {
@@ -176,7 +176,7 @@ html, body {
 	<div id="wrapper">
       <div id="header">
         <div class="topnav" id="myTopnav">
-        <a class="navbar-brand" href="../index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; float: left;margin-left: 10px;">Rosario Resort and Hotel</a>
+        <a class="navbar-brand" href="../index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; float: left;margin-left: 10px;">Casa de Tobias Mountain Resort</a>
   <a href="index.php">My Account</a>
   <a href="Contact.php">Contact</a>
   <a href="gallery.html">Gallery</a>
@@ -221,7 +221,7 @@ html, body {
     			<iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15494.586961859659!2d121.206586!3d13.860231!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd45d9221f9f1ea35!2sRosario+Resort+and+Hotel!5e0!3m2!1sen!2sph!4v1517279324056" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     		</div>
     	</div>
-        
+
     </div>
 
     <div class="grid">
@@ -232,8 +232,8 @@ html, body {
       <div class="container">
         <div class="row">
             <h4>Contact Us</h4>
-            <p><i class="fa fa-home fa-lg" aria-hidden="true"></i> National Highway, Brgy. Quilib, Rosario, 4222 Batangas </p>
-            <p><i class="fa fa-envelope fa-lg" aria-hidden="true"></i> reserve.rosario@gmail.com</p>
+            <p><i class="fa fa-home fa-lg" aria-hidden="true"></i> Alibungbungan, Nagcarlan, Laguna </p>
+            <p><i class="fa fa-envelope fa-lg" aria-hidden="true"></i> casadetobiasmountainresort@gmail.com</p>
             <p><i class="fa fa-phone fa-lg" aria-hidden="true"></i> (043) 740 4813 </p>
             <p><i class="fa fa-globe fa-lg" aria-hidden="true"></i> website </p>
           </div>

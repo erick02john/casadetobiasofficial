@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 include('../scriptvalidation.php');
 include 'dbconn.php';
@@ -13,14 +13,14 @@ session_start();
     $date = strtotime(date('m/d/Y'));
     $start = strtotime($_POST['Check-inDate']);
     $end = strtotime($_POST['Check-outDate']);
-    
+
     if($start >= $date){
-      
+
       $timediff = abs($end - $start);
-      
+
       $out = $timediff/86400;
         if($out == 0){
-           
+
           print ("<script language='JavaScript'>
                     window.alert('You shoud stay atleast 1 night')
                     window.location.href='rescheduledate.php';
@@ -58,7 +58,7 @@ session_start();
     <title>Book Now - Select Date</title>
 
 
-    
+
     <link rel="stylesheet" type="text/css" href="http://www.hasseb.fi/bookingcalendar/demo/jquery-ui.css">
     <script src="../bootstrap/js/jquery-1.11.3.min.js"></script>
     <script src="../bootstrap/js/jquery.growl.js"></script>
@@ -81,7 +81,7 @@ session_start();
   }
   .navbar-nav li {
     text-decoration: none;
-    font-size: 15px; 
+    font-size: 15px;
     padding-top: 20px;
     color: #ccc;
   }
@@ -125,7 +125,7 @@ li a:hover:not(.active) {
     font-family: Verdana;
     cursor: pointer;
 }
-.lognav form button:hover{   
+.lognav form button:hover{
     background-color: #ccc
 }
 
@@ -139,38 +139,38 @@ li a:hover:not(.active) {
  <div class="wrap">
   <nav class="nav-bar navbar-inverse" role="navigation">
       <div id ="top-menu" class="container-fluid active">
-          <a class="navbar-brand" href="index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; margin-left: 80px;">Rosario Resort and Hotel</a>
-          <div class="nav navbar-nav">        
-              
-          
+          <a class="navbar-brand" href="index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; margin-left: 80px;">Casa de Tobias Mountain Resort</a>
+          <div class="nav navbar-nav">
+
+
               </div>
-      </div>      
+      </div>
   </nav>
     <br><br><br>
 
     <div class="container">
       <?php include 'crumbresched.php'; ?>
           <h1>Reserve Date</h1>
-          
-       <div class="lognav"> 
-        
+
+       <div class="lognav">
+
      <form action="rescheduledate.php" method="POST">
       <center><h3>Please select your <strong>Check-in</strong> and <strong>Check-out</strong> dates to confirm.</h3></center> <br><br>
-    
+
       <div class="col-md-6 date">
         <div class="form-group">
           <input type='text' class="form-control input-lg" id="from" name="Check-inDate" placeholder="Check-IN Date" onkeypress="return restrictCharacters(this, event, dateOnly);" readonly />
         </div>
       </div>
-      
+
       <div class="col-md-6 date">
         <div class="form-group">
           <input type='text' class="form-control input-lg" id="to" name="Check-outDate" placeholder="Check-Out Date" onkeypress="return restrictCharacters(this, event, dateOnly);" readonly />
-          
+
         </div>
       </div>
       <div align="right">
-        
+
         <a><button type="submit" class="btn btn-lg btn-cust btn-right" name="next" id="nextbtn"  style="background-color: #728FCE; color: #fff;">NEXT</button></a>
       </div>
 
@@ -178,7 +178,7 @@ li a:hover:not(.active) {
      </div>
   </div>
 </div>
-        
+
 
 <script type="text/javascript">
 
@@ -199,7 +199,7 @@ li a:hover:not(.active) {
         onSelect: function(selected) {
            $("#from").datepicker("option", selecd)
         }
-    }); 
+    });
 });
 
 </script>

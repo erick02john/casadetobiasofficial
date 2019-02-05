@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 include("dbconn.php");
 include("../scriptvalidation.php");
@@ -23,7 +23,7 @@ $sdNum = 0;
         $psNum = 0;
         $psExtra = 0;
     }else{
-              
+
         $psNum = $_SESSION['presSNum'] * 2;
         $psExtra = $_SESSION['presSNum'] * 8;
     }
@@ -74,10 +74,10 @@ if (!empty($_POST)):
       $_SESSION['adultadd'] = 0;
     } else {
       $_SESSION['adultadd'] = $_POST['adultadd'];
-    } 
+    }
     $_SESSION['modeofpayment'] = $modeofpayment;
     $_SESSION['payment'] = $_POST['payment'];
-    
+
     echo ("<script language='JavaScript'>
       window.location.href='summary.php';
       </SCRIPT>");
@@ -131,7 +131,7 @@ if (!empty($_POST)):
   }
   .navbar-nav li {
     text-decoration: none;
-    font-size: 15px; 
+    font-size: 15px;
     padding-top: 20px;
     color: #ccc;
   }
@@ -175,7 +175,7 @@ li a:hover:not(.active) {
     font-family: Verdana;
     cursor: pointer;
 }
-.lognav form button:hover{   
+.lognav form button:hover{
     background-color: #ccc
 }
 
@@ -210,7 +210,7 @@ li a.active {
 }
 
 .tablecon {
-  
+
 }
 
 
@@ -225,7 +225,7 @@ li a.active {
 .container {
   margin-left: 20px;
   margin-right: 0;
-  
+
   width: 1300px;
 }
 
@@ -244,11 +244,11 @@ li a.active {
  <div class="wrap">
   <nav class="nav-bar navbar-inverse" role="navigation">
       <div id ="top-menu" class="container-fluid active">
-          <center><a class="navbar-brand" href="index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; margin-left: 80px;">Rosario Resort and Hotel</a></center>
-          <div class="nav navbar-nav">        
+          <center><a class="navbar-brand" href="index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; margin-left: 80px;">Casa de Tobias Mountain Resort</a></center>
+          <div class="nav navbar-nav">
 
               </div>
-      </div>      
+      </div>
   </nav>
   <br><br>
   <div class="container">
@@ -257,10 +257,10 @@ li a.active {
     <div class='table-responsive'>
 
     <table class="table">
-                  
+
     <form method="Post" action = "guestform.php">
 
-  
+
   <tr>
   <td><label>Number of Guest: </label>
   <select style="width:100;" class="form-control" name="adult" REQUIRED>

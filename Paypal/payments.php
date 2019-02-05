@@ -4,7 +4,7 @@
                                             session_start();
                                         }
                                         if (! empty($_SESSION['userid']))
-                                        {   
+                                        {
                                             if (($_SESSION['usertype'])==='stud'){
                                                 if(($_SESSION['new'])==='0'){
 
@@ -15,11 +15,11 @@ $user = $usrname; //database username
 $pass = $password; //database password
 $server_ip = $server_ip;
 // PayPal settings
-$paypal_email = 'jesterlomboy@yahoo.com.ph';
+$paypal_email = 'casadetobiasmountainresort@gmail.';
 $return_url = 'http://'.$server_ip.'/otsms/student/payments.php';
 $cancel_url = 'http://'.$server_ip.'/otsms/student/enrollment.php';
 $notify_url = 'http://'.$server_ip.'/otsms/student/enrollment.php';
- 
+
 
 // Check if paypal request or response
 if (!isset($_POST["txn_id"]) && !isset($_POST["txn_type"])){
@@ -45,9 +45,9 @@ if (!isset($_POST["txn_id"]) && !isset($_POST["txn_type"])){
         <?php
 
     }
-    
-    $uid = $_POST['stud_id']; 
-    $stud_lesson = $_POST['stud_lesson']; 
+
+    $uid = $_POST['stud_id'];
+    $stud_lesson = $_POST['stud_lesson'];
     $abc = $_POST['aaa'];
 
     $sql="SELECT * FROM tbl_module_info WHERE lesson_type='$abc' and archived='0'";
@@ -73,42 +73,42 @@ if (!isset($_POST["txn_id"]) && !isset($_POST["txn_type"])){
         <?php
     }
 
-    $stud_subscription = $_POST['stud_subscription']; 
-    $stud_session = $_POST['stud_session']; 
+    $stud_subscription = $_POST['stud_subscription'];
+    $stud_session = $_POST['stud_session'];
 
     $item_name = $_POST['stud_lesson'];
     $item_amount = $_POST['stud_price'];
 
     $querystring = '';
- 
+
     // Firstly Append paypal account to querystring
     $querystring .= "?business=".urlencode($paypal_email)."&";
- 
+
     // Append amount& currency (£) to quersytring so it cannot be edited in html
- 
+
     //The item name and amount can be brought in dynamically by querying the $_POST['item_number'] variable.
     $querystring .= "item_name=".urlencode($item_name)."&";
     $querystring .= "amount=".urlencode($item_amount)."&";
- 
+
     //loop for posted values and append to querystring
     foreach($_POST as $key => $value) {
         $value = urlencode(stripslashes($value));
         $querystring .= "$key=$value&";
     }
- 
+
     // Append paypal return addresses
     $querystring .= "return=".urlencode(stripslashes($return_url))."&";
     $querystring .= "cancel_return=".urlencode(stripslashes($cancel_url))."&";
     $querystring .= "notify_url=".urlencode($notify_url);
- 
+
     // Append querystring with custom field
     //$querystring .= "&custom=".USERID;
- 
+
     // Redirect to paypal IPN
 
     header('location:https://www.sandbox.paypal.com/cgi-bin/webscr'.$querystring);
     exit();
-} 
+}
 
 else {
     //Database Connection
@@ -136,20 +136,20 @@ else {
     $count=mysql_num_rows($result);
         if($count==1){
             while($row = mysql_fetch_array($result)){
-                $les_no = $row['lesson_no'];  
-                $les_nol = $row['nooflessons'];  
-                $les_dis = $row['discount'];  
-                $les_price = $row['price'];  
-            }    
+                $les_no = $row['lesson_no'];
+                $les_nol = $row['nooflessons'];
+                $les_dis = $row['discount'];
+                $les_price = $row['price'];
+            }
         }
 
     $sql="SELECT * FROM tbl_stud_info WHERE id='".$custom[0]."'";
     $result=mysql_query($sql);
     $count=mysql_num_rows($result);
-        if($count==1){ 
+        if($count==1){
             while($row = mysql_fetch_array($result)){
-                $fullname = $row['fname'];  
-            }    
+                $fullname = $row['fname'];
+            }
         }
 
             $initial = $les_price;
@@ -210,7 +210,7 @@ else {
 
     $sql1="SELECT * FROM tbl_stud_info where id='".$custom[0]."'";
     $result1=mysql_query($sql1);
-    while($row = mysql_fetch_array($result1))  
+    while($row = mysql_fetch_array($result1))
     {
 
         if(($row['lesson_number']=='1')&&($row['trial']=='1')){
@@ -245,35 +245,35 @@ else {
         $value = preg_replace('/(.*[^%^0^D])(%0A)(.*)/i','${1}%0D%0A${3}',$value);// IPN fix
         $req .= "&$key=$value";
     }
-    
-    
+
+
     // post back to PayPal system to validate
     $header = "POST /cgi-bin/webscr HTTP/1.0\r\n";
     $header .= "Content-Type: application/x-www-form-urlencoded\r\n";
     $header .= "Content-Length: " . strlen($req) . "\r\n\r\n";
-    
+
     $fp = fsockopen ('ssl://www.sandbox.paypal.com', 443, $errno, $errstr, 30);
-    
+
     if (!$fp) {
         // HTTP ERROR
-        
+
     } else {
         fputs($fp, $header . $req);
         while (!feof($fp)) {
             $res = fgets ($fp, 1024);
             if (strcmp($res, "VERIFIED") == 0) {
-                
+
                 // Used for debugging
                 // mail('user@domain.com', 'PAYPAL POST - VERIFIED RESPONSE', print_r($post, true));
-                        
+
                 // Validate payment (Check unique txnid &amp;amp;amp; correct price)
                 $valid_txnid = check_txnid($data['txn_id']);
                 $valid_price = check_price($data['payment_amount'], $data['item_number']);
                 // PAYMENT VALIDATED &amp;amp;amp; VERIFIED!
                 if ($valid_txnid && $valid_price) {
-                    
+
                     $orderid = updatePayments($data);
-                    
+
                     if ($orderid) {
                         // Payment has been made &amp;amp;amp; successfully inserted into the Database
                     } else {
@@ -285,12 +285,12 @@ else {
                     // Payment made but data has been changed
                     // E-mail admin or alert user
                 }
-            
+
             } else if (strcmp ($res, "INVALID") == 0) {
-            
+
                 // PAYMENT INVALID &amp;amp;amp; INVESTIGATE MANUALY!
                 // E-mail admin or alert user
-                
+
                 // Used for debugging
                 //@mail("user@domain.com", "PAYPAL DEBUGGING", "Invalid Response
 data&"<pre>"&print_r($post, true)&"</pre>";
@@ -316,7 +316,7 @@ data&"<pre>"&print_r($post, true)&"</pre>";
                                                     header("location:../setup.php");
                                                 }
                                             }
-                                        } 
+                                        }
 
                                         else{
 

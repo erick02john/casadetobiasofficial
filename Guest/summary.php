@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 session_start();
 
@@ -11,7 +11,7 @@ if(!empty($_SESSION['Email'])){
   $guestid = $_SESSION['guestid'];
   $email = $_SESSION['Email'];
 
-  
+
 
 }else{
   echo ("<script language='JavaScript'>
@@ -64,7 +64,7 @@ if($_SESSION['presSNum'] == ' '){
 		<link rel="stylesheet" href="../bootstrap/css/dataTables.bootstrap.min.css">
 		<link rel="stylesheet" href="../bootstrap/css/jquery.growl.css">
 
-		
+
 
 		<script src="../bootstrap/js/jquery-1.11.3.min.js"></script>
 		<script src="../bootstrap/js/jquery.growl.js"></script>
@@ -120,7 +120,7 @@ li a.active {
 	border-collapse: collapse;
     border: 1px solid #ccc;
 }
- 
+
 
 input[type="radio"] {
     display:none;
@@ -148,14 +148,14 @@ input[type="radio"]:checked + label span {
 	</head>
 	<body>
          <div class="row">
-    
-    
+
+
     <center><h2>Reservation Summary</h2></center>
                         <div class="col-sm-4"></div>
                         <div class="col-sm-4">
                         <div style="background-color: #ccc; width: 450px" class ="container">
                     <!-- <div class="well" > -->
-                     
+
                         <h3 style="text-align:center;">Guest Detail</h3>
                         <font size="4">Name: </font><label><?php echo $info['GuestFName']." ".$info['GuestMName']." ".$info['GuestLName']; ?></label><br />
                         <font size="4">Address: </font><label><?php echo $info['Address'];?></label><br />
@@ -174,48 +174,48 @@ input[type="radio"]:checked + label span {
                         <font size="4">Check-out Date: </font><label><?php echo $_SESSION['to'];?></label><br />
                         <font size="4">Nights: </font><label><?php echo $_SESSION['totalnights'];?></label><br />
                         <font size="4">Rooms to Reserve:</font><br />
-                        <?php 
+                        <?php
                             if($_SESSION['presSNum'] == ' '){
-                                
+
                             }else{
                                 echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>" . $_SESSION['presSNum']."x" ." ". $_SESSION['rmspName'] . " = " .'&#8369;'. number_format($_SESSION['presSReservedTotal']) . " Per night</label><br />";
                                 $addpS = $_SESSION['presSReservedTotal'];
                             }
                             if($_SESSION['presDNum'] == ' '){
-                                
+
                             }else{
                                 echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>" .  $_SESSION['presDNum']."x"  ." " . $_SESSION['rmdpName']. " = " . '&#8369;'.number_format($_SESSION['presDReservedTotal'])." Per night</label><br />";
                                 $addpD = $_SESSION['presDReservedTotal'];
                             }
                             if($_SESSION['supSNum'] == ' '){
-                                
+
                             }else{
                                 echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>"  . $_SESSION['supSNum']."x". " " . $_SESSION['rmssName'] . " = " .'&#8369;'. number_format($_SESSION['supSReservedTotal'])." Per night</label><br />";
                                 $addsS = $_SESSION['supSReservedTotal'];
                             }
                             if($_SESSION['supDNum'] == ' '){
-                                
+
                             }else{
                                 echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>"  . $_SESSION['supDNum']."x". " " . $_SESSION['rmdsName'] . " = " .'&#8369;'. number_format($_SESSION['supDReservedTotal'])." Per night</label><br />";
                                 $addsD = $_SESSION['supDReservedTotal'];
                             }
-                            
+
                         ?>
                         <font size="3">&nbsp;&nbsp;--------------------------------------------------------------------</font><br />
-                        
+
                         <?php
                         $nights = $_SESSION['totalnights'];
-                        $total = ($addpS + $addpD + $addsS + $addsD) * $nights; 
-                       
+                        $total = ($addpS + $addpD + $addsS + $addsD) * $nights;
+
                         echo "<label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"."&#8369;" .number_format($total). " For "."$nights night/s</label><br /><br />";
                         $addRate = $_SESSION['adultadd'] * 800 * $nights; ?>
                         <font size="4">Additional Guest:</font><br />
-                        <?php 
+                        <?php
                         if($_SESSION['adultadd'] != ' ')
                             echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>".$_SESSION['adultadd']." x &#8369;800.00 = ".'&#8369;'.number_format($addRate)." For $nights night</label><br><br>";
-                        $ttotal = $total + $addRate ;  
+                        $ttotal = $total + $addRate ;
                         $down = $ttotal / 2;
-                        $_SESSION['totalroom'] = $ttotal; 
+                        $_SESSION['totalroom'] = $ttotal;
                         echo "<font size='5'>Total Room Payment:  <label></font>";
                         echo "<font size='4' color='#4E8975'>".'&#8369;'.number_format($ttotal). " For " . $nights . " Night/s </font>";?></label><br />
                         <?php
@@ -224,11 +224,11 @@ input[type="radio"]:checked + label span {
                                 echo "<font size='4' color='#4E8975'>".'&#8369;'.number_format($down) . " </font>";
                             }
                         ?></label><br />
-                         
-                        
+
+
                         <br /><br /><br />
                 <div align="right">
-        
+
                     <a href="#confirm" class="btn btn-success" value="Confirm"  data-toggle="modal">Confirm</a>
                 </div>
             <?php if($modeofpayment == 'Bank Deposit'){ ?>
@@ -242,13 +242,13 @@ input[type="radio"]:checked + label span {
                                 <div class="modal-footer">
                                     <form method="post" action="addreservation.php" name="submitval" id="submitval" class="once">
                                         <a class="btn btn-default" data-dismiss="modal">Cancel</a>
-                                        
+
                                         <input type="submit" class="btn btn-success" id="reserve" name="reserve" value="Reserve" ondblclick="this.disabled=true;" />
                                     </form>
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
             <?php } else { ?>
 
@@ -260,12 +260,12 @@ input[type="radio"]:checked + label span {
                                     <h4 align="center"><i class="glyphicon glyphicon-question-sign"></i>&nbsp; Upon confirmation, You will be redirected to Paypal for your payment transaction.<br /><br /> Confirm Reservation? </h4>
                                 </div>
                                 <div class="modal-footer">
-                                    
+
 
 
         <?php $paypal_url='https://www.sandbox.paypal.com/cgi-bin/webscr'; // Test Paypal API URL
-            $paypal_id='davepaulgarciaaabiz@gmail.com'; // Business email ID
-            
+            $paypal_id='casadetobiasmountainresort@gmail.com'; // Business email ID
+
             $ttlnights = $_SESSION['totalnights'];
 
         if (($ttlrms >= 15) || ($ttlnights >= 15)) {
@@ -276,7 +276,7 @@ input[type="radio"]:checked + label span {
             $DscntdAmount = $ttotal;
             $_SESSION['amount'] = $DscntdAmount;
         }
-        
+
         if ($payment = 'Down Payment'){
         	 $DscntdAmount = $down;
         	 $_SESSION['paidamount'] =  $DscntdAmount;
@@ -286,17 +286,17 @@ input[type="radio"]:checked + label span {
 
 
         ?>
-       
- 
-<div class="product">            
-    
+
+
+<div class="product">
+
     <div class="btn">
-  
+
     <form action="<?php echo $paypal_url; ?>" method="post" name="frmPayPal1" id="submitval" class="once">
     <a class="btn btn-default" data-dismiss="modal" id="submitval" class="once">Cancel</a>
     <input type="hidden" name="business" value="<?php echo $paypal_id; ?>">
     <input type="hidden" name="cmd" value="_xclick">
-    <input type="hidden" name="item_name" value="Rosario Resort and Hotel Payment">
+    <input type="hidden" name="item_name" value="Casa de Tobias Mountain Resort Payment">
     <input type="hidden" name="item_number" value="1">
     <input type="hidden" name="credits" value="510">
     <input type="hidden" name="userid" value="1">
@@ -306,19 +306,19 @@ input[type="radio"]:checked + label span {
     <input type="hidden" name="handling" value="0">
     <input type="hidden" name="rm" value="2">
     <input type="hidden" name="cbt" value="Please Click Here to Complete Payment">
-    <input type="hidden" name="cancel_return" value="http://rosarioresortandhotel.com/RRH/Guest/summary.php">
+    <input type="hidden" name="cancel_return" value="http://rosarioresortandhotel.com/RRH/Guest/summ0ary.php">
     <input type="hidden" name="return" value="http://rosarioresortandhotel.com/RRH/Guest/GuestPaypal/success.php">
     <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
- 
-                                        
+
+
                                         <input type="submit" class="btn btn-success" id="reserve" name="submit" value="Confirm" alt="PayPal - The safer, easier way to pay online!" ondblclick="this.disabled=true;" />
-                                       </form> 
+                                       </form>
                                     </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
 
                 <?php } ?>

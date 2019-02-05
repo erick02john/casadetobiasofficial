@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 include('../scriptvalidation.php');
 if (!empty($_POST)):
@@ -9,14 +9,14 @@ session_start();
     $date = strtotime(date('m/d/Y'));
     $start = strtotime($_POST['Check-inDate']);
     $end = strtotime($_POST['Check-outDate']);
-    
+
     if($start >= $date){
-      
+
       $timediff = abs($end - $start);
-      
+
       $out = $timediff/86400;
         if($out == 0){
-           
+
           print ("<script language='JavaScript'>
                     window.alert('You shoud stay atleast 1 night')
                     window.location.href='datepickerform.php';
@@ -28,7 +28,7 @@ session_start();
           print ("<script language='JavaScript'>
         window.location.href='selectroom.php';
         </SCRIPT>");
-        
+
 
         }
     }else{
@@ -45,7 +45,7 @@ session_start();
   }
 ?>
 <?php else: ?>
-<?php 
+<?php
 session_start();
 include("../dbconn.php");
 $name = $_SESSION['Name'];
@@ -96,7 +96,7 @@ if($type != 'Admin' AND $type != 'Frontdesk'){
 
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-      <a class="navbar-brand mr-1" href="index.php">Rosario Resort and Hotel</a>
+      <a class="navbar-brand mr-1" href="index.php">Casa de Tobias Mountain Resort</a>
 
       <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
         <i class="fas fa-bars"></i>
@@ -116,8 +116,8 @@ if($type != 'Admin' AND $type != 'Frontdesk'){
 
       <!-- Navbar -->
       <ul class="navbar-nav ml-auto ml-md-0">
-        
-        
+
+
         <li class="nav-item dropdown no-arrow">
           <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fas fa-user-circle fa-fw"></i>
@@ -210,7 +210,7 @@ if($type != 'Admin' AND $type != 'Frontdesk'){
         <footer class="sticky-footer">
           <div class="container my-auto">
             <div class="copyright text-center my-auto">
-              <span>Copyright © Rosario Resort and Hotel 2018</span>
+              <span>Copyright © Casa de Tobias Mountain Resort 2019</span>
             </div>
           </div>
         </footer>
@@ -219,7 +219,7 @@ if($type != 'Admin' AND $type != 'Frontdesk'){
 <br>
 <div class="container">
 
-     
+
     <form id="walkin" action="datepickerform.php" method="POST">
     <div class="row">
       <div class="col">
@@ -232,16 +232,16 @@ if($type != 'Admin' AND $type != 'Frontdesk'){
           <input type='text' class="form-control input-lg" id="to" name="Check-outDate" placeholder="Check-Out Date" onkeypress="return restrictCharacters(this, event, dateOnly);" readonly />
         </div>
       </div>
-    </div>        
-      
-      
-        <div align="right"> 
+    </div>
+
+
+        <div align="right">
           <input type="submit" style='width: 150px; height: 40px;' class='btn btn-info' name="walkin" value="Walk-in">
     </form>
       </div>
 
 
-     
+
 
 
   <!-- Scroll to Top Button-->
@@ -268,8 +268,8 @@ if($type != 'Admin' AND $type != 'Frontdesk'){
       </div>
     </div>
 
-        
-     
+
+
 <!-- Bootstrap core JavaScript-->
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -287,9 +287,9 @@ if($type != 'Admin' AND $type != 'Frontdesk'){
     <!-- Demo scripts for this page-->
     <script src="../js/demo/datatables-demo.js"></script>
 
-    
 
-    
+
+
     <script type="text/javascript">
 
   $(document).ready(function(){
@@ -309,10 +309,10 @@ if($type != 'Admin' AND $type != 'Frontdesk'){
         onSelect: function(selected) {
            $("#from").datepicker("option", selecd)
         }
-    }); 
+    });
 });
 
- 
+
 </script>
 
    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
@@ -330,7 +330,7 @@ if($type != 'Admin' AND $type != 'Frontdesk'){
              });
         });
 
-   </script>     
+   </script>
 
 
 
@@ -338,4 +338,3 @@ if($type != 'Admin' AND $type != 'Frontdesk'){
 </html>
 
 <?php endif; ?>
-

@@ -29,7 +29,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php">Rosario Resort and Hotel</a>
+            <a class="navbar-brand" href="index.php">Casa de Tobias Mountain Resort</a>
           </div>
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -67,7 +67,7 @@
                  <li><a href="#">Reports</a></li>
                  <li><a href="#">Settings</a></li>
                 </li>
-              
+
           </ul>
 
         </div>
@@ -75,16 +75,16 @@
           <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
           <h1>Admin</h1>
 
-          
+
 
 <?php
   include('display.php');
 
 ?>
-          
 
 
-        
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

@@ -1,232 +1,306 @@
+
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>ROSARIO RESORT AND HOTEL</title>
-
-    <!--WEBSITE CSS/JS -->
-    <link rel= "stylesheet" href="css/mystyle.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
-        <style>
-
-* {
-    margin: 0;
-}
-html, body {
-    height: 100%;
-}
-.wrapper {
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
-}
-
-.topnav {
-  overflow: hidden;
-  background-color: #003366;
-}
-
-.topnav a {
-  float: right;
-  display: block;
-  color: #dfab21;
-  text-align: center;
-  padding: 25px 15px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: transparent;
-  color: black;
-}
-
-.navbar-brand:hover{
-  color: black;
-}
-
-.topnav .icon {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: center;
-  }
-
-}
-
-#content{
-  padding-top: 10px;
-  text-align: center;
-}
-
-#content p{
-  box-sizing: border-box;
-  text-align: center;
-  padding: 10px 10px;
-}
-
-.footer {
-  padding: 30px;
-  color: #eeeeee;
-  background-color: black;
-}
-
-.rowss{
-  text-align: center;
-}
-
-.rows {
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: #222222;
-   color: white;
-   text-align: center;
-}
-.fa {
-  padding: 20px;
-  font-size: 15px;
-  width: 25px;
-  text-align: center;
-  text-decoration: none;
-  margin: 7px 4px;
-  border-radius: 50%;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
-
-
-</style>
-  </head>
+<html lang="en">
+<head>
+<title>CASA DE TOBIAS MOUNTAIN RESORT</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Resort Inn Responsive , Smartphone Compatible web template , Samsung, LG, Sony Ericsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen">
+<link href="css/easy-responsive-tabs.css" rel='stylesheet' type='text/css'/>
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+<link rel="stylesheet" href="css/jquery-ui.css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
+<!--fonts-->
+<link href="//fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Federo" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+<!--//fonts-->
+</head>
 <body>
-    <div id="wrapper">
-      <div id="header">
-       <div class="topnav" id="myTopnav">
-        <a class="navbar-brand" href="index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; float: left;margin-left: 10px;">Rosario Resort and Hotel</a>
-  <a href="datepickerform.php">Reserve</a>
-  <a href = "Guest/_log-in.php">Log-In</a>
-  <a href="Contact.php">Contact</a>
-  <a href="gallery.php">Gallery</a>
-  <a href="rates.php">Rates</a>
-  <a href="About.php">About</a>
-  <a href="index.php" class="active">Home</a>
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
-</div>
+<!-- header -->
+<?php
+include('navlinks.php');
+?>
+<!-- //header -->
+		<!-- banner -->
+	<div id="home" class="w3ls-banner">
+		<!-- banner-text -->
+		<div class="slider">
+			<div class="callbacks_container">
+				<ul class="rslides callbacks callbacks1" id="slider4">
+					<li>
+						<div class="w3layouts-banner-top">
 
-      <div id="content">
-        <div class="grid">
-    <div class="shadowundertop"></div>
-    <div class="row">
-  
-        <h1 class="maintitle ">
-        <span >ABOUT THE COMPANY</span>
-        </h1>
-        <center>
-        <img src="images/image.jpg" width="300" height="250" alt = "About">
-        <img src="images/image2.jpg" width="300" height="250" alt = "About">
-        <br>
-        <br>
-        <br>
-        <center><p>
-          
-          Rosario Resort and Hotel offers services and facilities that has 18 hotel rooms, 1 swimming pool, restaurant, bar and functional rooms.<br> They have 32 regular employees. They have front desk clerks, room attendants, banquets and events crew, restaurant and bar employees and administration.<br>
-        </p></center>
+							<div class="container">
+								<div class="agileits-banner-info">
+								<h4>CASA DE TOBIAS MOUNTAIN RESORT</h4>
+									<h3>Come join us to experience a relaxing place in Nagcarlan, Laguna</h3>
+										<p>Welcome to our Hotel and Resort in Laguna</p>
+									<div class="agileits_w3layouts_more menu__item">
+				<a href="#" class="menu__link" data-toggle="modal" data-target="#myModal">Learn More</a>
+			</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="w3layouts-banner-top w3layouts-banner-top1">
+							<div class="container">
+								<div class="agileits-banner-info">
+								<h4>CASA DE TOBIAS MOUNTAIN RESORT</h4>
+									<h3>Experience a wonderful scenery in our resort</h3>
+										<p></p>
+									<div class="agileits_w3layouts_more menu__item">
+				<a href="#" class="menu__link" data-toggle="modal" data-target="#myModal">Learn More</a>
+			</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="w3layouts-banner-top w3layouts-banner-top2">
+							<div class="container">
+								<div class="agileits-banner-info">
+								<h4>CASA DE TOBIAS MOUNTAIN RESORT</h4>
+								<h3></h3>
+										<p>Get a Reservation Today!</p>
+									<div class="agileits_w3layouts_more menu__item">
+											<a href="#" class="menu__link" data-toggle="modal" data-target="#myModal">Learn More</a>
+										</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+			<!--banner Slider starts Here-->
+		</div>
+	</div>
+	<!-- //banner -->
+<!--//Header-->
+<!-- //Modal1 -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+						<!-- Modal1 -->
+							<div class="modal-dialog">
+							<!-- Modal content-->
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4>CASA DE TOBIAS MOUNTAIN RESORT<span>Resort</span></h4>
+										<img src="images/1.jpg" alt=" " class="img-responsive">
+										<h5></h5>
+										<p>Enjoy the refreshness of the Mountain Resort</p>
+									</div>
+								</div>
+							</div>
+						</div>
+<!-- //Modal1 -->
+<div id="availability-agileits">
 
-        <br><br><br>
-          <div class="clearfix">
-          </div>
-        </div>
-      </div>
+
+			<div class="clearfix"> </div>
+</div>
+<br />
+<!-- /about -->
+ 	<div class="about-wthree" id="about">
+		  <div class="container">
+				   <div class="ab-w3l-spa" style="font-size:25px;">
+                            <h3 class="title-w3-agileits title-black-wthree">Casa de Tobias</h3>
+														<h2>Casa de Tobias</h2>
+														<p>
+														Casa De Tobias Mountain Resort is located in Alibungbungan, Nagcarlan, Laguna. The resort established in 1998. There are series of episodes of renovations like repainting, landscaping, carpentry,
+														while keeping the resort is open. The resort has seventeen (17) rooms that can cater to the customer's need. Casa de Tobias has a huge adult pool, kiddie pool and a man-made river that usually use for team buildings.
+														The resort has a clubhouse which is rented to host group meetings, seminars, and trainings that typically accompanies corporate outings and whole family trips.
+														The resort have country-inspired cabins and nipa huts that are great for families, Barkadas get away and group retreats.</p>
+														<p>	Casa de Tobias Resort can give you a relaxing scenery that helps you to enjoy and forgot all the problems in workloads even the school works.
+														the ambiance of the resort is nature-friendly that you can experience a heaven and peaceful view with sounds of birds outside of the resort. you may also experience a breath taking view of mouintains near in the resort.
+														The resort is very far from the pollution in manila that you experience.
+														The environment is very natural and pure, when you go around the place the sounds of the water flowing coming from the man made river or called "Sapa".
+														</p>
+		          </div>
+		   	<div class="clearfix"> </div>
     </div>
-
-    <div class="rows">
-  <a href="https://www.facebook.com/Rosario.Resort/" class="fa fa-facebook" target="_blank"></a>
-  <a href="https://www.google.com.ph/search?q=rosario+resort+and+gotel&oq=rosario+resort+and+gotel&aqs=chrome..69i57l2j69i60l4.9849j0j4&sourceid=chrome&ie=UTF-8" class="fa fa-google" target="_blank"></a>
 </div>
-    <div id="footer" class="footer">
-      <div class="container">
-        <div class="rowss">
-            <h4>Contact Us</h4>
-            <p><i class="fa fa-home fa-lg" aria-hidden="true"></i> National Highway, Brgy. Quilib, Rosario, 4222 Batangas </p>
-            <p><i class="fa fa-envelope fa-lg" aria-hidden="true"></i> reserve.rosario@gmail.com</p>
-            <p><i class="fa fa-phone fa-lg" aria-hidden="true"></i> (043) 740 4813 </p>
-            <p><i class="fa fa-globe fa-lg" aria-hidden="true"></i> website </p>
-          </div>
-        </div>
-      </div>
-</div>
-      
+ 	<!-- //about -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<div class="gradient">
+		<div class="homepage globalpage_new page"></div>
+		<div class="row">
+			<div class="col-lg-6 col-md-3 m-5">
+				<div class="footer-block">
+					<h3 class="footer-block-title"><p>Site</p></h3>
+					<div class="row">
+						<div class="col-md-12 col-lg-6 m-5">
+							<ul class="list-unstyled">
+								<li>
+									<a href="/" target="_self">Home</a>
+								</li>
+								<li>
+									<a href="/about" target="_self">The Resort</a>
+								</li>
+								<li>
+									<a href="/gallery" target="_self">Gallery</a>
+								</li>
+								<li>
+									<a href="/contact" target="_self">Contact Us</a>
+								</li>
+								<li>
+									<a href="/Rooms" target="_self">Rooms</a>
+								</li>
+								<li class="list-inline-item">
+									<a href="/privacy-policy.html">Privacy Policy</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-4">
+				<div class="footer-block">
+					<h3 class="footer-block-title"><p>RESERVATION</p></h3>
+					<ul class="list-unstyled">
+						<li><a class="icon-link icon-link-mobile" href="tel:+6566888888">(02) 794 3471
+						</a></li>
+						<li><a class="icon-link icon-link-mobile" href="tel:+6566888826">+63 917 9789 141</a></li>
+					</ul>
 
-  </div>
+				</div>
+			</div>
+		</div>
+	<div class="row">
+		<div class="col"><br>
+				<p class="copyright">© 2019 Casa de Tobias Mountain Resort. All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
-<script>
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
+<!--/footer -->
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- contact form -->
+<script src="js/jqBootstrapValidation.js"></script>
+
+<!-- /contact form -->
+<!-- Calendar -->
+		<script src="js/jquery-ui.js"></script>
+		<script>
+				$(function() {
+				$( "#datepicker,#datepicker1,#datepicker2,#datepicker3" ).datepicker();
+				});
+		</script>
+<!-- //Calendar -->
+<!-- gallery popup -->
+<link rel="stylesheet" href="css/swipebox.css">
+				<script src="js/jquery.swipebox.min.js"></script>
+					<script type="text/javascript">
+						jQuery(function($) {
+							$(".swipebox").swipebox();
+						});
+					</script>
+<!-- //gallery popup -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
 </script>
+<!-- start-smoth-scrolling -->
+<!-- flexSlider -->
+				<script defer src="js/jquery.flexslider.js"></script>
+				<script type="text/javascript">
+				$(window).load(function(){
+				  $('.flexslider').flexslider({
+					animation: "slide",
+					start: function(slider){
+					  $('body').removeClass('loading');
+					}
+				  });
+				});
+			  </script>
+			<!-- //flexSlider -->
+<script src="js/responsiveslides.min.js"></script>
+			<script>
+						// You can also use "$(window).load(function() {"
+						$(function () {
+						  // Slideshow 4
+						  $("#slider4").responsiveSlides({
+							auto: true,
+							pager:true,
+							nav:false,
+							speed: 500,
+							namespace: "callbacks",
+							before: function () {
+							  $('.events').append("<li>before event fired.</li>");
+							},
+							after: function () {
+							  $('.events').append("<li>after event fired.</li>");
+							}
+						  });
 
+						});
+			</script>
+		<!--search-bar-->
+		<script src="js/main.js"></script>
+<!--//search-bar-->
+<!--tabs-->
+<script src="js/easy-responsive-tabs.js"></script>
 <script>
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
+$(document).ready(function () {
+$('#horizontalTab').easyResponsiveTabs({
+type: 'default', //Types: default, vertical, accordion
+width: 'auto', //auto or any width like 600px
+fit: true,   // 100% fit in a container
+closed: 'accordion', // Start closed if in accordion view
+activate: function(event) { // Callback function if tab is switched
+var $tab = $(this);
+var $info = $('#tabInfo');
+var $name = $('span', $info);
+$name.text($tab.text());
+$info.show();
 }
+});
+$('#verticalTab').easyResponsiveTabs({
+type: 'vertical',
+width: 'auto',
+fit: true
+});
+});
 </script>
+<!--//tabs-->
+<!-- smooth scrolling -->
+	<!-- <script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear'
+			};
+		*/
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script> -->
 
-<script>
-// Get the modal
-var modal = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script>
+	<div class="arr-w3ls">
+	<a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</div>
+<!-- //smooth scrolling -->
+<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
 </body>
 </html>

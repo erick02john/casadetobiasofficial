@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 include("../dbconn.php");
 $name = $_SESSION['Name'];
@@ -29,9 +29,9 @@ while($row = mysqli_fetch_array($sql)){
   $date = date('F', mktime(0,0,0,$row['months']))." ".$row['years'];
   $query = mysqli_query($conn, "SELECT * from reservation where MONTH(ReservationDate)='$month' and YEAR(ReservationDate)='$year'") or die("errrr");
   $resnum = mysqli_num_rows($query);
-  $dates = $dates.'"'.$date.'", '; 
+  $dates = $dates.'"'.$date.'", ';
   $reservation = $reservation.$resnum.', ';
-  
+
 }
 $dates = trim($dates, ",");
 $reservation = trim($reservation, ",");
@@ -70,7 +70,7 @@ $reservation = trim($reservation, ",");
   top: 0px;
   width: 100%;
   height: 100%;
-  z-index: 9999;  
+  z-index: 9999;
   background: url(../loader3.gif) center no-repeat #fff;
 }
 
@@ -81,7 +81,7 @@ $reservation = trim($reservation, ",");
 <div class="se-pre-con"></div>
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-      <a class="navbar-brand mr-1" href="index.php">Rosario Resort and Hotel</a>
+      <a class="navbar-brand mr-1" href="index.php">CASA DE TOBIAS</a>
 
       <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
         <i class="fas fa-bars"></i>
@@ -101,8 +101,8 @@ $reservation = trim($reservation, ",");
 
       <!-- Navbar -->
       <ul class="navbar-nav ml-auto ml-md-0">
-        
-        
+
+
         <li class="nav-item dropdown no-arrow">
           <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fas fa-user-circle fa-fw"></i>
@@ -192,7 +192,7 @@ $reservation = trim($reservation, ",");
           </ol>
 
           <!-- Icon Cards-->
-         
+
           <div class="row">
             <div class="col-xl-3 col-sm-6 mb-3">
               <div class="card text-white bg-primary o-hidden h-100">
@@ -210,7 +210,7 @@ $reservation = trim($reservation, ",");
                 </a>
               </div>
             </div>
-           
+
             <div class="col-xl-3 col-sm-6 mb-3">
               <div class="card text-white bg-warning o-hidden h-100">
                 <div class="card-body">
@@ -246,7 +246,7 @@ $reservation = trim($reservation, ",");
               </div>
             </div>
 
-           
+
             <div class="col-xl-3 col-sm-6 mb-3">
               <div class="card text-white bg-danger o-hidden h-100">
                 <div class="card-body">
@@ -265,7 +265,7 @@ $reservation = trim($reservation, ",");
             </div>
           </div>
 
-         
+
 
            <!-- Area Chart Example-->
           <div class="card mb-3">
@@ -277,17 +277,17 @@ $reservation = trim($reservation, ",");
             </div>
             <div class="card-footer small text-muted"></div>
           </div>
-           
-             
+
+
             </div>
             <div>
-    <?php include('DisplayGuest.php'); ?> 
+    <?php include('DisplayGuest.php'); ?>
     </div>
         <!-- Sticky Footer -->
         <footer class="sticky-footer">
           <div class="container my-auto">
             <div class="copyright text-center my-auto">
-              <span>Copyright © Rosario Resort and Hotel 2018</span>
+              <span>Copyright © Casa de Tobias Mountain Resort 2019</span>
             </div>
           </div>
         </footer>
@@ -346,7 +346,7 @@ $reservation = trim($reservation, ",");
        }, 1000);
 
        setInterval(function(){
-        $('#show').load("refreshmessage.php").fadeIn(slow); 
+        $('#show').load("refreshmessage.php").fadeIn(slow);
        }, 1000);
 
          setInterval(function(){
@@ -366,9 +366,9 @@ $reservation = trim($reservation, ",");
      });
 
      function refresh() {
-         if(new Date().getTime() - time >= 60000) 
+         if(new Date().getTime() - time >= 60000)
              window.location.reload(true);
-         else 
+         else
              setTimeout(refresh, 10000);
      }
      setTimeout(refresh, 10000);
@@ -442,9 +442,3 @@ var myLineChart = new Chart(ctx, {
   </body>
 
 </html>
-
-
-
-
-
-

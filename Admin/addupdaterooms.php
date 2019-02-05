@@ -1,4 +1,4 @@
-<?php include '../scriptvalidation.php'; 
+<?php include '../scriptvalidation.php';
 	include 'dbconn.php'; ?>
 
 <div class="modal fade" id="addroom" role="dialog">
@@ -26,10 +26,9 @@
                         <th>RoomType:</th>
                         <td>
                           <select  class='form-control'  name = 'roomtype'>
-                      <option value = 'Presidential(Queen Sized-Bed)'>Presidential(Queen Sized-Bed)</option>
-                    <option value = 'Presidential(Twin Sized-Bed)'>Presidential(Twin Sized-Bed)</option>
-                    <option value = 'Superior(Queen Sized-Bed)'>Superior(Queen Sized-Bed)</option>
-                    <option value = 'Superior(Twin Sized-Bed)'>Superior(Twin Sized-Bed)</option>
+                      <option value = 'Presidential(Queen Sized-Bed)'>Small Kubo House</option>
+                    <option value = 'Presidential(Twin Sized-Bed)'>Big Kubo House</option>
+                    <option value = 'Superior(Queen Sized-Bed)'>Clubhouse Dormitory</option>
                     </select>
                         </td>
                       </tr>
@@ -69,10 +68,9 @@
                         <th>RoomType:</th>
                         <td>
                           <select  class='form-control'  name = 'roomtype'>
-                      <option value = 'Presidential(Queen Sized-Bed)'>Presidential(Queen Sized-Bed)</option>
-                    <option value = 'Presidential(Twin Sized-Bed)'>Presidential(Twin Sized-Bed)</option>
-                    <option value = 'Superior(Queen Sized-Bed)'>Superior(Queen Sized-Bed)</option>
-                    <option value = 'Superior(Twin Sized-Bed)'>Superior(Twin Sized-Bed)</option>
+														<option value = 'Presidential(Queen Sized-Bed)'>Small Kubo House</option>
+			                    <option value = 'Presidential(Twin Sized-Bed)'>Big Kubo House</option>
+			                    <option value = 'Superior(Queen Sized-Bed)'>Clubhouse Dormitory</option>
                     </select>
                         </td>
                       </tr>
@@ -100,8 +98,8 @@
       </div>
     </div>
   </div>
-  
-  
+
+
  <div class="modal fade" id="addroomtype" role="dialog">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">

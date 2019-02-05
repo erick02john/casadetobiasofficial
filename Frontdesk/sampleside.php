@@ -62,7 +62,7 @@ body {
     overflow-x: hidden;
     padding-top: 20px;
     margin-top: 80px;
-    text-align: right;                                    
+    text-align: right;
 
 }
 
@@ -74,7 +74,7 @@ body {
     font-size: 18px;
     color: #666362;
     display: block;
-    
+
     margin-right: 25px;
 }
 
@@ -117,7 +117,7 @@ body {
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php" style=" color:#fff; font-size: 24px; font-family: OCR A Std, monospace; margin-top: 10px;">Rosario Resort and Hotel</a>
+            <a class="navbar-brand" href="index.php" style=" color:#fff; font-size: 24px; font-family: OCR A Std, monospace; margin-top: 10px;">Casa de Tobias Mountain Resort</a>
           </div>
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -125,12 +125,12 @@ body {
               <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="Profile.php">Profile</a></li>
-                <li><a href="../Admin/logout.php" class="view btn-sm active" data-toggle="modal" ><i class="glyphicon glyphicon-log-out"></i>&nbsp;&nbsp;Log Out</a></li>                       
+                <li><a href="../Admin/logout.php" class="view btn-sm active" data-toggle="modal" ><i class="glyphicon glyphicon-log-out"></i>&nbsp;&nbsp;Log Out</a></li>
               </ul>
             </li>
           </ul>
        </div>
-          
+
       </div>
     </div>
 
@@ -144,7 +144,7 @@ body {
             <li><a class="active" href="Reserved.php">Reserved <span class="sr-only">(current)</span></a></li>
             <li><a href="Check-in.php">Checked-in</a></li>
             <li><a href="Check-out.php">Checked-out</a></li>
-           
+
             <li><a href="Billing.php">Billing</a></li>
             <li><a href="Rooms.php">Rooms</a></li>
             <li class="dropdown">
@@ -160,15 +160,15 @@ body {
     </div>
 </div>
     </div>
-        
+
           <main role="main" class="col-xs-8 col-sm-auto col-sm-12 pt-3">
-         
-        
+
+
           <br><br>
          <div class="container">
           <button style="margin-left: 50px; height: 60px; width: 200px;" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Room</button>
 
-  
+
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
@@ -264,12 +264,12 @@ body {
 <div class="tableposition" style="margin-top:20px; margin-left: 240px;">
           <?php include 'displayRooms.php'; ?> </div>
 
-          
 
 
-        
 
-        
-   
+
+
+
+
   </body>
 </html>

@@ -9,16 +9,16 @@
         <link href=".bootstrap/css/bootstrap.css" rel="stylesheet" />
         <link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet" />
         <link rel="stylesheet" type="text/css" media="screen" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
-    
+
         <link rel="stylesheet" type="text/css" href="css/animate.min.css">
         <link rel="stylesheet" type="text/css" href="css/website/bootstrap.min.css">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <link href="css/bootstrap.css" rel='stylesheet' type='text/css'>
-        
+
         <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-       
+
         <style type="text/css">
             body {
                 background:#ebebe0;
@@ -96,7 +96,7 @@
                 text-align: left;
             }
             .form-box {
-               
+
                 box-shadow: 0px 1px 4px 0.3px #888888;
                 background-color: #57AC57;
                 margin-bottom: 50px;
@@ -123,10 +123,10 @@
                 padding-top: 25px;
                 color: #fff;
             }
-            .form-top-left h3 { 
-                margin-top: 0; 
+            .form-top-left h3 {
+                margin-top: 0;
             }
-            
+
             .form-top-right {
                 float: left;
                 width: 25%;
@@ -231,7 +231,7 @@
 <div id="wrapper">
     <div id="header">
       <div class="topnav" id="myTopnav">
-        <a class="navbar-brand" href="../index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; float: left;margin-left: 10px;">Rosario Resort and Hotel</a>
+        <a class="navbar-brand" href="../index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; float: left;margin-left: 10px;">Casa de Tobias Mountain Resort</a>
   <a href="datepickerform.php" style=" font-size: 17px;">Reserve</a>
   <a href = "Guest/_log-in.php" style="cursor: pointer; font-size: 17px;">Log-In</a>
 
@@ -241,13 +241,13 @@
   <a href="About.php" style=" font-size: 17px;">About</a>
   <a href="index.php" class="active" style=" font-size: 17px;">Home</a>
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>   
-     
+</div>
+
         <div>
-       
+
 
         <div class="container">
-                    
+
                     <div class="row" style="margin-top:50px;">
                         <div class="col-sm-5 login-verify">
                             <div class="form-box">
@@ -268,15 +268,15 @@
                                                 <input maxlength="40" type="email" name="email" id="email" class="form-control"  required />
                                                 <br>
                                                 <br>
-                                                
+
                                             </div>
                                             <div style="margin-top:-20px;">
                                             <label id="login-remarks" font-color="red" style="margin-left: 0px;"></label>
                                                 <div style="float:right;width:45%;margin-left:0px;margin-right:0px;margin-top:-20px;">
                                                     <button type="submit" class="btn btn-lg btn-blue btn-forg" id="sendmail" name="sendmail" style="font-size:8pt;" formnovalidate >Email my Password
-                                                    </button>                       
+                                                    </button>
                                                 </div>
-                                                
+
                                             </div>
                                         </div>
                                     </form>
@@ -295,8 +295,8 @@
       <div class="container">
         <div class="row">
             <h4>Contact Us</h4>
-            <p><i class="fa fa-home fa-lg" aria-hidden="true"></i> National Highway, Brgy. Quilib, Rosario, 4222 Batangas </p>
-            <p><i class="fa fa-envelope fa-lg" aria-hidden="true"></i> reserve.rosario@gmail.com</p>
+            <p><i class="fa fa-home fa-lg" aria-hidden="true"></i> Alibungbungan Nagcarlan Laguna </p>
+            <p><i class="fa fa-envelope fa-lg" aria-hidden="true"></i> casadetobiasmountainresort@gmail.com</p>
             <p><i class="fa fa-phone fa-lg" aria-hidden="true"></i> (043) 740 4813 </p>
             <p><i class="fa fa-globe fa-lg" aria-hidden="true"></i> website </p>
           </div>
@@ -316,9 +316,9 @@ function myFunction() {
     }
 }
 </script>
-       
+
         </body>
-            
+
          <script src="js/jquery.min.js" type="text/javascript"></script>
          <script src="js/bootstrap.min.js"  type="text/javascript"></script>
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>ROSARIO RESORT AND HOTEL</title>
+        <title>Casa de Tobias Mountain Resort</title>
 
     <!--WEBSITE CSS/JS -->
     <link rel= "stylesheet" href="css/mystyle.css">
@@ -135,7 +135,7 @@ html, body {
     <div id="wrapper">
       <div id="header">
        <div class="topnav" id="myTopnav">
-        <a class="navbar-brand" href="index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; float: left;margin-left: 10px;">Rosario Resort and Hotel</a>
+        <a class="navbar-brand" href="index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; float: left;margin-left: 10px;">Casa de Tobias Mountain Resort</a>
   <a href="index.php">My Account</a>
   <a href="contact.php">Contact</a>
   <a href="gallery.html">Gallery</a>
@@ -150,7 +150,7 @@ html, body {
         <div class="grid">
     <div class="shadowundertop"></div>
     <div class="row">
-  
+
         <h1 class="maintitle "><br>
         <span >ABOUT THE COMPANY</span>
         </h1>
@@ -160,8 +160,8 @@ html, body {
         <br>
         <br>
         <br>
-        <center><p> 
-          Rosario Resort and Hotel offers services and facilities that has 18 hotel rooms, 1 swimming pool, restaurant, bar and functional rooms.<br> They have 32 regular employees. They have front desk clerks, room attendants, banquets and events crew, restaurant and bar employees and administration.<br>
+        <center><p>
+          Casa de Tobias Mountain Resort and Hotel offers services and facilities that has 18 hotel rooms, 1 swimming pool, restaurant, bar and functional rooms.<br> They have 32 regular employees. They have front desk clerks, room attendants, banquets and events crew, restaurant and bar employees and administration.<br>
         </p></center>
 
         <br><br><br>
@@ -179,15 +179,15 @@ html, body {
       <div class="container">
         <div class="rowss">
             <h4>Contact Us</h4>
-            <p><i class="fa fa-home fa-lg" aria-hidden="true"></i> National Highway, Brgy. Quilib, Rosario, 4222 Batangas </p>
-            <p><i class="fa fa-envelope fa-lg" aria-hidden="true"></i> reserve.rosario@gmail.com</p>
+            <p><i class="fa fa-home fa-lg" aria-hidden="true"></i> Alibungbungan, Nagcarlan, Laguna </p>
+            <p><i class="fa fa-envelope fa-lg" aria-hidden="true"></i> casadetobiasmountainresort@gmail.com</p>
             <p><i class="fa fa-phone fa-lg" aria-hidden="true"></i> (043) 740 4813 </p>
             <p><i class="fa fa-globe fa-lg" aria-hidden="true"></i> website </p>
           </div>
         </div>
       </div>
 </div>
-      
+
 
   </div>
 

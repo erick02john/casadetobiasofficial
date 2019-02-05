@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 include("dbconn.php");
 
@@ -16,7 +16,7 @@ if(!empty($_SESSION['Email'])){
 ?><!DOCTYPE html>
 <html>
     <head>
-        <title>Rosario Resort and Hotel</title>
+        <title>Casa de Tobias Mountain Resort</title>
     <link rel="stylesheet" type="text/css" href="../backext/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../backext/css/admin.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -95,7 +95,7 @@ if(!empty($_SESSION['Email'])){
       <div id="wrapper">
       <div id="header">
         <div class="topnav" id="myTopnav">
-        <a class="navbar-brand" href="index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; float: left;margin-left: 10px; text-align: center;">Rosario Resort and Hotel</a>
+        <a class="navbar-brand" href="index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; float: left;margin-left: 10px; text-align: center;">Casa de Tobias Mountain Resort</a>
   <a href="index.php">My Account</a>
   <a href="contact.php">Contact</a>
   <a href="gallery.html">Gallery</a>
@@ -104,18 +104,18 @@ if(!empty($_SESSION['Email'])){
   <a href="home.php" class="active">Home</a>
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
-  
+
 <aside id="side-menu" class="aside" role="navigation">
     <ul class="nav nav-list accordion">
         <li><img src="../images/logos/fd.png" width="100px" height="100px" style="margin-left: 50px;"></li>
         <li style="margin-left: 70px; font-family: Arial Black, Helvetica, sans-serif; font-size: 15px;">Guest</li>
     </ul>
-    <ul class="nav nav-list accordion">                    
+    <ul class="nav nav-list accordion">
         <li class="nav-header">
             <div class="link"><i class="fa fa-lg fa-globe"></i>Current<i class="fa fa-chevron-down"></i></div>
             <ul class="submenu">
-              <li><a href="Personalinfo.php">Personal Info.</a></li>  
-              <li><a href="Reservationinfo.php">Reservation Info.</a></li>  
+              <li><a href="Personalinfo.php">Personal Info.</a></li>
+              <li><a href="Reservationinfo.php">Reservation Info.</a></li>
             </ul>
           </li>
       </ul>
@@ -144,22 +144,22 @@ if(!empty($_SESSION['Email'])){
       </ul>
   </aside>
   <div class="content">
-    <div class="top-bar">       
-      <a href="#menu" class="side-menu-link burger"> 
+    <div class="top-bar">
+      <a href="#menu" class="side-menu-link burger">
         <span class='burger_inside' id='bgrOne'></span>
         <span class='burger_inside' id='bgrTwo'></span>
         <span class='burger_inside' id='bgrThree'></span>
-      </a>      
+      </a>
     </div>
     <section class="content-inner">
     <h2>Overview</h2>
     <?php include 'displayRecords.php';
      ?>
     </section>
-  </div>  
-  
   </div>
-  
+
+  </div>
+
 </div>
 <script>
 function myFunction() {

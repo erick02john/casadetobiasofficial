@@ -6,10 +6,10 @@ include 'scriptvalidation.php';
 
 if(isset($_POST['submit'])){
   $message = $_POST['message'];
-  $to = "davepaulgarciaaa@gmail.com";
+  $to = "casadetobiasmountainresort@gmail.com";
   $from = $_POST['email'];
-  $subject = "Contact Form | Rosario Resort and Hotel";
-  
+  $subject = "Contact Form | Casa de Tobias Mountain Resort";
+
 $headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 // More headers
@@ -18,13 +18,13 @@ $headers .= 'Cc: $from' . "\r\n";
 
 
   mail($to,$subject,$message,$headers);
-} 
+}
 
 
 ?>
 <!DOCTYPE html>
 <html>
-<title>Welcome to Rosario Resort and Hotel</title>
+<title>Welcome to Casa de Tobias Mountain Resort</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -48,7 +48,7 @@ body, html {
     background-size: cover;
     background-image: url("images/images/gallery (22).jpg");
     min-height: 100%;
-    
+
 }
 .w3-bar .w3-button {
     padding: 16px;
@@ -76,7 +76,7 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">ROSARIO RESORT AND HOTEL</a>
+    <a href="#home" class="w3-bar-item w3-button w3-wide">Casa de Tobias Mountain Resort</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
@@ -111,7 +111,7 @@ body, html {
     <span class="w3-jumbo w3-hide-small" style="background: #616161">Welcome to our Page</span><br>
     <span class="w3-xxlarge w3-hide-large w3-hide-medium">Welcome to our Page</span><br>
     <span class="w3-large"><br></span>
-  </div> 
+  </div>
   <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
     <div class="w3-container w3-white w3-padding-16">
       <form action="datepickerform.php" method="post" ">
@@ -140,11 +140,11 @@ body, html {
     <div>
       <center>
       <i class="fa fa-building w3-margin-bottom w3-jumbo w3-center"></i>
-     
-      <p class="w3-large">SAMPLE ABOUT: Rosario Resort and Hotel offers services and facilities that has 18 hotel rooms, 1 swimming pool, restaurant, bar and functional rooms.<br> They have 32 regular employees. They have front desk clerks, room attendants, banquets and events crew, restaurant and bar employees and administration.</p>
+
+      <p class="w3-large">SAMPLE ABOUT: Casa de Tobias Mountain Resort offers services and facilities that has 18 hotel rooms, 1 swimming pool, restaurant, bar and functional rooms.<br> They have 32 regular employees. They have front desk clerks, room attendants, banquets and events crew, restaurant and bar employees and administration.</p>
       </center>
     </div>
-    
+
   </div>
 </div>
 
@@ -152,7 +152,7 @@ body, html {
 <div class="w3-container w3-light-grey" style="padding:128px 16px">
   <div class="w3-row-padding">
     <div class="w3-col m6">
-      <h3>Rosario Resort and Hotel.</h3>
+      <h3>Casa de Tobias Mountain Resort.</h3>
       <p>18 hotel rooms, 1 swimming pool, restaurant, bar and functional rooms</p>
       <p><a href="#gallery" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Facilities</a></p>
     </div>
@@ -168,7 +168,7 @@ body, html {
   <p class="w3-center w3-large"></p>
   <div class="w3-row-padding" style="margin-top:64px">
 
-  <?php 
+  <?php
     $sql = mysqli_query($conn, "SELECT Distinct RoomType FROM roomtype");
     while($roomt = mysqli_fetch_array($sql)){
         $roomtype = $roomt['RoomType'];
@@ -187,7 +187,7 @@ body, html {
         </div>
       </div>
     </div>
-    
+
     <?php } ?>
   </div>
 </div>
@@ -230,7 +230,7 @@ body, html {
       <a href="images/images/gallery (9).jpg" data-lightbox="mygallery"><img src="images/images/gallery (9).jpg" style="width:100%"></a>
     </div>
   </div>
-      
+
 
   </div>
 </div>
@@ -297,9 +297,9 @@ body, html {
   <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-half">
-      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> National Highway, Brgy. Quilib, Rosario, 4222 Batangas</p>
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Alibungbungan, Nagcarlan, Laguna</p>
       <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: (043) 740 4813</p>
-      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: reserve.rosario@gmail.com</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: casadetobiasmountainresort@gmail.com</p>
       <br>
       <form action="contact.php" method="post" target="_blank">
         <p><input class="w3-input w3-border" type="text" name="name" placeholder="Full Name" required name="Name"></p>
@@ -316,7 +316,7 @@ body, html {
       <!-- Add Google Maps -->
       <div id="googleMap" style="width:100%;height:510px;">
         <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15494.586961859659!2d121.206586!3d13.860231!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd45d9221f9f1ea35!2sRosario+Resort+and+Hotel!5e0!3m2!1sen!2sph!4v1517279324056" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-    
+
     </div>
   </div>
 </div>
@@ -331,7 +331,7 @@ body, html {
   </div>
   <p>Copyright © Rosario Resort and Hotel 2018</p>
 </footer>
- 
+
 <!-- Add Google Maps -->
 <script>
 /*function myMap()
@@ -378,7 +378,7 @@ $(document).ready(function(){
         onSelect: function(selected) {
            $("#from").datepicker("option", selected)
         }
-    }); 
+    });
 });
 
 

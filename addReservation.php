@@ -20,10 +20,10 @@ include ('dbconn.php');
 	$CheckInDate = $_SESSION['from'];
 	$CheckOutDate = $_SESSION['to'];
 	$RevDate = date('Y-m-d');
-	
+
     $numdays = abs(strtotime($CheckInDate) - strtotime($RevDate))/86400;
 	if ($numdays > 7) {
-	$ExpirationDate = date('Y-m-d', strtotime($RevDate. ' + 7 days'));		
+	$ExpirationDate = date('Y-m-d', strtotime($RevDate. ' + 7 days'));
 	}else{
 		$ExpirationDate = $CheckOutDate;
 	}
@@ -40,17 +40,17 @@ while($row=mysqli_fetch_assoc($record)){
 while($ctr < $roomcount){
 	$data = mysqli_query($conn, "SELECT * FROM roomtype WHERE RoomType = '$counter[$ctr]'");
 
-	$countpsreserved = mysqli_query($conn, "SELECT * from roominventory ri join roomtype rt on ri.RoomID = rt.RoomID where (Status = 'Reserved' or Status = 'Pending' or Status = 'Checked-in') AND RoomType = '$counter[$ctr]'  AND 
+	$countpsreserved = mysqli_query($conn, "SELECT * from roominventory ri join roomtype rt on ri.RoomID = rt.RoomID where (Status = 'Reserved' or Status = 'Pending' or Status = 'Checked-in') AND RoomType = '$counter[$ctr]'  AND
               ((CheckInDate >= '$CheckInDate' and CheckInDate < '$CheckOutDate' )
             or (CheckOutDate > '$CheckInDate'and CheckOutDate < '$CheckOutDate' ) or (CheckOutDate >= '$CheckOutDate')and(CheckInDate < '$CheckInDate'))");
 
-			
+
 			$presDrow = mysqli_num_rows($countpsreserved);
 			$totalpdrow = mysqli_num_rows($data);
 			$presDcount = $totalpdrow - $presDrow;
 
 	if($_SESSION['roomcount'][$ctr] > $presDcount){
-   
+
     	 echo ("<script language='JavaScript'>
         window.alert('The rooms are already taken')
         window.location.href='selectroom.php';
@@ -59,14 +59,14 @@ while($ctr < $roomcount){
 	$ctr++;
 }
 
-            
 
-    
+
+
 
 	$guest = mysqli_query($conn, "INSERT INTO guest (GuestId, GuestFName, GuestMName, GuestLName, Address, Gender, ContactNumber, Email, Password) VALUES ('$GID', '$fname', '$mname', '$lname', '$address', '$gender', '$mnum', '$email', '$password')");
 	$strrms = "";
 
-	
+
 	$rec = mysqli_query($conn, "SELECT Distinct RoomType from roomtype");
 	$roomcount = mysqli_num_rows($rec);
 	$ctr=0;
@@ -81,7 +81,7 @@ while($ctr < $roomcount){
 			while($counterps < $rr){
 				while ($rmsp = mysqli_fetch_assoc($roomSinglePre)){
 					if ($counterps < $rr){
-						$pSemp = mysqli_query($conn, "SELECT * from roominventory where RoomID = '{$rmsp['RoomID']}' AND (Status = 'Reserved' or Status = 'Pending') AND 
+						$pSemp = mysqli_query($conn, "SELECT * from roominventory where RoomID = '{$rmsp['RoomID']}' AND (Status = 'Reserved' or Status = 'Pending') AND
 							((CheckInDate >= '$CheckInDate' and CheckInDate < '$CheckOutDate' )
 						or (CheckOutDate > '$CheckInDate'and CheckOutDate < '$CheckOutDate' ) or (CheckOutDate >= '$CheckOutDate')and(CheckInDate < '$CheckInDate'))");
 						$countps = mysqli_num_rows($pSemp);
@@ -105,7 +105,7 @@ while($ctr < $roomcount){
 
 
 
-	$reservation = mysqli_query($conn, "INSERT INTO reservation (ReservationID, GuestID, RoomsReserved, NumberOfAdult, ReservationDate, CheckInDate, CheckOutDate, ExpirationDate, Status) 
+	$reservation = mysqli_query($conn, "INSERT INTO reservation (ReservationID, GuestID, RoomsReserved, NumberOfAdult, ReservationDate, CheckInDate, CheckOutDate, ExpirationDate, Status)
 		VALUES('$ResID', '$GID', '$strrms', '$ttlgst', '$RevDate', '$CheckInDate', '$CheckOutDate', '$ExpirationDate', 'Pending')") or die("error reservation");
 
 	//billing table
@@ -113,10 +113,10 @@ while($ctr < $roomcount){
 	$ModeOfPayment = $_SESSION['modeofpayment'];
 	$payment = $_SESSION['payment'];
 
-	
+
 
 	if ($ModeOfPayment == 'Paypal'){
-		$TotalAmount = $_SESSION['amount']; 
+		$TotalAmount = $_SESSION['amount'];
 		$paidamount = $_SESSION['paidamount'];
 		$balance = '0.00';
 		if ($payment == 'Down Payment'){
@@ -125,9 +125,9 @@ while($ctr < $roomcount){
 		} else {
 			$billingstatus = 'Fully Paid';
 		}
-		
-		
-		$billing = mysqli_query($conn, "INSERT INTO billing (ReservationID, TotalAmount, PaidAmount, Balance, BillingStatus, ModeOfPayment) 
+
+
+		$billing = mysqli_query($conn, "INSERT INTO billing (ReservationID, TotalAmount, PaidAmount, Balance, BillingStatus, ModeOfPayment)
 		VALUES('$ResID','$TotalAmount', '$paidamount', '$balance', '$billingstatus', '$ModeOfPayment')");
 
 		mysqli_query($conn, "UPDATE reservation SET Status = 'Reserved' WHERE ReservationID = '$ResID'");
@@ -136,7 +136,7 @@ while($ctr < $roomcount){
 
 
 	} else {
-		$billing = mysqli_query($conn, "INSERT INTO billing (ReservationID, TotalAmount, PaidAmount, Balance, BillingStatus, ModeOfPayment) 
+		$billing = mysqli_query($conn, "INSERT INTO billing (ReservationID, TotalAmount, PaidAmount, Balance, BillingStatus, ModeOfPayment)
 		VALUES('$ResID','$TotalAmount', '0.00', '$TotalAmount', 'Pending', '$ModeOfPayment')");
 	}
 
@@ -145,39 +145,39 @@ while($ctr < $roomcount){
 	$date = date('Y-m-d');
 	$ttlrms = $_SESSION['ttlrms'];
 	$to = $email;
-	$subject = "Rosario Resort and Hotel Reservation";
+	$subject = "Casa de Tobias Mountain Resort Reservation";
 	$message = "
 <td align='center' valign='top'>
 
 	</table><table bgcolor='#FFFFFF' border='0' cellpadding='0' cellspacing='0' width='600'><tbody><tr><td align='center' valign='top'>
-                                
+
                                 <table border='0' cellpadding='0' cellspacing='0' width='100%' style='color:#FFFFFF;' bgcolor='#1362ac'><tbody><tr><td align='center' valign='top'>
-                                            
+
                                             <table border='0' cellpadding='0' cellspacing='0' width='600' class='flexibleContainer'><tbody><tr><td align='center' valign='top' width='600' class='flexibleContainerCell'>
-                                                        
+
                                                         <table border='0' bgcolor='#003366' width='100%' height = '50px'><tbody><tr><td align='left' valign='middle'>
-                                                                    
-                                                            <center><font style='font-family: Arial Black, Helvetica, sans-serif;' color= '#dfab21'>Rosario Resort and Hotel</center>
+
+                                                            <center><font style='font-family: Arial Black, Helvetica, sans-serif;' color= '#dfab21'>Casa de Tobias Mountain Resort</center>
                                                             </tr></tbody></table></td>
                                                 </tr></tbody></table></td>
                                     </tr></tbody></table></td>
                         </tr><tr><td align='center' valign='top'>
-                                
+
                              </td>
                         </tr><tr><td align='center' valign='top'>
-                                
+
                                 <table border='0' cellpadding='0' cellspacing='0' width='100%'>
 								<tbody>
 								<tr>
 								<td valign='top'>
-                                            
-                                            
-                                                    
-															
+
+
+
+
 															<table align='left'border='0' cellpadding='0' cellspacing='0' class='flexibleContainer'><tbody><tr>
 														<td align='center' valign='top' class='textContent'>
                                                                     <div  style='text-align:left;font-family:Helvetica, Arial, sans-serif;font-size:15px;margin-right: 10; margin-left:10;margin-bottom:0;margin-top:10px;color:#5F5F5F;line-height:135%;'>
-																	
+
                                                                         <a>Date: $date</a>
 																		<p>
 																			Good Day!<br><br>
@@ -199,7 +199,7 @@ while($ctr < $roomcount){
 																				<td width='40%'>Check-out Date: </td><td width='60%'>$CheckOutDate</td>
 																			</tr>
 																			<tr>
-																				<td width='40%'>Hotel Address: </td><td width='60%'>National Highway, Brgy. Quilib Rosario, Batangas, Philippines</td>
+																				<td width='40%'>Hotel Address: </td><td width='60%'>Alibungbungan, Nagcarlan, Laguna</td>
 																			</tr>
 																			<tr>
 																				<td width='40%'>Hotel Phone: </td><td width='60%'>(043) 749 4613</td>
@@ -238,7 +238,7 @@ while($ctr < $roomcount){
 																		</table><br><br>
 																		<table  cellpadding='1' cellspacing='0' style='font-size: 17px;' width='100%'>
                                                                             <tr>
-                                                                               <td width='60%'>Rosario Resort and Hotel Bank Account: </td> 
+                                                                               <td width='60%'>Casa de Tobias Mountain Resort Bank Account: </td>
                                                                             </tr>
                                                                             <tr>
                                                                                 <td><b>MR. COMMONWEALTH PROPERTIES INC. (MRCPI)</b></td>
@@ -253,36 +253,36 @@ while($ctr < $roomcount){
                                                                                 <td><b>PADRE GARCIA BRANCH</b></td>
                                                                             </tr>
 
-																																				
+
 																		</table>
-																		
+
 																		<h4>Payment Policy:</h4>
 																		<p>All bookings must be guaranteed at the time of reservation by cash, advance deposit or Paypal. Thank you.</p>
-																		
-																		
+
+
 																		<p>
-                                                                            We hope you find everything in order, please e-mail or call us should you have questions or clarifications.                                                     
+                                                                            We hope you find everything in order, please e-mail or call us should you have questions or clarifications.
                                                                         </p>
-																		
+
 																		<p>Thank You!</p>
-																		
+
                                                                     </div>
                                                                 </td>
-																
+
                                                             </tr></tbody></table>
-															
+
 															</td>
                                                 </td>
                                     </tr></tbody></table></td>
                         </tr>
                         </tr></tbody></table><table bgcolor='#E1E1E1' border='0' cellpadding='0' cellspacing='0' width='600'><tbody><tr><td align='center' valign='top'>
-                                
+
                                <!--  <table border='0' cellpadding='0' cellspacing='0' width='100%'><tbody><tr><td align='center' valign='top'>
-                                            
+
                                             <table border='0' cellpadding='0' cellspacing='0' width='600' class='flexibleContainer'><tbody><tr><td align='center' valign='top' width='600' class='flexibleContainerCell'>
                                                         <table border='0' cellpadding='40' cellspacing='0' width='100%'><tbody><tr><td valign='top' bgcolor='#E1E1E1'>
                                                                     <div style='font-family:Helvetica, Arial, sans-serif;font-size:13px;color:#828282;text-align:center;line-height:120%;'>
-                                                                        <div>Copyright © 2018 <span style='color:#828282;'>Rosario Resort and Hotel Resort</span></a>. All&nbsp;rights&nbsp;reserved.</div>
+                                                                        <div>Copyright © 2018 <span style='color:#828282;'>Casa de Tobias Mountain Resort Resort</span></a>. All&nbsp;rights&nbsp;reserved.</div>
                                                                     </div>
                                                                 </td>
                                                             </tr></tbody></table></td>
@@ -292,15 +292,15 @@ while($ctr < $roomcount){
 $headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 // More headers
-$headers .= 'From: <davepaulgarciaaa@gmail.com>' . "\r\n";
-$headers .= 'Cc: davepaulgarciaaa@gmail.com' . "\r\n";
+$headers .= 'From: <casadetobiasmountainresort@gmail.com>' . "\r\n";
+$headers .= 'Cc: casadetobiasmountainresort@gmail.com' . "\r\n";
 
 mail($to,$subject,$message,$headers);
 
 if($ModeOfPayment == 'Paypal'){
 	mysqli_close($conn);
 
-	print ("<script language='JavaScript'> 
+	print ("<script language='JavaScript'>
 	window.location.href='http://rosarioresortandhotel.com/RRH/Guest/index.php';
 	</SCRIPT>");
 	$_SESSION['guestid'] = $GID;
@@ -310,7 +310,7 @@ if($ModeOfPayment == 'Paypal'){
 }else{
 	mysqli_close($conn);
 
-	print ("<script language='JavaScript'> 
+	print ("<script language='JavaScript'>
 	window.location.href='Guest/index.php';
 	</SCRIPT>");
 	$_SESSION['guestid'] = $GID;
@@ -319,5 +319,5 @@ if($ModeOfPayment == 'Paypal'){
 }
 
 
-	
+
 ?>

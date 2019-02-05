@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 include('../scriptvalidation.php');
 include 'dbconn.php';
@@ -13,17 +13,17 @@ if (isset($_POST['next'])):
     $date = strtotime(date('m/d/Y'));
     $start = strtotime($Checkin);
     $end = strtotime($Checkout);
-    
-      
+
+
       $timediff = abs($end - $start);
-      
+
       $out = $timediff/86400;
 
           $_SESSION['totalnights'] = $out;
           print ("<script language='JavaScript'>
         window.location.href='Modifyroom.php';
         </SCRIPT>");
-       
+
 ?>
 <?php else: ?>
 
@@ -37,7 +37,7 @@ if (isset($_POST['next'])):
     <title>Modify room - Date</title>
 
 
-    
+
     <link rel="stylesheet" type="text/css" href="http://www.hasseb.fi/bookingcalendar/demo/jquery-ui.css">
     <script src="../bootstrap/js/jquery-1.11.3.min.js"></script>
     <script src="../bootstrap/js/jquery.growl.js"></script>
@@ -60,7 +60,7 @@ if (isset($_POST['next'])):
   }
   .navbar-nav li {
     text-decoration: none;
-    font-size: 15px; 
+    font-size: 15px;
     padding-top: 20px;
     color: #ccc;
   }
@@ -104,7 +104,7 @@ li a:hover:not(.active) {
     font-family: Verdana;
     cursor: pointer;
 }
-.lognav form button:hover{   
+.lognav form button:hover{
     background-color: #ccc
 }
 
@@ -118,38 +118,38 @@ li a:hover:not(.active) {
  <div class="wrap">
   <nav class="nav-bar navbar-inverse" role="navigation">
       <div id ="top-menu" class="container-fluid active">
-          <a class="navbar-brand" href="index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; margin-left: 80px;">Rosario Resort and Hotel</a>
-          <div class="nav navbar-nav">        
-              
-          
+          <a class="navbar-brand" href="index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; margin-left: 80px;">Casa de Tobias Mountain Resort</a>
+          <div class="nav navbar-nav">
+
+
               </div>
-      </div>      
+      </div>
   </nav>
     <br><br><br>
 
     <div class="container">
-      <?php include 'crumbcontainerdate.php'; ?>  
+      <?php include 'crumbcontainerdate.php'; ?>
           <h1>Reserved Date</h1>
-          
-       <div class="lognav"> 
-        
+
+       <div class="lognav">
+
      <form action="Modifyroomdate.php" method="POST">
      <br><br>
-    
+
       <div class="col-md-6 date">
         <div class="form-group">
           Check-in Date: <input type='text' class="form-control input-lg" id="from" value= "<?php echo $Checkin; ?>" onkeypress="return restrictCharacters(this, event, dateOnly);" readonly />
         </div>
       </div>
-      
+
       <div class="col-md-6 date">
         <div class="form-group">
           Check-out Date: <input type='text' class="form-control input-lg" id="to" value= "<?php echo $Checkout;?>" onkeypress="return restrictCharacters(this, event, dateOnly);" readonly />
-          
+
         </div>
       </div>
       <div align="right">
-        
+
         <a><button type="submit" class="btn btn-lg btn-cust btn-right" name="next" id="nextbtn"  style="background-color: #728FCE; color: #fff;">NEXT</button></a>
       </div>
 

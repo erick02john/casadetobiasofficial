@@ -29,7 +29,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="Frontdesk.php">Rosario Resort and Hotel</a>
+            <a class="navbar-brand" href="Frontdesk.php">Alibungbungan, Nagcarlan, Laguna</a>
           </div>
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -49,7 +49,7 @@
     <br><br><br><br><br>
           <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
           <h1>Hi</h1>
-          <?php 
+          <?php
           if($row['Gender'] == "Male"){
             $gender = "Mr.";
           }
@@ -58,13 +58,13 @@
           }
           echo "<h3>" .$gender ." ". $row['GuestFName'] ." ". $row['GuestLName'] . "</h3>";
           ?>
-          
 
 
-          
 
 
-        
+
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

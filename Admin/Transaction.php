@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 include("../dbconn.php");
 
@@ -49,17 +49,17 @@ body{
 <div class="wrap">
   <nav class="nav-bar navbar-inverse" role="navigation">
       <div id ="top-menu" class="container-fluid active">
-          <a class="navbar-brand" href="index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; margin-left: 80px;">Rosario Resort and Hotel</a>
-          <ul class="nav navbar-nav">        
-              
+          <a class="navbar-brand" href="index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; margin-left: 80px;">Casa de Tobias Mountain Resort</a>
+          <ul class="nav navbar-nav">
+
               <li class="dropdown movable">
-                  
+
                       <li><a href="../Admin/logout.php" class="view btn-sm active" data-toggle="modal"  style="font-size: 15px; margin-top: 13px;"><i class="glyphicon glyphicon-log-out"></i>&nbsp;Log Out</a></li>
                   </ul>
               </li>
-              
+
           </ul>
-      </div>      
+      </div>
   </nav>
 
   <aside id="side-menu" class="aside" role="navigation">
@@ -77,7 +77,7 @@ body{
             <a href="Rooms.php">Rooms</a>
           </li>
       </ul>
-      
+
       <ul class="nav nav-list accordion">
           <li class="one">
             <a href="Billing.php">Billing</a>
@@ -105,25 +105,25 @@ body{
       </ul>
   </aside>
   <div class="content">
-    <div class="top-bar">       
-      <a href="#menu" class="side-menu-link burger"> 
+    <div class="top-bar">
+      <a href="#menu" class="side-menu-link burger">
         <span class='burger_inside' id='bgrOne'></span>
         <span class='burger_inside' id='bgrTwo'></span>
         <span class='burger_inside' id='bgrThree'></span>
-      </a>      
+      </a>
     </div>
     <section class="content-inner">
       <h1>Transactions</h1>
 
-          
+
     <div class="tableposition" style="margin-top:20px;">
-      <?php include('displayTransactions.php'); ?>  </div>       
+      <?php include('displayTransactions.php'); ?>  </div>
 
     </section>
   </div>
 </div>
 
-        
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->

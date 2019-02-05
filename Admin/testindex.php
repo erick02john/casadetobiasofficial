@@ -1,4 +1,4 @@
-<?php 
+<?php
 include("dbconn.php");
 
 $reservation='';
@@ -11,9 +11,9 @@ while($row = mysqli_fetch_array($sql)){
   $date = date('F', mktime(0,0,0,$row['months']))." ".$row['years'];
   $query = mysqli_query($conn, "SELECT * from reservation where MONTH(ReservationDate)='$month' and YEAR(ReservationDate)='$year'") or die("errrr");
   $resnum = mysqli_num_rows($query);
-  $dates = $dates.'"'.$date.'", '; 
+  $dates = $dates.'"'.$date.'", ';
   $reservation = $reservation.$resnum.', ';
-  
+
 }
 $dates = trim($dates, ",");
 $reservation = trim($reservation, ",");
@@ -52,7 +52,7 @@ $reservation = trim($reservation, ",");
 
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-      <a class="navbar-brand mr-1" href="index.html">Rosario Resort and Hotel</a>
+      <a class="navbar-brand mr-1" href="index.html">Casa de Tobias Mountain Resort</a>
 
       <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
         <i class="fas fa-bars"></i>
@@ -244,7 +244,7 @@ $reservation = trim($reservation, ",");
         <footer class="sticky-footer">
           <div class="container my-auto">
             <div class="copyright text-center my-auto">
-              <span>Copyright © Rosario Resort and Hotel 2018</span>
+              <span>Copyright © Casa de Tobias Mountain Reosrt 2019</span>
             </div>
           </div>
         </footer>

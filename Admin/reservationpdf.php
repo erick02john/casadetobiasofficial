@@ -1,7 +1,7 @@
 <?php include "../pdf/fpdf.php";
 	include "dbconn.php";
 	$type = $_POST['type'];
-	
+
 	if($type == 'Daily'){
 	$date=date("Y-m-d");
 	$types = "Today";
@@ -36,12 +36,12 @@
     $monday->modify('+1 day');
 	}
 
-	
+
 	}else{
 	$querycount = mysqli_query($conn, "SELECT * FROM reservation where ReservationDate LIKE '%{$date}%' and Status LIKE '%{$status}%'") or die("error");
 	$count = mysqli_num_rows($querycount);
 	}
-	
+
 
 	$pdf=new FPDF();
 $datetoday = date("Y-m-d");
@@ -50,16 +50,16 @@ $datetoday = date("Y-m-d");
 $pdf->SetFont('Arial','B',14);
 
 //Cell(width , height , text , border , end line , [align] )
-$pdf->Cell(130 ,5, 'Rosario Resort and Hotel',0,0);
+$pdf->Cell(130 ,5, 'Casa de Tobias Mountain Resort',0,0);
 $pdf->Cell(59 ,5,$type.' ReservationReport',0,1);//end of line
 
 //set font to arial, regular, 12pt
 $pdf->SetFont('Arial','',12);
 
-$pdf->Cell(130 ,5,'National Highway, Brgy Quilib',0,0);
+$pdf->Cell(130 ,5,'Alibungbungan, Nagcarlan, Laguna',0,0);
 $pdf->Cell(59 ,5,'',0,1);//end of line
 
-$pdf->Cell(130 ,5,'Rosario Batangas Philippines',0,0);
+$pdf->Cell(130 ,5,'Casa de Tobias Nagcarlan Laguna',0,0);
 $pdf->Cell(25 ,5,'Date',0,0);
 $pdf->Cell(34 ,5,$datetoday,0,1);//end of line
 
@@ -139,7 +139,7 @@ $pdf->SetFont('Arial','B',6);
 	$pdf->ln();
 	}
 }
-	
+
 		$pdf->Output();
-	
+
 ?>

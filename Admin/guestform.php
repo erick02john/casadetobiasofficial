@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 include("dbconn.php");
 include("../scriptvalidation.php");
@@ -27,7 +27,7 @@ $rExtra = 0;
 $roomcount = mysqli_query($conn, "SELECT Distinct RoomType from roomtype");
 $count = mysqli_num_rows($roomcount);
 while($ctr < $count){
-  
+
   $rcnum = $_SESSION['roomcount'][$ctr];
   $roomtype = $_SESSION['roomtype'][$ctr];
   $query1 = mysqli_query($conn, "SELECT RoomCapacity FROM roomtype WHERE RoomType = '$roomtype'");
@@ -44,11 +44,11 @@ while($ctr < $count){
   }
     $totalg += $rnum;
     $totalExtra += $rExtra - $rnum;
-  
+
     $ctr++;
 
 }
-  
+
 if (!empty($_POST)):
 
 
@@ -68,7 +68,7 @@ if (!empty($_POST)):
       </SCRIPT>");
 
   }else{
-    
+
     $_SESSION['firstName'] = $_POST['firstName'];
     $_SESSION['middleName'] = $_POST['middleName'];
     $_SESSION['lastName'] = $_POST['lastName'];
@@ -81,10 +81,10 @@ if (!empty($_POST)):
       $_SESSION['adultadd'] = 0;
     } else {
       $_SESSION['adultadd'] = $_POST['adultadd'];
-    } 
+    }
     $_SESSION['modeofpayment'] = $modeofpayment;
-    
-    
+
+
     echo ("<script language='JavaScript'>
       window.location.href='summary.php';
       </SCRIPT>");
@@ -120,7 +120,7 @@ if (!empty($_POST)):
     <link href="../css/sb-admin.css" rel="stylesheet">
 
 
-   
+
   <style type="text/css">
     .container {
       margin-top: 20px;
@@ -141,7 +141,7 @@ if (!empty($_POST)):
 
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-      <a class="navbar-brand mr-1" href="index.php">Rosario Resort and Hotel</a>
+      <a class="navbar-brand mr-1" href="index.php">Casa de Tobias Mountain Resort</a>
 
       <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
         <i class="fas fa-bars"></i>
@@ -161,8 +161,8 @@ if (!empty($_POST)):
 
       <!-- Navbar -->
       <ul class="navbar-nav ml-auto ml-md-0">
-        
-        
+
+
         <li class="nav-item dropdown no-arrow">
           <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fas fa-user-circle fa-fw"></i>
@@ -255,7 +255,7 @@ if (!empty($_POST)):
        <!--  <footer class="sticky-footer">
           <div class="container my-auto">
             <div class="copyright text-center my-auto">
-              <span>Copyright © Rosario Resort and Hotel 2018</span>
+              <span>Copyright © Casa de Tobias Mountain Resort 2019</span>
             </div>
           </div>
         </footer> -->
@@ -266,7 +266,7 @@ if (!empty($_POST)):
     <div class='table-responsive'>
 
     <table class="table">
-                  
+
     <form method="Post" action = "guestform.php">
     <tr>
       <td><input type = "text" class = "form-control" name = "firstName" placeholder = "First Name" onfocus="this.select()" onkeypress="return restrictCharacters(this, event, alphaOnly);" autocomplete="off" REQUIRED/></td>
@@ -275,14 +275,14 @@ if (!empty($_POST)):
 
       <td><input type = "text" class = "form-control" name = "lastName" placeholder = "Last Name" onfocus="this.select()" onkeypress="return restrictCharacters(this, event, alphaOnly);" autocomplete="off" REQUIRED/></td>
     </tr>
-    
+
     <tr>
       <td><label>Gender: </label></td>
       <td><input type="radio" id="r1" name="gender" value="Female" />
           <label for="r1"><span></span>Female</label></td>
       <td><input type="radio" id="r2" name="gender" value="Male" />
           <label for="r2"><span></span>Male</label></td>
-      
+
     </tr>
 
     <tr>
@@ -296,7 +296,7 @@ if (!empty($_POST)):
       <td><label>Email:</label></th>
       <td colspan="2"><input type="email" name="email" class="form-control" placeholder="Email" onfocus="this.select()" autocomplete="off" REQUIRED /></td>
   </tr>
-  
+
   <tr>
   <td><label>Number of Guest: </label>
   <select style="width:100;" class="form-control" name="adult" REQUIRED>
@@ -356,8 +356,8 @@ if (!empty($_POST)):
       </div>
     </div>
 
-        
-     
+
+
 <!-- Bootstrap core JavaScript-->
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

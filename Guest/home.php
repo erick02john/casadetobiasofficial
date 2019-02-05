@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>ROSARIO RESORT AND HOTEL</title>
+        <title>Casa de Tobias Mountain Resort</title>
 
     <!--WEBSITE CSS/JS -->
-    
+
            <link rel="stylesheet" type="text/css" media="screen" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link href="./css/prettify-1.0.css" rel="stylesheet">
@@ -23,7 +23,7 @@
     <script src="bootstrap/js/dataTables.bootstrap.min.js"></script>
     <script type="text/javascript" src="http://www.hasseb.fi/bookingcalendar/demo/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="http://www.hasseb.fi/bookingcalendar/demo/jquery-ui.js"></script>
-    
+
         <style>
 * {
     margin: 0;
@@ -143,7 +143,7 @@ html, body {
     <div id="wrapper">
       <div id="header">
         <div class="topnav" id="myTopnav">
-        <a class="navbar-brand" href="../index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; float: left;margin-left: 10px;">Rosario Resort and Hotel</a>
+        <a class="navbar-brand" href="../index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; float: left;margin-left: 10px;">Casa de Tobias Mountain Resort</a>
   <a href="index.php">My Account</a>
   <a href="contact.php">Contact</a>
   <a href="gallery.html">Gallery</a>
@@ -157,24 +157,24 @@ html, body {
       <iframe height="500px" width="100%" allowfullscreen="true" src="https://momento360.com/e/uc/c3f10e2f4418487aa4806e3fdfedfcb7?utm_campaign=embed&utm_source=other&utm_medium=other"></iframe>
       </div>
 <br>
-	<div class="container"> 
+	<div class="container">
       <form action="datepickerform.php" method="POST">
       <center><h2>Please select your <strong>Check-in</strong> and <strong>Check-out</strong> dates to confirm.</h2></center> <br><br>
-    
+
       <div class="col-md-6 date">
         <div class="form-group">
           <input type='text' class="form-control input-lg" id="from" name="Check-inDate" placeholder="Check-IN Date" onkeypress="return restrictCharacters(this, event, dateOnly);" />
         </div>
       </div>
-      
+
       <div class="col-md-6 date">
         <div class="form-group">
           <input type='text' class="form-control input-lg" id="to" name="Check-outDate" placeholder="Check-Out Date" onkeypress="return restrictCharacters(this, event, dateOnly);" />
-          
+
         </div>
       </div>
       <div align="right">
-        
+
         <a><button type="submit" class="btn btn-lg btn-cust btn-right" name="next" id="nextbtn"  style="background-color: #003366; color: yellow; width: 100px;">NEXT</button></a>
       </div>
 
@@ -192,8 +192,8 @@ html, body {
       <div class="container">
         <div class="row">
             <h4>Contact Us</h4>
-            <p><i class="fa fa-home fa-lg" aria-hidden="true"></i> National Highway, Brgy. Quilib, Rosario, 4222 Batangas </p>
-            <p><i class="fa fa-envelope fa-lg" aria-hidden="true"></i> reserve.rosario@gmail.com</p>
+            <p><i class="fa fa-home fa-lg" aria-hidden="true"></i> Alibungbungan, Nagcarlan, Laguna </p>
+            <p><i class="fa fa-envelope fa-lg" aria-hidden="true"></i> casadetobiasmountainresort@gmail.com</p>
             <p><i class="fa fa-phone fa-lg" aria-hidden="true"></i> (043) 740 4813 </p>
             <p><i class="fa fa-globe fa-lg" aria-hidden="true"></i> website </p>
           </div>
@@ -223,7 +223,7 @@ html, body {
         onSelect: function(selected) {
            $("#from").datepicker("option", selected)
         }
-    }); 
+    });
 });
 
         </script>

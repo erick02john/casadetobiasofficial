@@ -1,16 +1,16 @@
 
-<?php 
+<?php
 include "../pdf/fpdf.php";
 	include "dbconn.php";
 
 class PDF extends FPDF {
 		function Header(){
 			$this->SetFont('Arial','B',14);
-			$this->Cell(130 ,5, 'Rosario Resort and Hotel',0,0);
+			$this->Cell(130 ,5, 'Casa de Tobias Mountain Resort',0,0);
 				$this->Cell(59 ,5,'Reservation Report',0,0);//end of line
 				$this->Cell(25 ,5,'',0,1);
 			$this->SetFont('Arial','',12);
-			$this->Cell(130 ,5,'National Highway, Brgy Quilib',0,0);
+			$this->Cell(130 ,5,'Alibungbungan, Nagcarlan, Laguna',0,0);
 			$this->Cell(20 ,5,'Date',0,0);
 			$this->Cell(34 ,5,date("Y-m-d"),0,1);//end of line
 			$this->Cell(25 ,5,'',0,0);
@@ -20,22 +20,20 @@ class PDF extends FPDF {
 			$this->Cell(25 ,5,'',0,0);
 			$this->Cell(34 ,5,'',0,1);//end of line
 			$this->Cell(130 ,5,'(043) 740 4698',0,0);
-			
+
 			$this->Cell(59 ,5,'',0,1);//end of line
 			//$this->Cell(59 ,5,$day.' ReservationReport',0,1);
 		}
 		function Footer(){
 			$name = $_POST['id'];
 			$this->SetFont('Arial','B',14);
-			
+
 			$this->Cell(130 ,5,'',0,1);//end of line
 			$this->Cell(130,10, 'Prepared For: '.$name,0,1);
 
 			$this->Cell(130,10, '_________________',0,1);
 			$this->Cell(130,0, '          Signature',0,1);
-			
-			//$this->Cell(130 ,5, 'Rosario Resort and Hotel',0,1);
-			//$this->Cell(59 ,5,$day.' ReservationReport',0,1);
+
 		}
 
 	}
@@ -44,7 +42,7 @@ class PDF extends FPDF {
 
 	$monday = new DateTime($day . 'this week');
 				$types = "This " . $day;
-	
+
 
 	if($_POST['status'] == 'All Reservation'){
 			$status = "";
@@ -56,7 +54,7 @@ $sum = 0;
 	$sums = 0.0;
 	$sumguest = 0;
 	$count = 0;
-	
+
 	for($i=0; $i<1; $i++) {
     $con = $monday->format('Y-m-d');
     $querycount = mysqli_query($conn, "SELECT * FROM reservation where ReservationDate LIKE '%{$con}%' and Status LIKE '%{$status}%'") or die("error");
@@ -75,7 +73,7 @@ $sum = 0;
 	}
 
 
-	
+
 
 	$pdf=new PDF();
 $datetoday = date("Y-m-d");
@@ -93,8 +91,6 @@ $pdf->SetFont('Arial','B',14);
 
 
 
-// $pdf->Cell(130 ,5,'Rosario Batangas Philippines',0,0);
-// $pdf->Cell(25 ,5,'Date',0,0);
 // $pdf->Cell(34 ,5,$datetoday,0,1);//end of line
 
 // $pdf->Cell(130 ,5,'(043) 740 4898',0,0);
@@ -149,7 +145,7 @@ $pdf->SetFont('Arial','B',6);
 	$sums = 0.0;
 	$sumguest = 0;
 	$monday = new DateTime($day . 'this week');
-				
+
 	for($i=0; $i<1; $i++) {
     $con = $monday->format('Y-m-d');
     $query = mysqli_query($conn, "SELECT * FROM reservation r join billing b on r.ReservationID=b.ReservationID where ReservationDate LIKE '%{$con}%' and Status LIKE '%{$status}%'") or die("error");
@@ -177,7 +173,7 @@ $pdf->SetFont('Arial','B',6);
 
 	$pdf->AddPage();
 
-	
+
 		$pdf->Output();
-	
+
 ?>

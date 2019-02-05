@@ -7,13 +7,13 @@ $to = $_SESSION['to'];
 if(empty($from) AND empty($to)){
 	echo "<script language='JavaScript'>
 							window.alert('Please select date first')
-							
+
 							window.location.href='datepickerform.php';
 							</SCRIPT>";
 
 }
 else{
-	
+
 
 
 $checkIn = $_SESSION['from'];
@@ -57,7 +57,7 @@ echo "<script language='JavaScript'>
 		 	echo("<script language='JavaScript'>
 				window.location.href='../echos.php';
 			</SCRIPT>");
-	 
+
 }
 	// $presS = $_POST['Presidential(Single)'];
 
@@ -127,7 +127,7 @@ echo "<script language='JavaScript'>
 		<link rel="stylesheet" href="bootstrap/css/dataTables.bootstrap.min.css">
 		<link rel="stylesheet" href="bootstrap/css/jquery.growl.css">
 
-	
+
 
 		<script src="bootstrap/js/jquery-1.11.3.min.js"></script>
 		<script src="bootstrap/js/jquery.growl.js"></script>
@@ -208,7 +208,7 @@ echo "<script language='JavaScript'>
 	<body>
 
     <div class="topnav" id="myTopnav">
-        <a class="navbar-brand" href="../index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; float: left;margin-left: 10px;">Rosario Resort and Hotel</a>
+        <a class="navbar-brand" href="../index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; float: left;margin-left: 10px;">Casa de Tobias Mountain Resort</a>
   <a href="datepickerform.php">Reserve</a>
   <a href = "Guest/_log-in.php">Log-In</a>
   <a href="contact.php" style=" font-size: 17px;">Contact</a>
@@ -226,7 +226,7 @@ echo "<script language='JavaScript'>
 				<?php include 'crumbcontainerroom.php'; ?><br>
 				<h1><center>SELECT ROOM</center></h1>
 			</div>
-				
+
 				<table class="tablecon" align="center">
 
 
@@ -236,7 +236,7 @@ echo "<script language='JavaScript'>
 
 						<?php
 						$record = mysqli_query($conn, "SELECT DISTINCT RoomType FROM roomtype");
-						
+
 						$roomcount = mysqli_num_rows($record);
  						while($row=mysqli_fetch_assoc($record)){
  							$counts[]= str_replace(" ","*",$row['RoomType']);
@@ -245,10 +245,10 @@ echo "<script language='JavaScript'>
 
  						$ctr=0;
 						?>
-							
+
 						<?php
 								while($ctr < $roomcount){
-							
+
 							$data = mysqli_query($conn, "SELECT * FROM roomtype WHERE RoomType = '$counter[$ctr]'");
 							$rmdt = mysqli_fetch_array($data);
 						?>
@@ -264,22 +264,22 @@ echo "<script language='JavaScript'>
 
 						<div style="margin-top: -190px; "><font size="5">Room Capacity: Up to <?php echo $rmdt['RoomCapacity']?> persons<br><br>
 						Room Rate: <?php echo 'P'.number_format($rmdt['RoomRate'])?> <font size="2">(Per night)</div></font>
-						<div style="text-align: right; margin-right: 80px; margin-top: -80px; "><select name="<?php echo $counts[$ctr]?>" style="width: 150px;"><option value=0>&nbsp;</option>	
+						<div style="text-align: right; margin-right: 80px; margin-top: -80px; "><select name="<?php echo $counts[$ctr]?>" style="width: 150px;"><option value=0>&nbsp;</option>
 
 						?>
 						<?php
-							$countpsreserved = mysqli_query($conn, "SELECT * from roominventory ri join roomtype rt on ri.RoomID = rt.RoomID where (Status = 'Reserved' or Status = 'Pending' or Status = 'Checked-in') AND RoomType = '{$counter[$ctr]}'  AND 
+							$countpsreserved = mysqli_query($conn, "SELECT * from roominventory ri join roomtype rt on ri.RoomID = rt.RoomID where (Status = 'Reserved' or Status = 'Pending' or Status = 'Checked-in') AND RoomType = '{$counter[$ctr]}'  AND
 							((CheckInDate >= '$checkIn' and CheckInDate < '$checkOut' )
 						or (CheckOutDate > '$checkIn'and CheckOutDate < '$checkOut' ) or (CheckOutDate >= '$checkOut')and(CheckInDate < '$checkIn'))");
-			
-						
+
+
 						$presSrow = mysqli_num_rows($countpsreserved);
 						$totalpsrow = mysqli_num_rows($data);
 						$presScount = $totalpsrow - $presSrow;
-						
+
 						for ($x = 1; $x <= $presScount; $x++) {
 								echo "<option value='$x'>$x</option>";
-							} 
+							}
 						?>
 						</select><font size="2"><?php
 						if($presScount <= 0){
@@ -294,30 +294,30 @@ echo "<script language='JavaScript'>
 						?></div></font>
 						</td>
 						</tr>
-						
+
 						<?php $ctr++;} ?>
- 				
-					
-				
+
+
+
 				</table>
 				<br>
 				<div style="margin-left: 150px; margin-right: 150px;">
 					<input type="submit" class="btn btn-outline btn-success btn-lg btn-block" name="reserve" value="Next"/>
 				</div>
-				
+
 				</form>
 		</div>
 		<script type="text/javascript">
-	
+
 	 var time = new Date().getTime();
      $(document.body).bind( function(e) {
          time = new Date().getTime();
      });
 
      function refresh() {
-         if(new Date().getTime() - time >= 60000) 
+         if(new Date().getTime() - time >= 60000)
              window.location.reload(true);
-         else 
+         else
              setTimeout(refresh, 10000);
      }
 
@@ -335,8 +335,8 @@ function myFunction() {
 }
 </script>
 </body>
-	
+
 </html>
-					
-<?php endif; 
+
+<?php endif;
 }?>

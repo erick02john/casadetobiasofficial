@@ -7,13 +7,13 @@ $to = $_SESSION['to'];
 if(empty($from) AND empty($to)){
 	echo "<script language='JavaScript'>
 							window.alert('Please select date first')
-							
+
 							window.location.href='datepickerform.php';
 							</SCRIPT>";
 
 }
 else{
-	
+
 $roomSinglePre = mysqli_query($conn, "SELECT * FROM roomtype WHERE RoomType = 'Presidential(Single)'");
 $rmsp = mysqli_fetch_array($roomSinglePre);
 $roomDoublePre = mysqli_query($conn, "SELECT * FROM roomtype WHERE RoomType = 'Presidential(Double)'");
@@ -103,7 +103,7 @@ if (!empty($_POST)):
 		<link rel="stylesheet" href="bootstrap/css/dataTables.bootstrap.min.css">
 		<link rel="stylesheet" href="bootstrap/css/jquery.growl.css">
 
-		
+
 
 		<script src="bootstrap/js/jquery-1.11.3.min.js"></script>
 		<script src="bootstrap/js/jquery.growl.js"></script>
@@ -177,10 +177,10 @@ li a.active {
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php" style="color:#dfab21;">Rosario Resort and Hotel</a>
+            <a class="navbar-brand" href="index.php" style="color:#dfab21;">Casa de Tobias Mountain Resort</a>
           </div>
       <ul>
-         
+
         <li class="last"><a href="Contact.html">Contact</a></li>
         <li><a href="Gallery.html">Gallery</a></li>
         <li><a href="Rates.html">Rates</a></li>
@@ -196,7 +196,7 @@ li a.active {
 				<?php include 'crumbcontainerroom.php'; ?><br>
 				<h1><center>SELECT ROOM</center></h1>
 			</div>
-				
+
 				<table class="tablecon" align="center">
 				  <tr>
 				  	<td align="right">
@@ -213,19 +213,19 @@ li a.active {
 						<h4><br>Room Capacity: Up to <?php echo $rmsp['RoomCapacity']?> </h4><br>
 						<h4>Room Rate: <?php echo 'P'.number_format($rmsp['RoomRate'])?> &nbsp;<font size="2">(Per night)</font></h4>
 						<h4><select name="Presidential(Single)" style="width: 150px;"><option value=' '>&nbsp;</option>
-						<?php 
-						$countpsreserved = mysqli_query($conn, "SELECT * from roominventory ri join roomtype rt on ri.RoomID = rt.RoomID where (Status = 'Reserved' or Status = 'Pending') AND RoomType = 'Presidential(Single)'  AND 
+						<?php
+						$countpsreserved = mysqli_query($conn, "SELECT * from roominventory ri join roomtype rt on ri.RoomID = rt.RoomID where (Status = 'Reserved' or Status = 'Pending') AND RoomType = 'Presidential(Single)'  AND
 							((CheckInDate >= '$checkIn' and CheckInDate < '$checkOut' )
 						or (CheckOutDate >= '$checkIn'and CheckOutDate < '$checkOut' ) or (CheckOutDate >= '$checkOut')and(CheckInDate < '$checkIn'))");
-			
-						
+
+
 						$presSrow = mysqli_num_rows($countpsreserved);
 						$totalpsrow = mysqli_num_rows($roomSinglePre);
 						$presScount = $totalpsrow - $presSrow;
-						
+
 						for ($x = 1; $x <= $presScount; $x++) {
 								echo "<option value='$x'>$x</option>";
-							} 
+							}
 						?>
 						</select><font size="2"><?php
 						if($presScount <= 0){
@@ -238,7 +238,7 @@ li a.active {
 						}
 						}
 						?></font></h4>
-						
+
 				</div></td>
 				<td><div class="roombox" style="margin-left: 10px;">
 					<div class="alert alert-info">
@@ -252,19 +252,19 @@ li a.active {
 						<h4><br>Room Capacity: Up to <?php echo $rmdp['RoomCapacity']?> </h3><br>
 						<h4>Room Rate: <?php echo 'P'.number_format($rmdp['RoomRate'])?><font size="2">(Per night)</font></h3>
 						<h4><select name="Presidential(Double)" style="width: 150px;"><option value=' '>&nbsp;</option>
-						<?php 
-						$countpdreserved = mysqli_query($conn, "SELECT * from roominventory ri join roomtype rt on ri.RoomID = rt.RoomID where (Status = 'Reserved' or Status = 'Pending') AND RoomType = 'Presidential(Double)'  AND 
+						<?php
+						$countpdreserved = mysqli_query($conn, "SELECT * from roominventory ri join roomtype rt on ri.RoomID = rt.RoomID where (Status = 'Reserved' or Status = 'Pending') AND RoomType = 'Presidential(Double)'  AND
 							((CheckInDate >= '$checkIn' and CheckInDate < '$checkOut' )
 						or (CheckOutDate >= '$checkIn'and CheckOutDate < '$checkOut' ) or (CheckOutDate >= '$checkOut')and(CheckInDate < '$checkIn'))");
-			
-						
+
+
 						$presDrow = mysqli_num_rows($countpdreserved);
 						$totalpdrow = mysqli_num_rows($roomDoublePre);
 						$presDcount = $totalpdrow - $presDrow;
-						
+
 						for ($x = 1; $x <= $presDcount; $x++) {
 								echo "<option value='$x'>$x</option>";
-							} 
+							}
 						?>
 						</select><font size="2"><?php
 						if($presDcount <= 0){
@@ -291,19 +291,19 @@ li a.active {
 						<h4><br>Room Capacity: Up to <?php echo $rmss['RoomCapacity']?> </h3><br>
 						<h4>Room Rate: <?php echo 'P'.number_format($rmss['RoomRate'])?><font size="2">(Per night)</font></h3>
 						<h4><select name="Superior(Single)" style="width: 150px;"><option value=' '>&nbsp;</option>
-						<?php 
-						$countssreserved = mysqli_query($conn, "SELECT * from roominventory ri join roomtype rt on ri.RoomID = rt.RoomID where (Status = 'Reserved' or Status = 'Pending') AND RoomType = 'Superior(Single)'  AND 
+						<?php
+						$countssreserved = mysqli_query($conn, "SELECT * from roominventory ri join roomtype rt on ri.RoomID = rt.RoomID where (Status = 'Reserved' or Status = 'Pending') AND RoomType = 'Superior(Single)'  AND
 							((CheckInDate >= '$checkIn' and CheckInDate < '$checkOut' )
 						or (CheckOutDate >= '$checkIn'and CheckOutDate < '$checkOut' ) or (CheckOutDate >= '$checkOut')and(CheckInDate < '$checkIn'))");
-			
-						
+
+
 						$supSrow = mysqli_num_rows($countssreserved);
 						$totalssrow = mysqli_num_rows($roomSingleSup);
 						$supScount = $totalssrow - $supSrow;
-						
+
 						for ($x = 1; $x <= $supScount; $x++) {
 								echo "<option value='$x'>$x</option>";
-							} 
+							}
 						?>
 						</select><font size="2"><?php
 						if($supScount <= 0){
@@ -328,19 +328,19 @@ li a.active {
 						<h4><br>Room Capacity: Up to <?php echo $rmds['RoomCapacity']?> </h3><br>
 						<h4>Room Rate: <?php echo 'P'.number_format($rmds['RoomRate'])?><font size="2">(Per night)</font></h3>
 						<h4><select name="Superior(Double)" style="width: 150px;"><option value=' '>&nbsp;</option>
-						<?php 
-						$countsdreserved = mysqli_query($conn, "SELECT * from roominventory ri join roomtype rt on ri.RoomID = rt.RoomID where (Status = 'Reserved' or Status = 'Pending') AND RoomType = 'Superior(Double)'  AND 
+						<?php
+						$countsdreserved = mysqli_query($conn, "SELECT * from roominventory ri join roomtype rt on ri.RoomID = rt.RoomID where (Status = 'Reserved' or Status = 'Pending') AND RoomType = 'Superior(Double)'  AND
 							((CheckInDate >= '$checkIn' and CheckInDate < '$checkOut' )
 						or (CheckOutDate >= '$checkIn'and CheckOutDate < '$checkOut' ) or (CheckOutDate >= '$checkOut')and(CheckInDate < '$checkIn'))");
-			
-						
+
+
 						$supDrow = mysqli_num_rows($countsdreserved);
 						$totalsdrow = mysqli_num_rows($roomDoubleSup);
 						$supDcount = $totalsdrow - $supDrow;
-						
+
 						for ($x = 1; $x <= $supDcount; $x++) {
 								echo "<option value='$x'>$x</option>";
-							} 
+							}
 						?>
 						</select><font size="2"><?php
 						if($supDcount <= 0){
@@ -355,15 +355,15 @@ li a.active {
 						?></font></h4>
 				</td>
 			</tr>
-			</table>	
+			</table>
 				<div style="margin-left: 950px;">
 					<input type="submit" class="btn btn-success btn-md btn-right" name="reserve" value="Next" style="width: 90px; height: 50px;"></input>
 				</div>
 				</form>
 		</div>
 	</body>
-	
+
 </html>
-					
-<?php endif; 
+
+<?php endif;
 }?>

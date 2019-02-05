@@ -8,7 +8,7 @@ session_start();
 
 
     $checkLoginName = mysqli_query($conn, "SELECT * FROM accounts WHERE Username ='$username' and Password ='$password'");
-    $numrows = mysqli_num_rows($checkLoginName); 
+    $numrows = mysqli_num_rows($checkLoginName);
     if($numrows!=0){
         while($row = mysqli_fetch_assoc($checkLoginName)){
           $dbUsername = $row['Username'];
@@ -18,9 +18,9 @@ session_start();
           $dbName = $row['FullName'];
         }
         if($username==$dbUsername&&$password==$dbPassword ){
-          if($dbUserStatus != 'Deactivated'){ 
+          if($dbUserStatus != 'Deactivated'){
             if($dbUserType == 'Admin'){
-                print ("<script language='JavaScript'> 
+                print ("<script language='JavaScript'>
                   window.location.href='Admin/index.php';
                   </SCRIPT>");
                   $_SESSION['Username'] = $dbUsername;
@@ -29,7 +29,7 @@ session_start();
                   $_SESSION['Name'] = $dbName;
                 }
              else if($dbUserType == 'Frontdesk'){
-                print ("<script language='JavaScript'> 
+                print ("<script language='JavaScript'>
                   window.location.href='Admin/index.php';
                   </SCRIPT>");
                   $_SESSION['Username'] = $dbUsername;
@@ -37,24 +37,24 @@ session_start();
                   $_SESSION['UserType'] = $dbUserType;
                   $_SESSION['Name'] = $dbName;
                 }
-              
-            
-            
+
+
+
           }else{
-              
+
                 print "<script language='JavaScript'>
                 window.alert('Account is Disabled!')
                 window.location.href='__login.php';
                 </SCRIPT>";
             }
-          
-          
+
+
         }else{
           print "<script language='JavaScript'>
           window.alert('Incorrect Username or Password!')
           window.location.href='__login.php';
           </SCRIPT>";
-          
+
         }
     }else{
       print ("<script language='JavaScript'>
@@ -62,7 +62,7 @@ session_start();
         window.location.href='__login.php';
         </SCRIPT>");
     }
-  
+
 ?>
 <?php else:  ?>
 <!DOCTYPE html>
@@ -76,7 +76,7 @@ session_start();
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin - Login</title>
+    <title>Casa De Tobias Admin</title>
 
     <!-- Bootstrap core CSS-->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -118,7 +118,7 @@ session_start();
             </div>
             <input type="submit" class="btn btn-primary btn-block" name="login" class="login loginmodal-submit" value="Login">
           </form>
-          
+
         </div>
       </div>
     </div>
@@ -138,6 +138,6 @@ session_start();
   function callfunction(){
     print "<div class='alert alert-success'> <strong>Success!</strong> Indicates a successful or positive action."
     "</div>"
-    
+
   }
 </script>

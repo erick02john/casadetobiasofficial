@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 include ('dbconn.php');
 include ('../scriptvalidation.php');
@@ -47,7 +47,7 @@ while($ctr < $count){
 
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-      <a class="navbar-brand mr-1" href="index.php">Rosario Resort and Hotel</a>
+      <a class="navbar-brand mr-1" href="index.php">Casa de Tobias Mountain Resort</a>
 
       <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
         <i class="fas fa-bars"></i>
@@ -67,8 +67,8 @@ while($ctr < $count){
 
       <!-- Navbar -->
       <ul class="navbar-nav ml-auto ml-md-0">
-        
-        
+
+
         <li class="nav-item dropdown no-arrow">
           <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fas fa-user-circle fa-fw"></i>
@@ -161,18 +161,18 @@ while($ctr < $count){
     <!--     <footer class="sticky-footer">
           <div class="container my-auto">
             <div class="copyright text-center my-auto">
-              <span>Copyright © Rosario Resort and Hotel 2018</span>
+              <span>Copyright © Casa de Tobias Mountain Reosrt 2019</span>
             </div>
           </div>
         </footer> -->
 
-    
+
 <div class="container">
     <h2>Summary</h2><center>
-                        
+
                         <div style="background-color: #ccc; width: 500px" class ="container">
                     <!-- <div class="well" > -->
-                     
+
                         <h3 style="text-align:center;">Guest Detail</h3>
                         <font size="4">Name: </font><label><?php echo "<font color = '#4e8975'>".$_SESSION['firstName']." ".$_SESSION['middleName']." ".$_SESSION['lastName']."</font>"; ?></label><br />
                         <font size="4">Address: </font><label><?php echo "<font color = '#4e8975'>".$_SESSION['address']."</font>";?></label><br />
@@ -191,7 +191,7 @@ while($ctr < $count){
                         <font size="4">Check-out Date: </font><label><?php echo "<font color = '#4e8975'>".$_SESSION['to']."</font>";?></label><br />
                         <font size="4">Nights: </font><label><?php echo "<font color = '#4e8975'>".$_SESSION['totalnights']."</font>";?></label><br />
                         <font size="4">Rooms to Reserve:</font><br /><font color = '#4e8975'>
-                        <?php 
+                        <?php
                         $ctr = 0;
                         $ttlrr = 0;
                         $roomcount = mysqli_query($conn, "SELECT Distinct RoomType from roomtype");
@@ -199,40 +199,40 @@ while($ctr < $count){
                         while($ctr < $count){
                             $rcnum = $_SESSION['roomcount'][$ctr];
                             if($rcnum == 0){
-                                
+
                             }else{
                                 echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>" . $rcnum."x" ." ". $_SESSION['roomtype'][$ctr] . " = " .'&#8369;'. number_format($_SESSION['roomtotal'][$ctr]) . " Per night</label><br />";
                                 $addrr = $_SESSION['roomtotal'][$ctr];
                                 $ttlrr += $addrr;
                             }
-                            
+
                             $ctr++;
                         }
-                                
+
                         ?>
                         </font><font size="3">&nbsp;&nbsp;--------------------------------------------------------------------</font><br />
-                        
+
                         <?php
                         $nights = $_SESSION['totalnights'];
-                        $total = $ttlrr * $nights; 
-                       
+                        $total = $ttlrr * $nights;
+
                         echo "<label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = '#4e8975'>"."&#8369;" .number_format($total). " For "."$nights night/s</font></label><br /><br />";
 
                         $addRate = $_SESSION['adultadd'] * 800 * $nights; ?>
-                        
-                        <?php 
+
+                        <?php
                         if($_SESSION['adultadd'] != ' ')
                             echo "<font size='4'>Additional Guest:</font><br />
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label><font color = '#4e8975'>".$_SESSION['adultadd']." x &#8369;800.00 = ".'&#8369;'.number_format($addRate)." For $nights night</font></label><br><br>";
-                            
-                        $ttotal = $total + $addRate ;  
-                        $_SESSION['totalroom'] = $ttotal; 
+
+                        $ttotal = $total + $addRate ;
+                        $_SESSION['totalroom'] = $ttotal;
                         echo "<font size='5'>Total Room Payment:  <label>";
                         echo "<font size='4' color='#4E8975'>".'&#8369;'.number_format($ttotal). " For " . $nights . " Night/s </font>";?></label><br />
-                        
+
                        <br><br><br>
                 <div align="right">
-        
+
                     <a href="#confirm" class="btn btn-outline btn-success btn-lg btn-block" value="Confirm"  data-toggle="modal">Confirm</a>
                 </div>
                 <div class="modal fade" id="confirm" >
@@ -245,13 +245,13 @@ while($ctr < $count){
                                 <div class="modal-footer">
                                     <form method="post" action="Check-in_Registration.php" name="submitval" id="submitval" class="once">
                                         <a class="btn btn-default" data-dismiss="modal">Cancel</a>
-                                        
+
                                         <input type="submit" class="btn btn-success" id="reserve" name="reserve" value="Reserve" ondblclick="this.disabled=true;" />
                                     </form>
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
           </div>
                 </center>
@@ -282,8 +282,8 @@ while($ctr < $count){
       </div>
     </div>
 
-        
-     
+
+
 <!-- Bootstrap core JavaScript-->
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
