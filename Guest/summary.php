@@ -306,8 +306,8 @@ input[type="radio"]:checked + label span {
     <input type="hidden" name="handling" value="0">
     <input type="hidden" name="rm" value="2">
     <input type="hidden" name="cbt" value="Please Click Here to Complete Payment">
-    <input type="hidden" name="cancel_return" value="http://rosarioresortandhotel.com/RRH/Guest/summ0ary.php">
-    <input type="hidden" name="return" value="http://rosarioresortandhotel.com/RRH/Guest/GuestPaypal/success.php">
+    <input type="hidden" name="cancel_return" value="http://localhost/casadetobiasofficial/Guest/summary.php">
+    <input type="hidden" name="return" value="http://localhost/casadetobiasofficial/Guest/GuestPaypal/success.php">
     <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
 
 

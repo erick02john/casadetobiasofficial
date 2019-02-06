@@ -224,9 +224,8 @@ body, html {
 <footer class="w3-center w3-black w3-padding-64">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
-    <a href="https://www.facebook.com/Rosario.Resort/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-    <a href="https://www.google.com.ph/search?q=Rosario+Resort+and+Hotel&oq=Rosario+Resort+and+Hotel&aqs=chrome..69i57l2j69i60l4.9849j0j4&sourceid=chrome&ie=UTF-8"><i class="fa fa-google w3-hover-opacity"></i></a>
-
+    <a href="https://www.facebook.com/Casa-De-Tobias-Mountain-Resort-254137624658146/"></i></a>
+    <a href="https://www.waze.com/en/directions/philippines/nagcarlan/casa-de-tobias-mountain-resort/79560845.795739526.5393912.html"></i></a>
   </div>
   <p>Copyright © Casa de Tobias Mountain Resort 2019</p>
 </footer>
@@ -236,7 +235,7 @@ body, html {
 $(document).ready(function(){
 
     $("#from").datepicker({
-        minDate: 0,
+        minDate: +3,
         maxDate: "+365D",
         numberOfMonths: 1,
         onSelect: function(selected) {

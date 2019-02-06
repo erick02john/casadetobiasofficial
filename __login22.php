@@ -298,7 +298,7 @@ body, html {
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-half">
       <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Alibungbungan, Nagcarlan, Laguna</p>
-      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: (043) 740 4813</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: (02) 794 3471</p>
       <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: casadetobiasmountainresort@gmail.com</p>
       <br>
       <form action="contact.php" method="post" target="_blank">
@@ -315,7 +315,7 @@ body, html {
     <div class="w3-half">
       <!-- Add Google Maps -->
       <div id="googleMap" style="width:100%;height:510px;">
-        <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15494.586961859659!2d121.206586!3d13.860231!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd45d9221f9f1ea35!2sRosario+Resort+and+Hotel!5e0!3m2!1sen!2sph!4v1517279324056" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d16122.454019686036!2d121.40985074751899!3d14.153485976700352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x33bd59965aaaaaab%3A0xbd2e2e6cb805ecdd!2sCasa+De+Tobias+Mountain+Resort%2C+Alibungbungan%2C+Nagcarlan%2C+Laguna!3m2!1d14.153554499999998!2d121.4149029!5e1!3m2!1sen!2sph!4v1548942171554" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
     </div>
   </div>
@@ -325,11 +325,11 @@ body, html {
 <footer class="w3-center w3-black w3-padding-64">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
-    <a href="https://www.facebook.com/Rosario.Resort/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-    <a href="https://www.google.com.ph/search?q=Rosario+Resort+and+Hotel&oq=Rosario+Resort+and+Hotel&aqs=chrome..69i57l2j69i60l4.9849j0j4&sourceid=chrome&ie=UTF-8"><i class="fa fa-google w3-hover-opacity"></i></a>
+    <a href="https://www.facebook.com/Casa-De-Tobias-Mountain-Resort-254137624658146/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.waze.com/en/directions/philippines/nagcarlan/casa-de-tobias-mountain-resort/79560845.795739526.5393912.html"><i class="fa fa-google w3-hover-opacity"></i></a>
 
   </div>
-  <p>Copyright © Rosario Resort and Hotel 2018</p>
+  <p>Copyright © Casa de Tobias Mountain Resort 2019</p>
 </footer>
 
 <!-- Add Google Maps -->
@@ -364,7 +364,7 @@ window.onclick = function(event) {
 $(document).ready(function(){
 
     $("#from").datepicker({
-        minDate: 0,
+        minDate: +2,
         maxDate: "+365D",
         numberOfMonths: 1,
         onSelect: function(selected) {

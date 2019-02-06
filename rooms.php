@@ -103,76 +103,7 @@ include('navlinks.php');
 								</div>
 							</div>
 						</div>
-<!-- //Modal1 -->
-<div id="availability-agileits">
 
-
-			<div class="clearfix"> </div>
-</div>
-<br />
-	 <!-- rooms & rates -->
-      <div class="plans-section" id="rooms">
-				 <div class="container">
-				 <h3 class="title-w3-agileits title-black-wthree">Rooms And Rates</h3>
-						<div class="priceing-table-main">
-
-				<?php
-
-
-
-					$sql = "SELECT * FROM room";
-					$result = $con->query($sql);
-
-					while($row=$result->fetch_assoc()){
-
-					$sql1 = "SELECT sum(NRoom) as NRoomAvail FROM roomreserve WHERE roomid = '".$row['roomid']."'";
-					$query = mysqli_query($connection,$sql1) or die ("Database Connection Failed");
-      				$result1 = mysqli_fetch_assoc($query);
-
-					$roomleft = $row['roomavailable'] - $result1['NRoomAvail'];
-
-					?>
-						 <div class="col-md-3 price-grid">
-							<div class="price-block agile">
-								<div class="price-gd-top">
-								<img src="<?=base_url().''.$row['roomimg']?>" alt=" " class="img-responsive" />
-									<h4><?=$row['roomtype']?></h4>
-								</div>
-								<div class="price-gd-bottom">
-									  <div class="price-list">
-									<ul>
-									<li>
-										<?=$row['description']?>
-										<br />
-										Good For <?=$row['roomcapacity']?> Person <br />
-										Room Capacity : Up to <?=($row['roomcapacity'] + $row['additional'])?><br />
-										<?=(($row['roomavailable'] > $result1['NRoomAvail']) ? '
-										<label style="color:green;">
-										'.$roomleft.' Rooms left</label>':
-										'<label style="color:red;">
-										'.$roomleft.' Rooms left</label>')?></li>
-								     </ul>
-							</div>
-									<div class="price-selet">
-										<h3><span>₱</span><?=$row['roomprice']?></h3>
-										<?=(($row['roomavailable'] > $result1['NRoomAvail']) ? '<a href="newreservation/step1.php?id='.$row['roomid'].'"><span style="color:green;">Book Now</span></a>':'<a style="cursor: no-drop;"><span style="color:red;">Not Available</span></a>')?>
-									</div>
-								</div>
-							</div>
-						</div>
-					<?php
-					}
-				?>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-	 <!--// rooms & rates -->
-			<div class="copy">
-		      <!--  <p>© 2018 . All Rights Reserved | Design by <a href="index.php">SUNRISE</a> </p>-->
-		    </div>
-<!--/footer -->
-<!-- js -->
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 <!-- contact form -->
 <script src="js/jqBootstrapValidation.js"></script>

@@ -294,7 +294,7 @@ $countersd = 0;
 																		</table><br><br>
 																		<table  cellpadding='1' cellspacing='0' style='font-size: 17px;' width='100%'>
                                                                             <tr>
-                                                                               <td width='60%'>Rosario Resort and Hotel Bank Account: </td>
+                                                                               <td width='60%'>Casa de Tobias Mountain Resort Account: </td>
                                                                             </tr>
                                                                             <tr>
                                                                                 <td><b>MR. COMMONWEALTH PROPERTIES INC. (MRCPI)</b></td>
@@ -338,7 +338,7 @@ $countersd = 0;
                                             <table border='0' cellpadding='0' cellspacing='0' width='600' class='flexibleContainer'><tbody><tr><td align='center' valign='top' width='600' class='flexibleContainerCell'>
                                                         <table border='0' cellpadding='40' cellspacing='0' width='100%'><tbody><tr><td valign='top' bgcolor='#E1E1E1'>
                                                                     <div style='font-family:Helvetica, Arial, sans-serif;font-size:13px;color:#828282;text-align:center;line-height:120%;'>
-                                                                        <div>Copyright © 2018 <span style='color:#828282;'>Rosario Resort and Hotel Resort</span></a>. All&nbsp;rights&nbsp;reserved.</div>
+                                                                        <div>Copyright © 2019 <span style='color:#828282;'>Casa de Tobias Mountain Resort</span></a>. All&nbsp;rights&nbsp;reserved.</div>
                                                                     </div>
                                                                 </td>
                                                             </tr></tbody></table></td>

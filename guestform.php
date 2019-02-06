@@ -24,7 +24,6 @@ while($ctr < $count){
 		$rExtra=0;
 	}
 	else{
-
 		$rnum = $rcnum * 2;
 		$rExtra = $rcnum * $cpcty;
 
@@ -212,15 +211,10 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="index.php#home" class="w3-bar-item w3-button w3-wide">Casa de Tobias Mountain Resort</a>
+    <a href="index.php#home" class="w3-bar-item w3-button w3-wide"><img src="images/mini-logo.jpg" style="width:100%;max-width:80px"></a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="index.php#about" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="index.php#room" class="w3-bar-item w3-button"> ROOMS</a>
-      <a href="index.php#gallery" class="w3-bar-item w3-button"> GALLERY</a>
-      <a href="index.php#contact" class="w3-bar-item w3-button"> CONTACT</a>
-      <a href="Guest/_log-in.php" class="w3-bar-item w3-button"> LOG-IN</a>
-      <a href="datepickerform.php" class="w3-bar-item w3-button" style="background: #000; color: #fff;"> BOOK NOW</a>
+      <a href="datepickerform.php" class="w3-bar-item w3-button"> Reset Reservation</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -298,7 +292,7 @@ body, html {
 <form class="w3-container" method="POST" action="guestform.php" name="myForm">
 <h2 class="w3-center">GUEST FORM</h2>
 <div class="w3-card-2" style="margin-top: 20px;">
-  <div class="w3-container w3-black">
+  <div class="w3-container w3-pale-green">
     <h2>Registration</h2>
   </div>
 
@@ -315,13 +309,14 @@ body, html {
 
 </div>
 <div class="w3-card-2" style="margin-top: 30px;">
-  <div class="w3-container w3-black">
+  <div class="w3-container w3-pale-green">
     <h2>Personal Information</h2>
   </div>
   <div class="w3-row-padding">
 
     <p><div class="w3-third">
-    	<input class="w3-input w3-border" type="text" name="firstName" placeholder="First Name" onfocus="this.select()" onkeypress="return restrictCharacters(this, event, alphaOnly);"  autocomplete="off" REQUIRED /></div></p>
+    	<input class="w3-input w3-border" type="text" name="firstName" placeholder="First Name" onfocus="this.select()" onkeypress="return
+			Characters(this, event, alphaOnly);"  autocomplete="off" REQUIRED /></div></p>
     <p><div class="w3-third">
     	<input class="w3-input w3-border" type="text" name="middleName" placeholder="Middle Name" onfocus="this.select()" onkeypress="return restrictCharacters(this, event, alphaOnly);"  autocomplete="off" REQUIRED/></div></p>
     <p><div class="w3-third">
@@ -335,7 +330,7 @@ body, html {
     <p><div class="w3-container">
     	<textarea class="w3-input w3-border" name= "address" placeholder="Address" rows= "4" cols= "50" onfocus="this.select()" REQUIRED/></textarea></div></p>
     <p><div class="w3-container">
-    	<input class="w3-input w3-border" type = "text" name = "mobNum" placeholder = "Mobile Number" onkeypress="return restrictCharacters(this, event, phoneOnly);" autocomplete="off" REQUIRED />.</div></p>
+    	<input class="w3-input w3-border" name = "mobNum" placeholder = "Mobile Number" onkeypress="return restrictCharacters(this, event, phoneOnly);" autocomplete="off" REQUIRED />.</div></p>
     <p><div class="w3-half">
             <label style="font-size: 18px;">Guest(s): &nbsp;</label>
             <select style="width:200;" class="w3-select w3-border" name="adult" REQUIRED>
@@ -356,7 +351,7 @@ body, html {
 	</div>
 </div>
 <div class="w3-card-2" style="margin-top: 30px;">
-  <div class="w3-container w3-black">
+  <div class="w3-container w3-pale-green">
     <h2>Payment Details</h2>
   </div>
 
@@ -394,8 +389,8 @@ body, html {
 <footer class="w3-center w3-black w3-padding-64">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
-    <a href="https://www.facebook.com/Rosario.Resort/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-    <a href="https://www.google.com.ph/search?q=Rosario+Resort+and+Hotel&oq=Rosario+Resort+and+Hotel&aqs=chrome..69i57l2j69i60l4.9849j0j4&sourceid=chrome&ie=UTF-8"><i class="fa fa-google w3-hover-opacity"></i></a>
+    <a href="https://www.facebook.com/Casa-De-Tobias-Mountain-Resort-254137624658146/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.waze.com/en/directions/philippines/nagcarlan/casa-de-tobias-mountain-resort/79560845.795739526.5393912.html"><i class="fa fa-google w3-hover-opacity"></i></a>
 
   </div>
   <p>Copyright © Casa de Tobias Mountain Resort 2019</p>
@@ -419,7 +414,7 @@ window.onclick = function(event) {
 $(document).ready(function(){
 
     $("#from").datepicker({
-        minDate: 0,
+        minDate: +2,
         maxDate: "+365D",
         numberOfMonths: 1,
         onSelect: function(selected) {
@@ -457,7 +452,7 @@ function w3_close() {
 
 
 <script type="text/javascript">
-        function checkPhone() {s
+        function checkPhone() {
             var phone = document.forms["myForm"]["password"].value;
             var pcon = document.forms["myForm"]["confirmnpassword"].value;
             var phoneNum = phone;

@@ -301,7 +301,7 @@ if($ModeOfPayment == 'Paypal'){
 	mysqli_close($conn);
 
 	print ("<script language='JavaScript'>
-	window.location.href='http://rosarioresortandhotel.com/RRH/Guest/index.php';
+	window.location.href='localhost/casadetibiasofficial/Guest/index.php';
 	</SCRIPT>");
 	$_SESSION['guestid'] = $GID;
  	$_SESSION['Email'] = $email;

@@ -48,7 +48,7 @@ $reservation = trim($reservation, ",");
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>RRH - Reports</title>
+    <title>Casa de Tobias - Reports</title>
 
     <!-- Bootstrap core CSS-->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -182,7 +182,7 @@ $reservation = trim($reservation, ",");
         <footer class="sticky-footer">
           <div class="container my-auto">
             <div class="copyright text-center my-auto">
-              <span>Copyright © Rosario Resort and Hotel 2018</span>
+              <span>Copyright © Casa de Tobias Mountain Resort 2019</span>
             </div>
           </div>
         </footer>

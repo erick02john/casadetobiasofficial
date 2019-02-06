@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 include("../dbconn.php");
 if(isset($_SESSION['Username'])){
@@ -42,7 +42,7 @@ $account = $_SESSION['UserType'];
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php" style=" color:#fff; ">Rosario Resort and Hotel</a>
+            <a class="navbar-brand" href="index.php" style=" color:#fff; ">Casa de Tobias Mountain Resort</a>
           </div>
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -50,7 +50,7 @@ $account = $_SESSION['UserType'];
               <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: #fff;"><span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="Profile.php">Profile</a></li>
-                <li><a href="../Admin/logout.php" class="view btn-sm active" data-toggle="modal" ><i class="glyphicon glyphicon-log-out"></i>&nbsp;&nbsp;Log Out</a></li>                       
+                <li><a href="../Admin/logout.php" class="view btn-sm active" data-toggle="modal" ><i class="glyphicon glyphicon-log-out"></i>&nbsp;&nbsp;Log Out</a></li>
               </ul>
             </li>
           </ul>
@@ -78,7 +78,7 @@ $account = $_SESSION['UserType'];
                   <li><a href="#">Restaurant</a></li>
                 </ul>
                 </li>
-              
+
           </ul>
 
         </div>
@@ -89,11 +89,11 @@ $account = $_SESSION['UserType'];
           <?php
           echo "<h3>" . $_SESSION['Username'] . "</h3>";
           include 'display.php';
-          ?>  
-          
+          ?>
 
 
-        
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

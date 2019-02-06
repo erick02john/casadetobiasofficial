@@ -76,7 +76,7 @@ if($type != 'Admin' AND $type != 'Frontdesk'){
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>RRH - Walk-in</title>
+    <title>Casa de Tobias - Walk-in</title>
 
     <!-- Bootstrap core CSS-->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -307,7 +307,7 @@ if($type != 'Admin' AND $type != 'Frontdesk'){
         maxDate:"+365D",
         numberOfMonths: 1,
         onSelect: function(selected) {
-           $("#from").datepicker("option", selecd)
+           $("#from").datepicker("option", selected)
         }
     });
 });
@@ -319,7 +319,7 @@ if($type != 'Admin' AND $type != 'Frontdesk'){
    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
-   <script type="text/javascript">
+   <!-- <script type="text/javascript">
         $(function () {
             $("#datepicker").datepicker({
                 shoeButtonPanel: true,
@@ -330,7 +330,7 @@ if($type != 'Admin' AND $type != 'Frontdesk'){
              });
         });
 
-   </script>
+   </script> -->
 
 
 

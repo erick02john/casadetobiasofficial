@@ -13,14 +13,14 @@ function restrictCharacters(myfield, e, restrictionType) {
     var character = String.fromCharCode(code);
 
     if (code==27) { this.blur(); return false; }
-    
+
     if (!e.ctrlKey && code!=9 && code!=8 && code!=36 && code!=37 && code!=38 && (code!=39 || (code==39 && character=="'")) && code!=40) {
         if (character.match(restrictionType)) {
             return true;
         } else {
             return false;
         }
-        
+
     }
-}
+  }
 </script>

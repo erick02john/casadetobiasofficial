@@ -51,7 +51,7 @@
                 <form method ='Post' action='container.php'>
                 <input type='hidden' name='resID' value ='{$row['ReservationID']}'>
                 <button type='submit' name='resched' class ='btn btn-info' style='font-size: 11px;'>Reschedule</button>";
-    
+
           echo "</form></a></td>
                 <td align= 'center'>
                 <form method ='Post' action='getdate.php'>
@@ -59,7 +59,7 @@
                 <input type='hidden' name='checkIn' value ='{$row['CheckInDate']}'>
                 <input type='hidden' name='checkOut' value ='{$row['CheckOutDate']}'>
                 <button type='submit' name='modify' class ='btn btn-info' style='font-size: 11px;'>Modify Room</button>";
-    
+
           echo "</form></td>";
 
 }else {
@@ -81,11 +81,11 @@ echo "<td>";
     <form method = 'Post' target='_blank' action='samplepdf.php'>
     <input class = 'form-control' type='hidden' name='bid' value='{$row['BillingID']}' readonly/>
     <input class = 'form-control' type='hidden' name='rid' value='{$row['ReservationID']}' readonly/>
-    "; ?> <?php include 'Admin/displayRecit.php' ?> <?php echo"
+    "; ?> <?php include '../Admin/displayRecit.php' ?> <?php echo"
     </div>
     </div>
-    </div>              
-        
+    </div>
+
         <div class='modal-footer'>
         <a class='btn btn-default' data-dismiss='modal'/>Cancel</a>
         <input type='submit' class='btn btn-warning' name='print' value='Print' />
@@ -111,4 +111,3 @@ echo "<td>";
                     <!-- /.panel -->
                 </div>
                 <!-- /.col-lg-6 -->
-      

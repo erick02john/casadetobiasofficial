@@ -162,7 +162,7 @@ $countersd = 0;
 	$date = date('Y-m-d');
 	$ttlrms = $_SESSION['ttlrms'];
 	$to = $email;
-	$subject = "Rosario Resort and Hotel Reservation Modification";
+	$subject = "Casa de Tobias Mountain Resort Reservation Modification";
 	$message = "
 <td align='center' valign='top'>
 
@@ -174,7 +174,7 @@ $countersd = 0;
 
                                                         <table border='0' bgcolor='#003366' width='100%' height = '50px'><tbody><tr><td align='left' valign='middle'>
 
-                                                            <center><font style='font-family: Arial Black, Helvetica, sans-serif;' color= '#dfab21'>Rosario Resort and Hotel</center>
+                                                            <center><font style='font-family: Arial Black, Helvetica, sans-serif;' color= '#dfab21'>Casa de Tobias Mountain Resort</center>
                                                             </tr></tbody></table></td>
                                                 </tr></tbody></table></td>
                                     </tr></tbody></table></td>
@@ -216,10 +216,10 @@ $countersd = 0;
 																				<td width='40%'>Check-out Date: </td><td width='60%'>$CheckOutDate</td>
 																			</tr>
 																			<tr>
-																				<td width='40%'>Hotel Address: </td><td width='60%'>National Highway, Brgy. Quilib Rosario, Batangas, Philippines</td>
+																				<td width='40%'>Hotel Address: </td><td width='60%'>Alibungbungan Nagcarlan Laguna</td>
 																			</tr>
 																			<tr>
-																				<td width='40%'>Hotel Phone: </td><td width='60%'>(043) 749 4613</td>
+																				<td width='40%'>Hotel Phone: </td><td width='60%'>(02) 794 3471</td>
 																			</tr>
 																			<tr>
 																				<td width='40%'>Alternative Hotel Phone: </td><td width='60%'>(043)  4698 </td>
@@ -255,7 +255,7 @@ $countersd = 0;
 																		</table><br><br>
 																		<table  cellpadding='1' cellspacing='0' style='font-size: 17px;' width='100%'>
                                                                             <tr>
-                                                                               <td width='60%'>Rosario Resort and Hotel Bank Account: </td>
+                                                                               <td width='60%'>Casa de Tobias Mountain Resort Account: </td>
                                                                             </tr>
                                                                             <tr>
                                                                                 <td><b>MR. COMMONWEALTH PROPERTIES INC. (MRCPI)</b></td>
@@ -299,7 +299,7 @@ $countersd = 0;
                                             <table border='0' cellpadding='0' cellspacing='0' width='600' class='flexibleContainer'><tbody><tr><td align='center' valign='top' width='600' class='flexibleContainerCell'>
                                                         <table border='0' cellpadding='40' cellspacing='0' width='100%'><tbody><tr><td valign='top' bgcolor='#E1E1E1'>
                                                                     <div style='font-family:Helvetica, Arial, sans-serif;font-size:13px;color:#828282;text-align:center;line-height:120%;'>
-                                                                        <div>Copyright © 2018 <span style='color:#828282;'>Rosario Resort and Hotel Resort</span></a>. All&nbsp;rights&nbsp;reserved.</div>
+                                                                        <div>Copyright © 2019 <span style='color:#828282;'>Casa de Tobias Mountain Resort Resort</span></a>. All&nbsp;rights&nbsp;reserved.</div>
                                                                     </div>
                                                                 </td>
                                                             </tr></tbody></table></td>

@@ -154,15 +154,10 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="index.php#home" class="w3-bar-item w3-button w3-wide">Casa de Tobias Mountain Resort</a>
+    <a href="index.php#home" class="w3-bar-item w3-button w3-wide"><img src="images/mini-logo.jpg" style="width:100%;max-width:80px"></a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="index.php#about" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="index.php#room" class="w3-bar-item w3-button"> ROOMS</a>
-      <a href="index.php#gallery" class="w3-bar-item w3-button"> GALLERY</a>
-      <a href="index.php#contact" class="w3-bar-item w3-button"> CONTACT</a>
-      <a href="Guest/_log-in.php" class="w3-bar-item w3-button"> LOG-IN</a>
-      <a href="datepickerform.php" class="w3-bar-item w3-button" style="background: #000; color: #fff;"> BOOK NOW</a>
+      <a href="datepickerform.php" class="w3-bar-item w3-button"> Reset Reservation</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -197,10 +192,10 @@ body, html {
         <li>Summary</li>
       </ul>
     </div>
-     <div class="w3-container w3-black">
+     <div class="w3-container w3-pale-green">
       <h2><i class="w3-margin-right"></i>RESERVE DATE</h2>
     </div>
-    <div class="w3-container w3-gray w3-padding-16">
+    <div class="w3-container w3-light-gray w3-padding-16">
       <form action="datepickerform.php" method="post" ">
         <div class="w3-row-padding" style="margin:0 -16px;">
           <div class="w3-half w3-margin-bottom">
@@ -224,8 +219,8 @@ body, html {
 <footer class="w3-center w3-black w3-padding-64">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
-    <a href="https://www.facebook.com/Rosario.Resort/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-    <a href="https://www.google.com.ph/search?q=Rosario+Resort+and+Hotel&oq=Rosario+Resort+and+Hotel&aqs=chrome..69i57l2j69i60l4.9849j0j4&sourceid=chrome&ie=UTF-8"><i class="fa fa-google w3-hover-opacity"></i></a>
+    <a href="https://www.facebook.com/Casa-De-Tobias-Mountain-Resort-254137624658146/"></i></a>
+    <a href="https://www.waze.com/en/directions/philippines/nagcarlan/casa-de-tobias-mountain-resort/79560845.795739526.5393912.html"></i></a>
 
   </div>
   <p>Copyright © Casa de Tobias Mountain Resort 2019</p>
@@ -248,7 +243,7 @@ window.onclick = function(event) {
 $(document).ready(function(){
 
     $("#from").datepicker({
-        minDate: 0,
+        minDate: +3,
         maxDate: "+365D",
         numberOfMonths: 1,
         onSelect: function(selected) {

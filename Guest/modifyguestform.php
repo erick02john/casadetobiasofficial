@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 include("dbconn.php");
 include("../scriptvalidation.php");
@@ -35,14 +35,14 @@ $sdNum = 0;
 	while($row4 = mysqli_fetch_array($query4)){
 		$cpctyST = $row4['RoomCapacity'];
 	}
-	
+
 
 
 		if($_SESSION['presSNum'] == ' '){
 				$psNum = 0;
 				$psExtra = 0;
 		}else{
-							
+
 				$psNum = $_SESSION['presSNum'] * 2;
 				$psExtra = $_SESSION['presSNum'] * $cpctyPQ;
 		}
@@ -67,7 +67,7 @@ $sdNum = 0;
 				$sdNum = $_SESSION['supDNum'] * 2;
 				$sdExtra = $_SESSION['supDNum'] * $cpctyST;
 		}
-		
+
   $totalg = $psNum + $pdNum + $ssNum + $sdNum;
   $totalExtra = (($psExtra - $psNum) + ($pdExtra - $pdNum) + ($ssExtra - $ssNum) + ($sdExtra - $sdNum));
 if (!empty($_POST)):
@@ -88,10 +88,10 @@ if (!empty($_POST)):
       $_SESSION['adultadd'] = 0;
     } else {
       $_SESSION['adultadd'] = $_POST['adultadd'];
-    } 
+    }
 
-    
-    
+
+
     echo ("<script language='JavaScript'>
       window.location.href='modifysummary.php';
       </SCRIPT>");
@@ -137,12 +137,12 @@ if (!empty($_POST)):
 <div class="wrap">
   <nav class="nav-bar navbar-inverse" role="navigation">
       <div id ="top-menu" class="container-fluid active">
-          <a class="navbar-brand" href="index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; margin-left: 80px;">Rosario Resort and Hotel</a>
-          <div class="nav navbar-nav">        
-              
-          
+          <a class="navbar-brand" href="index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; margin-left: 80px;">Casa de Tobias Mountain Resort</a>
+          <div class="nav navbar-nav">
+
+
               </div>
-      </div>      
+      </div>
   </nav>
     <br><br><br><br>
 
@@ -152,10 +152,10 @@ if (!empty($_POST)):
     <div class='table-responsive'>
 
     <table class="table">
-                  
+
     <form method="Post" action = "modifyguestform.php">
 
-  
+
   <tr>
   <td><label>Number of Guest: </label>
   <select style="width:100;" class="form-control" name="adult" REQUIRED>

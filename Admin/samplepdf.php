@@ -62,7 +62,7 @@ $pdf->SetFont('Arial','',12);
 $pdf->Cell(130 ,5,'Alibungbungan, Nagcarlan, Laguna',0,0);
 $pdf->Cell(59 ,5,'',0,1);//end of line
 
-$pdf->Cell(130 ,5,'Rosario Batangas Philippines',0,0);
+$pdf->Cell(130 ,5,'Casa de Tobias Nagcarlan',0,0);
 $pdf->Cell(25 ,5,'Date',0,0);
 $pdf->Cell(34 ,5,$date,0,1);//end of line
 

@@ -73,7 +73,7 @@ echo "<script language='JavaScript'>
 			</SCRIPT>");
 
 }
-
+al
 ?>
 <?php else: ?>
 
@@ -88,7 +88,7 @@ echo "<script language='JavaScript'>
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>RRH - Walk-in</title>
+    <title>Casa de Tobias - Walk-in</title>
 
     <!-- Bootstrap core CSS-->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -200,7 +200,7 @@ echo "<script language='JavaScript'>
             <span>Accounts</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Discounts.php">
+          <a class="nav-link" href="Discounts.php">al
             <i class="far fa-address-card"></i>
             <span>Discount</span></a>
        </li>

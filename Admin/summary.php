@@ -27,7 +27,7 @@ while($ctr < $count){
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>RRH - Walk-in</title>
+    <title>Casa de Tobias - Walk-in</title>
 
     <!-- Bootstrap core CSS-->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">

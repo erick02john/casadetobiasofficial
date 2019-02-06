@@ -433,7 +433,7 @@ li a.active {
   $(document).ready(function(){
 
     $("#from").datepicker({
-        minDate: 0,
+        minDate: +2,
         maxDate: "+365D",
         numberOfMonths: 1,
         onSelect: function(selected) {

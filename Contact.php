@@ -245,15 +245,15 @@ html, body {
         </div>
         <div class="map">
           <h2>Location</h2>
-          <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15494.586961859659!2d121.206586!3d13.860231!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd45d9221f9f1ea35!2sRosario+Resort+and+Hotel!5e0!3m2!1sen!2sph!4v1517279324056" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d16122.454019686036!2d121.40985074751899!3d14.153485976700352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x33bd59965aaaaaab%3A0xbd2e2e6cb805ecdd!2sCasa+De+Tobias+Mountain+Resort%2C+Alibungbungan%2C+Nagcarlan%2C+Laguna!3m2!1d14.153554499999998!2d121.4149029!5e1!3m2!1sen!2sph!4v1548942171554" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
       </div>
 
     </div>
 
      <div class="grid">
-  <a href="https://www.facebook.com/Rosario.Resort/" class="fa fa-facebook" target="_blank"></a>
-  <a href="https://www.google.com.ph/search?q=rosario+resort+and+gotel&oq=rosario+resort+and+gotel&aqs=chrome..69i57l2j69i60l4.9849j0j4&sourceid=chrome&ie=UTF-8" class="fa fa-google" target="_blank"></a>
+  <a href="https://www.facebook.com/Casa-De-Tobias-Mountain-Resort-254137624658146/" class="fa fa-facebook" target="_blank"></a>
+  <a href="https://www.waze.com/en/directions/philippines/nagcarlan/casa-de-tobias-mountain-resort/79560845.795739526.5393912.html" class="fa fa-google" target="_blank"></a>
 </div>
     <div id="footer" class="footer">
       <div class="container">
@@ -261,7 +261,7 @@ html, body {
             <h4>Contact Us</h4>
             <p><i class="fa fa-home fa-lg" aria-hidden="true"></i> Alibungbungan, Nagcarlan, Laguna </p>
             <p><i class="fa fa-envelope fa-lg" aria-hidden="true"></i> casadetobiasmountainresort.com</p>
-            <p><i class="fa fa-phone fa-lg" aria-hidden="true"></i> (043) 740 4813 </p>
+            <p><i class="fa fa-phone fa-lg" aria-hidden="true"></i> (02) 794 3471 </p>
             <p><i class="fa fa-globe fa-lg" aria-hidden="true"></i> website </p>
           </div>
         </div>

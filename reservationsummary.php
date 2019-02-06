@@ -135,15 +135,10 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="index.php#home" class="w3-bar-item w3-button w3-wide">Casa de Tobias Mountain Resort</a>
+    <a href="index.php#home" class="w3-bar-item w3-button w3-wide"><img src="images/mini-logo.jpg" style="width:100%;max-width:80px"></a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="index.php#about" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="index.php#room" class="w3-bar-item w3-button"> ROOMS</a>
-      <a href="index.php#gallery" class="w3-bar-item w3-button"> GALLERY</a>
-      <a href="index.php#contact" class="w3-bar-item w3-button"> CONTACT</a>
-      <a href="Guest/_log-in.php" class="w3-bar-item w3-button"> LOG-IN</a>
-      <a href="datepickerform.php" class="w3-bar-item w3-button" style="background: #000; color: #fff;"> BOOK NOW</a>
+      <a href="datepickerform.php" class="w3-bar-item w3-button"> Reset Reservation</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -178,7 +173,7 @@ body, html {
         <div class="w3-container w3-center w3-white">
   <div class="w3-row-padding">
     <div class="w3-middle">
-        <ul class="w3-ul w3-white w3-hover-shadow"><li class="w3-black w3-xlarge w3-padding-48">RESERVATION SUMMARY</li></ul>
+        <ul class="w3-ul w3-white w3-hover-shadow"><li class="w3-pale-green w3-xlarge w3-padding-48">RESERVATION SUMMARY</li></ul>
 
 
 
@@ -247,7 +242,14 @@ body, html {
                                 echo "<font size='4' color='#4E8975'>".'&#8369;'.number_format($down) . " </font>";
                             }
                         ?></label><br />
-
+                        <font size="3">&nbsp;&nbsp;--------------------------------------------------------------------</font><br />
+                        <h2 style="text-align:center;">INSTRUCTIONS</h2>
+                        <h3 style="text-align:center;">Step1</h3>
+                        <font size="4">Go to Casa de Tobias Homepage and click manage reservation</label><br />
+                        <h3 style="text-align:center;">Step2</h3>
+                        <font size="4">Apply the refernce number sent by via email</label><br />
+                        <h3 style="text-align:center;">Step3</h3>
+                        <font size="4">Customer may add edit delete and upload the copy of bank deposit slip</label><br />
 
                         <br /><br /><br />
 
@@ -330,9 +332,10 @@ body, html {
     <input type="hidden" name="handling" value="0">
     <input type="hidden" name="rm" value="2">
     <input type="hidden" name="cbt" value="Please Click Here to Complete Payment">
-    <input type="hidden" name="cancel_return" value="http://rosarioresortandhotel.com/RRH/reservationsummary.php">
-    <input type="hidden" name="return" value="http://rosarioresortandhotel.com/RRH/Paypal/success.php">
+    <input type="hidden" name="cancel_return" value="http://localhost/casadetobiasofficial/reservationsummary.php">
+    <input type="hidden" name="return" value="http://localhost/casadetobiasofficial/Paypal/success.php">
     <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+
 
 
                                         <input type="submit" class="btn btn-success" id="reserve" name="submit" value="Confirm" alt="PayPal - The safer, easier way to pay online!" ondblclick="this.disabled=true;" />
@@ -356,8 +359,8 @@ body, html {
 <footer class="w3-center w3-black w3-padding-64">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
-    <a href="https://www.facebook.com/Rosario.Resort/"><i class="fa fa-facebook-official w3-hover-opacity w3-black"></i></a>
-    <a href="https://www.google.com.ph/search?q=Rosario+Resort+and+Hotel&oq=Rosario+Resort+and+Hotel&aqs=chrome..69i57l2j69i60l4.9849j0j4&sourceid=chrome&ie=UTF-8"><i class="fa fa-google w3-hover-opacity w3-black"></i></a>
+    <a href="https://www.facebook.com/Casa-De-Tobias-Mountain-Resort-254137624658146/"><i class="fa fa-facebook-official w3-hover-opacity w3-black"></i></a>
+    <a href="https://www.waze.com/en/directions/philippines/nagcarlan/casa-de-tobias-mountain-resort/79560845.795739526.5393912.html"><i class="fa fa-google w3-hover-opacity w3-black"></i></a>
 
   </div>
   <p>Copyright © Casa de Tobias Mountain Resort 2019</p>
@@ -397,7 +400,7 @@ window.onclick = function(event) {
 $(document).ready(function(){
 
     $("#from").datepicker({
-        minDate: 0,
+        minDate: +2,
         maxDate: "+365D",
         numberOfMonths: 1,
         onSelect: function(selected) {

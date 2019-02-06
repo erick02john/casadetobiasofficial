@@ -29,7 +29,7 @@ if($type != 'Admin' AND $type != 'Frontdesk'){
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>RRH - Check-out</title>
+    <title>Casa de Tobias - Check-out</title>
 
     <!-- Bootstrap core CSS-->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">

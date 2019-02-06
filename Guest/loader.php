@@ -18,7 +18,7 @@
     }body{
     	margin:0;
     	padding:0;
-    	background: white; 
+    	background: white;
     }
  #myProgress {
   width: 506px;
@@ -39,7 +39,7 @@
   text-align: center;
   line-height: 30px;
   color: white;
-}    	
+}
 
 
     </style>
@@ -49,15 +49,15 @@
 <body onload = "move()">
 	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	<div  class="h1">
-	<h1 >Rosario Resort and Hotel</h1>
+	<h1 >Casa de Tobias Mountain Resort</h1>
 	</div>
 <div id="myProgress">
   <div id="myBar"></div>
 </div>
 <script>
-	
+
 function move() {
-  var elem = document.getElementById("myBar");   
+  var elem = document.getElementById("myBar");
   var width = 0;
   var id = setInterval(frame, 15);
   function frame() {
@@ -66,8 +66,8 @@ function move() {
           window.open("index.php", "_self");
 
     } else {
-      width++; 
-      elem.style.width = width + '%'; 
+      width++;
+      elem.style.width = width + '%';
       elem.innerHTML = width * 1  + '%';
 
     }

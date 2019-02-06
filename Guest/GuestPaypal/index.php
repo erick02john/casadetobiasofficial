@@ -1,25 +1,25 @@
 <?php
 $paypal_url='https://www.sandbox.paypal.com/cgi-bin/webscr'; // Test Paypal API URL
-$paypal_id='davepaulgarciaaabiz@gmail.com'; // Business email ID
+$paypal_id='casadetobiasmountainresort@gmail.com'; // Business email ID
 ?>
 <h4>Welcome, Guest</h4>
- 
-<div class="product">            
+
+<div class="product">
     <div class="image">
         <img src="rrh.jpg" />
     </div>
     <div class="name">
-        Rosario Resort and Hotel Payment
+        Casa de Tobias Mountain Resort Payment
     </div>
     <div class="price">
-    
+
         Price: $10.00
     </div>
     <div class="btn">
     <form action="<?php echo $paypal_url; ?>" method="post" name="frmPayPal1">
     <input type="hidden" name="business" value="<?php echo $paypal_id; ?>">
     <input type="hidden" name="cmd" value="_xclick">
-    <input type="hidden" name="item_name" value="Rosario Resort and Hotel Payment">
+    <input type="hidden" name="item_name" value="Casa de Tobias Mountain Resort Payment">
     <input type="hidden" name="credits" value="510">
     <input type="hidden" name="userid" value="1">
     <input type="hidden" name="amount" value="10.00">
@@ -31,6 +31,6 @@ $paypal_id='davepaulgarciaaabiz@gmail.com'; // Business email ID
     <input type="hidden" name="return" value="http://demo.phpgang.com/payment_with_paypal/success.php">
     <input type="image" src="https://www.sharkzone.co.za/wp-content/themes/wordpress-bootstrap-master/images/Paypal-Button.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
     <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
-    </form> 
+    </form>
     </div>
 </div>

@@ -28,7 +28,7 @@ if($type != 'Admin'){
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>RRH - Accounts</title>
+    <title>Casa de Tobias - Accounts</title>
 
     <!-- Bootstrap core CSS-->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
