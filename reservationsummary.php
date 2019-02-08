@@ -135,7 +135,7 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="index.php#home" class="w3-bar-item w3-button w3-wide"><img src="images/mini-logo.jpg" style="width:100%;max-width:80px"></a>
+    <a href="index.php#home" class="w3-bar-item w3-button w3-wide"><img src="images/mini-logo.jpg" style="width:100%;max-width:50px"></a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="datepickerform.php" class="w3-bar-item w3-button"> Reset Reservation</a>
@@ -245,9 +245,9 @@ body, html {
                         <font size="3">&nbsp;&nbsp;--------------------------------------------------------------------</font><br />
                         <h2 style="text-align:center;">INSTRUCTIONS</h2>
                         <h3 style="text-align:center;">Step1</h3>
-                        <font size="4">Go to Casa de Tobias Homepage and click manage reservation</label><br />
+                        <font size="4">Go to Casa de Tobias Homepage and click Login</label><br />
                         <h3 style="text-align:center;">Step2</h3>
-                        <font size="4">Apply the refernce number sent by via email</label><br />
+                        <font size="4">Apply the Email and Password</label><br />
                         <h3 style="text-align:center;">Step3</h3>
                         <font size="4">Customer may add edit delete and upload the copy of bank deposit slip</label><br />
 

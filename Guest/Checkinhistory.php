@@ -29,7 +29,7 @@ if(!empty($_SESSION['Email'])){
 <style type="text/css">
 .topnav {
   overflow: hidden;
-  background-color: #003366;
+  background-color: #158f53;
 }
 
 .topnav a {
@@ -101,7 +101,7 @@ if(!empty($_SESSION['Email'])){
   <a href="gallery.html">Gallery</a>
   <a href="rates.html">Rates</a>
   <a href="about.php">About</a>
-  <a href="home.php" class="active">Home</a>
+
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 

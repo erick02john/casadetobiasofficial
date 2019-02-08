@@ -193,12 +193,7 @@ input[type="radio"]:checked + label span {
                                 echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>"  . $_SESSION['supSNum']."x". " " . $_SESSION['rmssName'] . " = " .'&#8369;'. number_format($_SESSION['supSReservedTotal'])." Per night</label><br />";
                                 $addsS = $_SESSION['supSReservedTotal'];
                             }
-                            if($_SESSION['supDNum'] == ' '){
 
-                            }else{
-                                echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>"  . $_SESSION['supDNum']."x". " " . $_SESSION['rmdsName'] . " = " .'&#8369;'. number_format($_SESSION['supDReservedTotal'])." Per night</label><br />";
-                                $addsD = $_SESSION['supDReservedTotal'];
-                            }
 
                         ?>
                         <font size="3">&nbsp;&nbsp;--------------------------------------------------------------------</font><br />

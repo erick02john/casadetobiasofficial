@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("dbconn.php");
+include("../dbconn.php");
 include("../scriptvalidation.php");
 
 $type = $_SESSION['UserType'];
@@ -105,7 +105,7 @@ if (!empty($_POST)):
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>RRH - Walk-in</title>
+    <title>Casa de Tobias - Walk-in</title>
 
     <!-- Bootstrap core CSS-->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">

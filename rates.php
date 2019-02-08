@@ -28,7 +28,7 @@ html, body {
 
 .topnav {
   overflow: hidden;
-  background-color: #003366;
+  background-color: #158f53;
 }
 
 .topnav a {
@@ -141,7 +141,7 @@ html, body {
         <a class="navbar-brand" href="../index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; float: left;margin-left: 10px;">Casa de Tobias Mountain Resort</a>
   <a href="datepickerform.php">Reserve</a>
   <a href = "Guest/_log-in.php">Log-In</a>
-  <a href="contact.php" style=" font-size: 17px;">Contact</a>
+  <a href="contactus.php" style=" font-size: 17px;">Contact</a>
   <a href="gallery.php" style=" font-size: 17px;">Gallery</a>
   <a href="rates.php" style=" font-size: 17px;">Rates</a>
   <a href="About.php" style=" font-size: 17px;">About</a>
@@ -161,24 +161,19 @@ html, body {
 
   <div class="col-md-6">
     <div align = "center">
-    <img src="images/images/room (3).jpg" alt="small room" class="form-controls" border="5" width="80%">
-    <h3> Presidential Room (Queen Size Bed) - &#x20b1;3000.00</h3>
+    <img src="images/smallkuboimg/kubo3.jpg" alt="small room" class="form-controls" border="5" width="80%">
+    <h3> Small Kubo House - &#x20b1;1,500.00</h3>
     </div>
   </div>
   <div class="col-md-6">
   <div align="center">
-    <img src="images/images/room (6).jpg" alt="small room" class="form-controls" border="5" width="80%">
-    <h3> Presidential Room (Twin Size Bed) - &#x20b1;3000.00</h3>
+    <img src="images/bigkuboimg/bigkubo2.jpg" alt="small room" class="form-controls" border="5" width="80%">
+    <h3> Big Kubo House - &#x20b1;2000.00</h3>
     </div>
   </div><div class="col-md-6">
   <div align="center">
-    <img src="images/images/room (5).jpg" alt="small room" class="form-controls" border="5" width="80%">
-    <h3> Superior Room (Queen Size Bed) - &#x20b1;2000.00</h3>
-    </div>
-  </div><div class="col-md-6">
-  <div align="center">
-    <img src="images/images/room (4).jpg" alt="small room" class="form-controls" border="5" width="80%">
-    <h3> Superior Room (Twin Size Bed) - &#x20b1;2000.00</h3>
+    <img src="images/dormitory/dormitory2.jpg" alt="small room" class="form-controls" border="5" width="80%">
+    <h3> Dormitory Clubhouse - &#x20b1;2000.00</h3>
     </div>
   </div>
 </div>

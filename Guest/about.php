@@ -141,7 +141,7 @@ html, body {
   <a href="gallery.html">Gallery</a>
   <a href="rates.html">Rates</a>
   <a href="about.php">About</a>
-  <a href="home.php" class="active">Home</a>
+
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 </div>
@@ -155,8 +155,6 @@ html, body {
         <span >ABOUT THE COMPANY</span>
         </h1>
         <center>
-        <img src="../images/image.jpg" width="300" height="250" alt = "About">
-        <img src="../images/image2.jpg" width="300" height="250" alt = "About">
         <br>
         <br>
         <br>

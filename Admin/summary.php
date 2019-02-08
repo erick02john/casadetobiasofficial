@@ -1,7 +1,8 @@
 <?php
 session_start();
-include ('dbconn.php');
+include ('../dbconn.php');
 include ('../scriptvalidation.php');
+$type = $_SESSION['UserType'];
 
 $ctr = 0;
 $ttlrms = 0;

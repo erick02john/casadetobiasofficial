@@ -13,7 +13,7 @@ include ('dbconn.php');
 	$email = $_SESSION['email'];
 
 
-	
+
 
 	//reservation table
 	$ResID = rand(9,9999);
@@ -22,10 +22,10 @@ include ('dbconn.php');
 	$CheckInDate = $_SESSION['from'];
 	$CheckOutDate = $_SESSION['to'];
 	$RevDate = date('Y-m-d');
-	  
+
 	$numdays = abs(strtotime($CheckInDate) - strtotime($RevDate))/86400;
 	if ($numdays > 7) {
-	$ExpirationDate = date('Y-m-d', strtotime($RevDate. ' + 7 days'));		
+	$ExpirationDate = date('Y-m-d', strtotime($RevDate. ' + 7 days'));
 	}else{
 		$ExpirationDate = $CheckOutDate;
 	}
@@ -43,17 +43,17 @@ while($row=mysqli_fetch_assoc($record)){
 while($ctr < $roomcount){
 	$data = mysqli_query($conn, "SELECT * FROM roomtype WHERE RoomType = '$counter[$ctr]'");
 
-	$countpsreserved = mysqli_query($conn, "SELECT * from roominventory ri join roomtype rt on ri.RoomID = rt.RoomID where (Status = 'Reserved' or Status = 'Pending' or Status = 'Checked-in') AND RoomType = '$counter[$ctr]'  AND 
+	$countpsreserved = mysqli_query($conn, "SELECT * from roominventory ri join roomtype rt on ri.RoomID = rt.RoomID where (Status = 'Reserved' or Status = 'Pending' or Status = 'Checked-in') AND RoomType = '$counter[$ctr]'  AND
               ((CheckInDate >= '$CheckInDate' and CheckInDate < '$CheckOutDate' )
             or (CheckOutDate > '$CheckInDate'and CheckOutDate < '$CheckOutDate' ) or (CheckOutDate >= '$CheckOutDate')and(CheckInDate < '$CheckInDate'))");
 
-			
+
 			$presDrow = mysqli_num_rows($countpsreserved);
 			$totalpdrow = mysqli_num_rows($data);
 			$presDcount = $totalpdrow - $presDrow;
 
 	if($_SESSION['roomcount'][$ctr] > $presDcount){
-   
+
     	 echo ("<script language='JavaScript'>
         window.alert('The rooms are already taken')
         window.location.href='selectroom.php';
@@ -62,14 +62,14 @@ while($ctr < $roomcount){
 	$ctr++;
 }
 
-            
 
-    
+
+
 
 	$guest = mysqli_query($conn, "INSERT INTO guest (GuestId, GuestFName, GuestMName, GuestLName, Address, Gender, ContactNumber, Email, Password) VALUES ('$GID', '$fname', '$mname', '$lname', '$address', '$gender', '$mnum', '$email')");
 	$strrms = "";
 
-	
+
 	$rec = mysqli_query($conn, "SELECT Distinct RoomType from roomtype");
 	$roomcount = mysqli_num_rows($rec);
 	$ctr=0;
@@ -84,7 +84,7 @@ while($ctr < $roomcount){
 			while($counterps < $rr){
 				while ($rmsp = mysqli_fetch_assoc($roomSinglePre)){
 					if ($counterps < $rr){
-						$pSemp = mysqli_query($conn, "SELECT * from roominventory where RoomID = '{$rmsp['RoomID']}' AND (Status = 'Reserved' or Status = 'Pending') AND 
+						$pSemp = mysqli_query($conn, "SELECT * from roominventory where RoomID = '{$rmsp['RoomID']}' AND (Status = 'Reserved' or Status = 'Pending') AND
 							((CheckInDate >= '$CheckInDate' and CheckInDate < '$CheckOutDate' )
 						or (CheckOutDate > '$CheckInDate'and CheckOutDate < '$CheckOutDate' ) or (CheckOutDate >= '$CheckOutDate')and(CheckInDate < '$CheckInDate'))");
 						$countps = mysqli_num_rows($pSemp);
@@ -116,14 +116,14 @@ while($ctr < $roomcount){
 	}else{
 		$resStatus = 'Reserved';
 	}
-	$reservation = mysqli_query($conn, "INSERT INTO reservation (ReservationID, GuestID, RoomsReserved, NumberOfAdult, ReservationDate, CheckInDate, CheckOutDate, Status) 
+	$reservation = mysqli_query($conn, "INSERT INTO reservation (ReservationID, GuestID, RoomsReserved, NumberOfAdult, ReservationDate, CheckInDate, CheckOutDate, Status)
 		VALUES('$ResID', '$GID', '$strrms', '$ttlgst', '$date', '$CheckInDate', '$CheckOutDate', '$resStatus')") or die("error reservation");
 
 	//billing table
 	$TotalAmount = $_SESSION['totalroom'];
 	$ModeOfPayment = $_SESSION['modeofpayment'];
 
-	$billing = mysqli_query($conn, "INSERT INTO billing (ReservationID, TotalAmount, PaidAmount, Balance, BillingStatus, ModeOfPayment) 
+	$billing = mysqli_query($conn, "INSERT INTO billing (ReservationID, TotalAmount, PaidAmount, Balance, BillingStatus, ModeOfPayment)
 		VALUES('$ResID','$TotalAmount', '0.00', '$TotalAmount', 'Pending', '$ModeOfPayment')");
 
 	mysqli_close($conn);

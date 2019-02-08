@@ -17,7 +17,7 @@ if(!empty($_SESSION['Email'])){
 $psNum = 0;
 $pdNum = 0;
 $ssNum = 0;
-$sdNum = 0;
+
 
     if($_SESSION['presSNum'] == ' '){
         $psNum = 0;
@@ -41,15 +41,8 @@ $sdNum = 0;
         $ssNum = $_SESSION['supSNum'] * 2;
         $ssExtra = $_SESSION['supSNum'] * 8;
     }
-    if($_SESSION['supDNum'] == ' '){
-        $sdNum = 0;
-        $sdExtra = 0;
-    }else{
-        $sdNum = $_SESSION['supDNum'] * 2;
-        $sdExtra = $_SESSION['supDNum'] * 8;
-    }
-  $totalg = $psNum + $pdNum + $ssNum + $sdNum;
-  $totalExtra = (($psExtra - $psNum) + ($pdExtra - $pdNum) + ($ssExtra - $ssNum) + ($sdExtra - $sdNum));
+  $totalg = $psNum + $pdNum + $ssNum;
+  $totalExtra = (($psExtra - $psNum) + ($pdExtra - $pdNum) + ($ssExtra - $ssNum));
 if (!empty($_POST)):
 
 

@@ -149,13 +149,9 @@ html, body {
   <a href="gallery.html">Gallery</a>
   <a href="rates.html">Rates</a>
   <a href="about.php">About</a>
-  <a href="home.php" class="active">Home</a>
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 
-      <div id="content">
-      <iframe height="500px" width="100%" allowfullscreen="true" src="https://momento360.com/e/uc/c3f10e2f4418487aa4806e3fdfedfcb7?utm_campaign=embed&utm_source=other&utm_medium=other"></iframe>
-      </div>
 <br>
 	<div class="container">
       <form action="datepickerform.php" method="POST">

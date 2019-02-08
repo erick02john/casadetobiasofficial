@@ -154,7 +154,7 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="index.php#home" class="w3-bar-item w3-button w3-wide"><img src="images/mini-logo.jpg" style="width:100%;max-width:80px"></a>
+    <a href="index.php#home" class="w3-bar-item w3-button w3-wide"><img src="images/mini-logo.jpg" style="width:100%;max-width:50px"></a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="datepickerform.php" class="w3-bar-item w3-button"> Reset Reservation</a>

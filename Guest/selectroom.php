@@ -13,14 +13,12 @@ if(empty($from) AND empty($to)){
 }
 else{
 
-$roomSinglePre = mysqli_query($conn, "SELECT * FROM roomtype WHERE RoomType = 'Presidential(Queen Sized-Bed)'");
+$roomSinglePre = mysqli_query($conn, "SELECT * FROM roomtype WHERE RoomType = 'Small Kubo'");
 $rmsp = mysqli_fetch_array($roomSinglePre);
-$roomDoublePre = mysqli_query($conn, "SELECT * FROM roomtype WHERE RoomType = 'Presidential(Twin Sized-Bed)'");
+$roomDoublePre = mysqli_query($conn, "SELECT * FROM roomtype WHERE RoomType = 'Big Kubo House'");
 $rmdp = mysqli_fetch_array($roomDoublePre);
-$roomSingleSup = mysqli_query($conn, "SELECT * FROM roomtype WHERE RoomType = 'Superior(Queen Sized-Bed)'");
+$roomSingleSup = mysqli_query($conn, "SELECT * FROM roomtype WHERE RoomType = 'Dormitory Clubhouse'");
 $rmss = mysqli_fetch_array($roomSingleSup);
-$roomDoubleSup = mysqli_query($conn, "SELECT * FROM roomtype WHERE RoomType = 'Superior(Twin Sized-Bed)'");
-$rmds = mysqli_fetch_array($roomDoubleSup);
 
 $checkIn = $_SESSION['from'];
 $time = strtotime($checkIn);
@@ -47,7 +45,7 @@ if (!empty($_POST)):
 			$psRate = $rmsp['RoomRate'];
 			$psTotal = $psRate * $presS;
 			$_SESSION['presSReservedTotal'] = $psTotal;
-			$_SESSION['rmspName'] = 'Presidential(Queen Sized-Bed)';
+			$_SESSION['rmspName'] = 'Small Kubo';
 			$_SESSION['presSNum'] = $presS;
 		} else {
 			$_SESSION['presSReservedTotal'] = ' ';
@@ -58,7 +56,7 @@ if (!empty($_POST)):
 			$pdRate = $rmdp['RoomRate'];
 			$pdTotal = $pdRate * $presD;
 			$_SESSION['presDReservedTotal'] = $pdTotal;
-			$_SESSION['rmdpName'] = 'Presidential(Twin Sized-Bed)';
+			$_SESSION['rmdpName'] = 'Big Kubo House';
 			$_SESSION['presDNum'] = $presD;
 		} else {
 			$_SESSION['presDReservedTotal'] = ' ';
@@ -69,23 +67,12 @@ if (!empty($_POST)):
 			$ssRate = $rmss['RoomRate'];
 			$ssTotal = $ssRate * $supS;
 			$_SESSION['supSReservedTotal'] = $ssTotal;
-			$_SESSION['rmssName'] = 'Superior(Queen Sized-Bed)';
+			$_SESSION['rmssName'] = 'Dormitory Clubhouse';
 			$_SESSION['supSNum'] = $supS;
 		} else {
 			$_SESSION['supSReservedTotal'] = ' ';
 			$_SESSION['rmssName'] = ' ';
 			$_SESSION['supSNum'] = ' ';
-		}
-		if($supD != ' '){
-			$sdRate = $rmds['RoomRate'];
-			$sdTotal = $sdRate * $supD;
-			$_SESSION['supDReservedTotal'] = $sdTotal;
-			$_SESSION['rmdsName'] = 'Superior(Twin Sized-Bed)';
-			$_SESSION['supDNum'] = $supD;
-		} else {
-			$_SESSION['supDReservedTotal'] = ' ';
-			$_SESSION['rmdsName'] = ' ';
-			$_SESSION['supDNum'] = ' ';
 		}
 		echo("<script language='JavaScript'>
 				window.location.href='guestform.php';
@@ -269,7 +256,7 @@ li a.active {
 				  	<td>
 				  		<div class="roombox">
 						<div class="alert alert-info" style="background-color: #002366; color: #fff;">
-							<h4>Presidential(Queen Sized-Bed)<h4>
+							<h4>Small Kubo<h4>
 						</div>
 
 						<img style="width: 180px; height: 130px;" src="../Admin/upload/<?php echo $rmsp['RoomPhoto']?>" alt="Presidential(Queen Sized-Bed)" />
@@ -281,7 +268,7 @@ li a.active {
 						<h4>Room Rate: <?php echo 'P'.number_format($rmsp['RoomRate'])?> &nbsp;<font size="2">(Per night)</font></h4>
 						<h4><select name="Presidential(Single)" style="width: 150px;"><option value=' '>&nbsp;</option>
 						<?php
-						$countpsreserved = mysqli_query($conn, "SELECT * from roominventory ri join roomtype rt on ri.RoomID = rt.RoomID where (Status = 'Reserved' or Status = 'Pending' or Status = 'Checked-in') AND RoomType = 'Presidential(Queen Sized-Bed)'  AND
+						$countpsreserved = mysqli_query($conn, "SELECT * from roominventory ri join roomtype rt on ri.RoomID = rt.RoomID where (Status = 'Reserved' or Status = 'Pending' or Status = 'Checked-in') AND RoomType = 'Small Kubo'  AND
 							((CheckInDate >= '$checkIn' and CheckInDate < '$checkOut' )
 						or (CheckOutDate > '$checkIn'and CheckOutDate < '$checkOut' ) or (CheckOutDate >= '$checkOut')and(CheckInDate < '$checkIn'))");
 
@@ -309,7 +296,7 @@ li a.active {
 				</div></td>
 				<td><div class="roombox">
 					<div class="alert alert-info" style="background-color: #002366; color: #fff;">
-						<h4>Presidential(Twin Sized-Bed)</h4>
+						<h4>Big Kubo House</h4>
 					</div>
 
 						<img style="width: 180px; height: 130px;" src="../Admin/upload/<?php echo $rmdp['RoomPhoto']?>" alt="Presidential(Twin Sized-Bed)" />
@@ -320,7 +307,7 @@ li a.active {
 						<h4>Room Rate: <?php echo 'P'.number_format($rmdp['RoomRate'])?><font size="2">(Per night)</font></h3>
 						<h4><select name="Presidential(Double)" style="width: 150px;"><option value=' '>&nbsp;</option>
 						<?php
-						$countpdreserved = mysqli_query($conn, "SELECT * from roominventory ri join roomtype rt on ri.RoomID = rt.RoomID where (Status = 'Reserved' or Status = 'Pending' or Status = 'Checked-in') AND RoomType = 'Presidential(Twin Sized-Bed)'  AND
+						$countpdreserved = mysqli_query($conn, "SELECT * from roominventory ri join roomtype rt on ri.RoomID = rt.RoomID where (Status = 'Reserved' or Status = 'Pending' or Status = 'Checked-in') AND RoomType = 'Big Kubo House'  AND
 							((CheckInDate >= '$checkIn' and CheckInDate < '$checkOut' )
 						or (CheckOutDate > '$checkIn'and CheckOutDate < '$checkOut' ) or (CheckOutDate >= '$checkOut')and(CheckInDate < '$checkIn'))");
 
@@ -348,7 +335,7 @@ li a.active {
 
 				<td><div class="roombox">
 					<div class="alert alert-info" style="background-color: #002366; color: #fff;">
-						<header><h4>Superior(Queen Sized-Bed)</h4></header>
+						<header><h4>Dormitory Clubhouse</h4></header>
 					</div>
 					<img style="width: 180px; height: 130px;" src="../Admin/upload/<?php echo $rmss['RoomPhoto']?>" alt="Superior(Queen Sized-Bed)" />
 						<br><font size="2">(Airconditioned room)
@@ -358,7 +345,7 @@ li a.active {
 						<h4>Room Rate: <?php echo 'P'.number_format($rmss['RoomRate'])?><font size="2">(Per night)</font></h3>
 						<h4><select name="Superior(Single)" style="width: 150px;"><option value=' '>&nbsp;</option>
 						<?php
-						$countssreserved = mysqli_query($conn, "SELECT * from roominventory ri join roomtype rt on ri.RoomID = rt.RoomID where (Status = 'Reserved' or Status = 'Pending' or Status = 'Checked-in') AND RoomType = 'Superior(Queen Sized-Bed)'  AND
+						$countssreserved = mysqli_query($conn, "SELECT * from roominventory ri join roomtype rt on ri.RoomID = rt.RoomID where (Status = 'Reserved' or Status = 'Pending' or Status = 'Checked-in') AND RoomType = 'Dormitory Clubhouse'  AND
 							((CheckInDate >= '$checkIn' and CheckInDate < '$checkOut' )
 						or (CheckOutDate > '$checkIn'and CheckOutDate < '$checkOut' ) or (CheckOutDate >= '$checkOut')and(CheckInDate < '$checkIn'))");
 
@@ -383,43 +370,6 @@ li a.active {
 						}
 						?></font></h4>
 				</td>
-				<td><div class="roombox">
-					<div class="alert alert-info" style="background-color: #002366; color: #fff;">
-						<header><h4>Superior(Twin Sized-Bed)</h4></header>
-					</div>
-					<img style="width: 180px; height: 130px;" src="../Admin/upload/<?php echo $rmds['RoomPhoto']?>" alt="Superior(Twin Sized-Bed)" />
-						<br><font size="2">(Airconditioned room)
-						<br />(for 2 persons)
-						<br /><?php echo $rmds['Description'] ?></font><br>
-						<h4>Room Capacity: Up to <?php echo $rmds['RoomCapacity']?> </h3>
-						<h4>Room Rate: <?php echo 'P'.number_format($rmds['RoomRate'])?><font size="2">(Per night)</font></h3>
-						<h4><select name="Superior(Double)" style="width: 150px;"><option value=' '>&nbsp;</option>
-						<?php
-						$countsdreserved = mysqli_query($conn, "SELECT * from roominventory ri join roomtype rt on ri.RoomID = rt.RoomID where (Status = 'Reserved' or Status = 'Pending' or Status = 'Checked-in') AND RoomType = 'Superior(Twin Sized-Bed)'  AND
-							((CheckInDate >= '$checkIn' and CheckInDate < '$checkOut' )
-						or (CheckOutDate > '$checkIn'and CheckOutDate < '$checkOut' ) or (CheckOutDate >= '$checkOut')and(CheckInDate < '$checkIn'))");
-
-
-						$supDrow = mysqli_num_rows($countsdreserved);
-						$totalsdrow = mysqli_num_rows($roomDoubleSup);
-						$supDcount = $totalsdrow - $supDrow;
-
-						for ($x = 1; $x <= $supDcount; $x++) {
-								echo "<option value='$x'>$x</option>";
-							}
-						?>
-						</select><font size="2"><?php
-						if($supDcount <= 0){
-							echo "<br>(No Rooms Available)";
-						}else{
-							if($supDcount > 1){
-							echo "<br>(" . $supDcount . " Rooms Left)";
-						}else{
-							echo "<br>(" . $supDcount . " Room Left)";
-						}
-						}
-						?></font></h4>
-				</td><br>
 			</tr>
 			</table>
 			<div align="right">

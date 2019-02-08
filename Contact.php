@@ -52,7 +52,7 @@ html, body {
 
 .topnav {
   overflow: hidden;
-  background-color: #003366;
+  background-color: #158f53;
 }
 
 .topnav a {
@@ -205,7 +205,7 @@ html, body {
         <a class="navbar-brand" href="index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; float: left;margin-left: 10px;">Casa de Tobias Mountain Resort</a>
   <a href="datepickerform.php">Reserve</a>
   <a href = "Guest/_log-in.php">Log-In</a>
-  <a href="Contact.php">Contact</a>
+  <a href="Contactus.php">Contact</a>
   <a href="gallery.php">Gallery</a>
   <a href="rates.php">Rates</a>
   <a href="About.php">About</a>

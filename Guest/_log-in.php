@@ -304,7 +304,7 @@ session_start();
   <a href="../datepickerform.php" style=" font-size: 17px;">Reserve</a>
   <a href = "_log-in.php" style="cursor: pointer; font-size: 17px;">Log-In</a>
 
-  <a href="../contact.php" style=" font-size: 17px;">Contact</a>
+  <a href="../contactus.php" style=" font-size: 17px;">Contact</a>
   <a href="../gallery.php" style=" font-size: 17px;">Gallery</a>
   <a href="../rates.php" style=" font-size: 17px;">Rates</a>
   <a href="../About.php" style=" font-size: 17px;">About</a>
