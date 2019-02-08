@@ -78,7 +78,7 @@ echo "<td>";
         <div class='modal-body'>
         <div>
     <div class='table-responsive'>
-    <form method = 'Post' target='_blank' action='samplepdf.php'>
+    <form method = 'Post' target='_blank' action='../admin/samplepdf.php'>
     <input class = 'form-control' type='hidden' name='bid' value='{$row['BillingID']}' readonly/>
     <input class = 'form-control' type='hidden' name='rid' value='{$row['ReservationID']}' readonly/>
     "; ?> <?php include '../Admin/displayRecit.php' ?> <?php echo"

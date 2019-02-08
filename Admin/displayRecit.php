@@ -27,7 +27,7 @@
 
 	$bill = mysqli_fetch_array($amount);
     $billing = $bill['TotalAmount'];
-   
+
 	echo "<div class='table-responsive'>
 	<table class='display table' width='100%'>";
 	echo "<tr>
@@ -57,7 +57,7 @@
 		 		  </tr>";
 		  }
     	$tgCount += $count*2;
-    
+
 	}
 	  if($guest['NumberOfAdult'] > 2){
     	$totalgc=$guest['NumberOfAdult']-$tgCount;
@@ -75,7 +75,7 @@
 		  <td>800</td>
 		  <td>$tgPrice</td>
 		  </tr>";
-		  
+
 		}
 	$amenitys = 0;
 		  $amenityss = 0;
@@ -89,7 +89,7 @@
 		  <td></td>
 		  <td>{$amenity['AmenityPrice']}</td>
 		  <td>$amenitys</td>
-		  </tr>"; 
+		  </tr>";
 		}
 		$totalRoomBill+=$amenityss;
 		$totalBill=$totalRoomBill+$tgPrice;

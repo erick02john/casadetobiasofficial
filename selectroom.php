@@ -77,8 +77,21 @@ echo "<script language='JavaScript'>
     <script type="text/javascript" scr="js/lightbox-plus-jquery.min.js"></script>
     <script type="text/javascript" src="http://www.hasseb.fi/bookingcalendar/demo/jquery-ui.js"></script>
     <link rel="stylesheet" type="text/css" href="http://www.hasseb.fi/bookingcalendar/demo/jquery-ui.css">
+		<!-- //for-mobile-apps -->
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/font-awesome.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen">
+		<link href="css/easy-responsive-tabs.css" rel='stylesheet' type='text/css'/>
+		<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+		<link rel="stylesheet" href="css/jquery-ui.css" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
+		<!--fonts-->
+		<link href="//fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
+		<link href="//fonts.googleapis.com/css?family=Federo" rel="stylesheet">
+		<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
 body, html {
     height: 100%;
     line-height: 1.8;

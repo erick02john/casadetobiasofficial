@@ -106,14 +106,26 @@ if (!empty($_POST)):
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/lightbox.css">
-    <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
-    <script type="text/javascript" src="js/lightbox-plus-jquery.js"></script>
-    <script type="text/javascript" scr="js/lightbox-plus-jquery.min.js"></script>
-    <script type="text/javascript" src="http://www.hasseb.fi/bookingcalendar/demo/jquery-ui.js"></script>
-    <link rel="stylesheet" type="text/css" href="http://www.hasseb.fi/bookingcalendar/demo/jquery-ui.css">
+
+<script type="text/javascript" src="js/lightbox-plus-jquery.js"></script>
+<script type="text/javascript" src="http://www.hasseb.fi/bookingcalendar/demo/jquery-ui.js"></script>
+<link rel="stylesheet" type="text/css" href="http://www.hasseb.fi/bookingcalendar/demo/jquery-ui.css">
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen">
+<link href="css/easy-responsive-tabs.css" rel='stylesheet' type='text/css'/>
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+<link rel="stylesheet" href="css/jquery-ui.css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
+<!--fonts-->
+<link href="//fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Federo" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
 body, html {
     height: 100%;
     line-height: 1.8;
@@ -213,16 +225,7 @@ body, html {
 include('navlinks.php');
 ?>
 
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="index.php#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="index.php#room" onclick="w3_close()" class="w3-bar-item w3-button">ROOMS</a>
-  <a href="index.php#gallery" onclick="w3_close()" class="w3-bar-item w3-button">GALLERY</a>
-  <a href="index.php#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-  <a href="Guest/_log-in.php" onclick="w3_close()" class="w3-bar-item w3-button">LOG-IN</a>
-  <a href="datepickerform.php" onclick="w3_close()" class="w3-bar-item w3-button" style="background: #FFF; color: #000;">BOOK NOW</a>
-</nav>
+
 
 <!-- <div class="bgimg-1  w3-container w3-grayscale-min">
   <div class="w3-display-left w3-text-white" style="padding:48px">
@@ -272,7 +275,7 @@ include('navlinks.php');
 <div class="w3-container">
 	<div id="msform">
       <ul id="progressbar">
-        <li class="active"><a href="datepickerform">Select Dates</a></li>
+        <li class="active"><a href="datepickerform.php">Select Dates</a></li>
         <li class="active"><a href="selectroom.php">Select Rooms</a></li>
         <li class="active">Guest Form</li>
         <li>Summary</li>
@@ -287,11 +290,14 @@ include('navlinks.php');
 
   	<div class="w3-row-padding">
 
-    <p><div>
+    <p><div class="w3-twothird">
+			<label><i class="fa fa-address-book-o"></i> Email</label>
     	<input class="w3-input w3-border" type="email" name="email" placeholder="Email" onfocus="this.select()" autocomplete="off" REQUIRED /></div></p>
     <p><div class="w3-half">
+			<label><i class="fa fa-lock	"></i> Password</label>
     	<input class="w3-input w3-border" type="password" name="password" id="password" placeholder="Password" onkeyup="checkPhone();" onfocus="this.select()" autocomplete="off" REQUIRED /></div></p>
     <p><div class="w3-half">
+			<label><i class="fa fa-lock	"></i> Confirm Password</label>
     	<input class="w3-input w3-border" type="password" name="confirmnpassword" id="confirmnpassword" placeholder="Confirm Password" onkeyup='checkPhone();' onfocus="this.select()" autocomplete="off" REQUIRED />.</div></p>
 
 	</div>
@@ -304,11 +310,14 @@ include('navlinks.php');
   <div class="w3-row-padding">
 
     <p><div class="w3-third">
+			<label><i class="fa fa-users"></i> First Name</label>
     	<input class="w3-input w3-border" type="text" name="firstName" placeholder="First Name" onfocus="this.select()" onkeypress="return
 			Characters(this, event, alphaOnly);"  autocomplete="off" REQUIRED /></div></p>
     <p><div class="w3-third">
-    	<input class="w3-input w3-border" type="text" name="middleName" placeholder="Middle Name" onfocus="this.select()" onkeypress="return restrictCharacters(this, event, alphaOnly);"  autocomplete="off" REQUIRED/></div></p>
+			<label><i class="fa fa-users"></i> Middle Name</label>
+    	<input class="w3-input w3-border" type="text" name="middleName" placeholder="Middle Name" onfocus="this.select()" onkeypress="return restrictCharacters(this, event, alphaOnly);"  autocomplete="off" /></div></p>
     <p><div class="w3-third">
+			<label><i class="fa fa-users"></i> Last Name</label>
     	<input class="w3-input w3-border" type="text" name="lastName" placeholder="Last Name" onfocus="this.select()" onkeypress="return restrictCharacters(this, event, alphaOnly);"  autocomplete="off" REQUIRED/></div></p>
     <p><div class="w3-container">
         <label style="font-size: 18px;">Gender: &nbsp;</label>
@@ -319,6 +328,7 @@ include('navlinks.php');
     <p><div class="w3-container">
     	<textarea class="w3-input w3-border" name= "address" placeholder="Address" rows= "4" cols= "50" onfocus="this.select()" REQUIRED/></textarea></div></p>
     <p><div class="w3-container">
+			<label><i class="fa fa-mobile-phone"></i> Mobile Number</label>
     	<input class="w3-input w3-border" name = "mobNum" placeholder = "Mobile Number" onkeypress="return restrictCharacters(this, event, phoneOnly);" autocomplete="off" REQUIRED />.</div></p>
     <p><div class="w3-half">
             <label style="font-size: 18px;">Guest(s): &nbsp;</label>
