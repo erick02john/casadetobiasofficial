@@ -47,12 +47,18 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Casa de Tobias Mountain Resort</title>
-    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet" />
-	<link href="../bootstrap/css/bootstrap-theme.css" rel="stylesheet" />
-	<link rel="stylesheet" type="text/css" media="screen" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
-
-    <link rel="stylesheet" type="text/css" href="../css/animate.min.css">
-	<link rel="stylesheet" type="text/css" href="../css/website/bootstrap.min.css">
+		<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="../css/font-awesome.css" rel="stylesheet">
+		<link rel="stylesheet" href="../css/chocolat.css" type="text/css" media="screen">
+		<link href="../css/easy-responsive-tabs.css" rel='stylesheet' type='text/css'/>
+		<link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen" property="" />
+		<link rel="stylesheet" href="../css/jquery-ui.css" />
+		<link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<script type="text/javascript" src="../js/modernizr-2.6.2.min.js"></script>
+		<!--fonts-->
+		<link href="//fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
+		<link href="//fonts.googleapis.com/css?family=Federo" rel="stylesheet">
+		<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
@@ -270,9 +276,9 @@ session_start();
    text-align: center;
 }
 .fa {
-  padding: 20px;
+  padding: 8px;
   font-size: 15px;
-  width: 25px;
+  width: 30px;
   text-align: center;
   text-decoration: none;
   margin: 7px 4px;
@@ -296,21 +302,10 @@ session_start();
   </head>
 
   <body>
-  <script src="bootstrap/js/bootstrap.min.js"></script>
- <div id="wrapper">
-    <div id="header">
-      <div class="topnav" id="myTopnav">
-        <a class="navbar-brand" href="../index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; float: left;margin-left: 10px;">Casa de Tobias Mountain Resort</a>
-  <a href="../datepickerform.php" style=" font-size: 17px;">Reserve</a>
-  <a href = "_log-in.php" style="cursor: pointer; font-size: 17px;">Log-In</a>
 
-  <a href="../contactus.php" style=" font-size: 17px;">Contact</a>
-  <a href="../gallery.php" style=" font-size: 17px;">Gallery</a>
-  <a href="../rates.php" style=" font-size: 17px;">Rates</a>
-  <a href="../About.php" style=" font-size: 17px;">About</a>
-  <a href="../index.php" class="active" style=" font-size: 17px;">Home</a>
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
+<?php
+include('navlinks.php');
+?>
 
 
 
@@ -334,7 +329,7 @@ session_start();
 			</div>
 <!-- FOOTER -->
   <div class="grid">
-  <a href="https://www.facebook.com/Casa-De-Tobias-Mountain-Resort-254137624658146/" target="_blank"></a>
+  <a href="https://www.facebook.com/Casa-De-Tobias-Mountain-Resort-254137624658146/" class="fa fa-facebook style="font-size:48px"" target="_blank"></a>
   <a href="https://www.waze.com/en/directions/philippines/nagcarlan/casa-de-tobias-mountain-resort/79560845.795739526.5393912.html" class="fa fa-google" target="_blank"></a>
 </div>
     <div id="footer" class="footer">

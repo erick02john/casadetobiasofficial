@@ -62,21 +62,20 @@
 	  if($guest['NumberOfAdult'] > 2){
     	$totalgc=$guest['NumberOfAdult']-$tgCount;
     	$tgPrice = $totalgc * 800.00 * $nightcount;
+			if($totalgc > 0){
+	 		  echo "
+	 		  <tr>
+	 		  <td>Extraguest </td>
+	 		  <td>$totalgc</td>
+	 		  <td>$nightcount</td>
+	 		  <td>800</td>
+	 		  <td>$tgPrice</td>
+	 		  </tr>";
+	 		}
 		}else{
 		$tgPrice=0;
 		$tgCount=0;
-	}
-	 if($totalgc > 0){
-		  echo "
-		  <tr>
-		  <td>Extraguest </td>
-		  <td>$totalgc</td>
-		  <td>$nightcount</td>
-		  <td>800</td>
-		  <td>$tgPrice</td>
-		  </tr>";
-
-		}
+}
 	$amenitys = 0;
 		  $amenityss = 0;
 		while($amenity = mysqli_fetch_array($ame)){

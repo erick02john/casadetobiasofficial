@@ -24,7 +24,7 @@
               <div class="table-responsive">
                 <table class="table table-striped table-hover" id="dataTable" width="100%" cellspacing="0" style="font-size: 14px;">
 
-	
+
 	<?php
 	echo "<thead>
 			<tr>
@@ -56,7 +56,7 @@
  <?php
 
   mysqli_close($conn);
-
+  
 ?>
 
 </body>
@@ -73,9 +73,9 @@ var time = new Date().getTime();
      });
 
      function refresh() {
-         if(new Date().getTime() - time >= 60000) 
+         if(new Date().getTime() - time >= 60000)
              window.location.reload(true);
-         else 
+         else
              setTimeout(refresh, 10000);
      }
 

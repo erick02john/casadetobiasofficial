@@ -20,7 +20,7 @@
     </style>
 </head>
 <body>
-<?php 
+<?php
 	include 'dbconn.php';
 	$date = date("");
 	$query = mysqli_query($conn, "SELECT * from reservation where GuestID = '$guestid' AND Status = 'Checked-out' ORDER BY CheckInDate ASC");
@@ -48,9 +48,9 @@
 			<td align='center'>{$row['FDO']}</td>
 			</tr>";
 			$x++;
-		
+
 		}
-	
+
 echo "</table>
 	</div>";
 ?>
@@ -65,9 +65,9 @@ echo "</table>
      });
 
      function refresh() {
-         if(new Date().getTime() - time >= 60000) 
+         if(new Date().getTime() - time >= 60000)
              window.location.reload(true);
-         else 
+         else
              setTimeout(refresh, 10000);
      }
 

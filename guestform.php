@@ -218,6 +218,12 @@ body, html {
   background: black;
   color: white;
 }
+form.w3-container {
+	padding-left: 90px!important;
+	padding-right: 90px!important;
+	padding-top: 0px!important;
+	padding-bottom: 0px!important;
+}
 </style>
 <body>
 <!-- Navbar (sit on top) -->
@@ -273,6 +279,7 @@ include('navlinks.php');
 
 </div> -->
 <div class="w3-container">
+<form class="w3-container" method="POST" action="guestform.php" name="myForm">
 	<div id="msform">
       <ul id="progressbar">
         <li class="active"><a href="datepickerform.php">Select Dates</a></li>
@@ -281,31 +288,29 @@ include('navlinks.php');
         <li>Summary</li>
       </ul>
 </div>
-<form class="w3-container" method="POST" action="guestform.php" name="myForm">
 <h2 class="w3-center">GUEST FORM</h2>
-<div class="w3-card-2" style="margin-top: 20px;">
+<div class="w3-card-2 w3-margin-top">
   <div class="w3-container w3-pale-green">
-    <h2>Registration</h2>
+    <h2 class="w3-padding">Registration</h2>
   </div>
 
-  	<div class="w3-row-padding">
-
-    <p><div class="w3-twothird">
+  	<div class="w3-container padding ">
+    <div class="w3-rest">
 			<label><i class="fa fa-address-book-o"></i> Email</label>
-    	<input class="w3-input w3-border" type="email" name="email" placeholder="Email" onfocus="this.select()" autocomplete="off" REQUIRED /></div></p>
-    <p><div class="w3-half">
+    	<input class="w3-input w3-border" type="email" name="email" placeholder="Email" onfocus="this.select()" autocomplete="off" REQUIRED /></div>
+    <div class="w3-half">
 			<label><i class="fa fa-lock	"></i> Password</label>
-    	<input class="w3-input w3-border" type="password" name="password" id="password" placeholder="Password" onkeyup="checkPhone();" onfocus="this.select()" autocomplete="off" REQUIRED /></div></p>
-    <p><div class="w3-half">
+    	<input class="w3-input w3-border" type="password" name="password" id="password" placeholder="Password" onkeyup="checkPhone();" onfocus="this.select()" autocomplete="off" REQUIRED /></div>
+    <div class="w3-half">
 			<label><i class="fa fa-lock	"></i> Confirm Password</label>
-    	<input class="w3-input w3-border" type="password" name="confirmnpassword" id="confirmnpassword" placeholder="Confirm Password" onkeyup='checkPhone();' onfocus="this.select()" autocomplete="off" REQUIRED />.</div></p>
+    	<input class="w3-input w3-border" type="password" name="confirmnpassword" id="confirmnpassword" placeholder="Confirm Password" onkeyup='checkPhone();' onfocus="this.select()" autocomplete="off" REQUIRED />.</div>
 
 	</div>
 
 </div>
 <div class="w3-card-2" style="margin-top: 30px;">
   <div class="w3-container w3-pale-green">
-    <h2>Personal Information</h2>
+    <h2 class="w3-padding">Personal Information</h2>
   </div>
   <div class="w3-row-padding">
 
@@ -318,6 +323,7 @@ include('navlinks.php');
     	<input class="w3-input w3-border" type="text" name="middleName" placeholder="Middle Name" onfocus="this.select()" onkeypress="return restrictCharacters(this, event, alphaOnly);"  autocomplete="off" /></div></p>
     <p><div class="w3-third">
 			<label><i class="fa fa-users"></i> Last Name</label>
+
     	<input class="w3-input w3-border" type="text" name="lastName" placeholder="Last Name" onfocus="this.select()" onkeypress="return restrictCharacters(this, event, alphaOnly);"  autocomplete="off" REQUIRED/></div></p>
     <p><div class="w3-container">
         <label style="font-size: 18px;">Gender: &nbsp;</label>
@@ -326,6 +332,7 @@ include('navlinks.php');
         <input type="radio" class="w3-radio" id="r2" name="gender" value= "Male"/>
         <label for="r2"><span></span>Male</label></div></p>
     <p><div class="w3-container">
+			<label><i class="fa fa-address-card"></i> Address</label>
     	<textarea class="w3-input w3-border" name= "address" placeholder="Address" rows= "4" cols= "50" onfocus="this.select()" REQUIRED/></textarea></div></p>
     <p><div class="w3-container">
 			<label><i class="fa fa-mobile-phone"></i> Mobile Number</label>
@@ -351,7 +358,7 @@ include('navlinks.php');
 </div>
 <div class="w3-card-2" style="margin-top: 30px;">
   <div class="w3-container w3-pale-green">
-    <h2>Payment Details</h2>
+    <h2 class="w3-padding">Payment Details</h2>
   </div>
 
   	<div class="w3-row-padding">
@@ -370,9 +377,7 @@ include('navlinks.php');
         <option></option>
         <option value="Down Payment">Down Payment</option>
         <option value="Full Payment">Full Payment</option>
-    </select></div></p>
-
-
+  </select></div></p>
 	</div>
 
 </div>

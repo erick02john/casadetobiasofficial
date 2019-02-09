@@ -32,8 +32,8 @@ $base = 'http://'.$_SERVER['SERVER_NAME'].''.$_SERVER['REQUEST_URI'];
 							<li <?=(($base == ''.base_url().'gallery.php') ? 'class="menu__item menu__item--current"':"class='menu__item'")?>><a href="gallery.php" class="menu__link">Gallery</a></li>
 							<li <?=(($base == ''.base_url().'rooms.php') ? 'class="menu__item menu__item--current"':"class='menu__item'")?>><a href="rooms.php" class="menu__link">Rooms</a></li>
 							<li <?=(($base == ''.base_url().'contactus.php') ? 'class="menu__item menu__item--current"':"class='menu__item'")?>><a href="contactus.php" class="menu__link">Contact Us</a></li>
-              <li <?=(($base == ''.base_url().'contactus.php') ? 'class="menu__item menu__item--current"':"class='menu__item'")?>><a href="guest/_log-in.php" class="menu__link">Log-in</a></li>
-              <li <?=(($base == ''.base_url().'contactus.php') ? 'class="menu__item menu__item--current"':"class='menu__item'")?>><a href="datepickerform.php" class="menu__link">Book Now</a></li>
+              <li <?=(($base == ''.base_url().'guest/_log-in.php') ? 'class="menu__item menu__item--current"':"class='menu__item'")?>><a href="guest/_log-in.php" class="menu__link">Log-in</a></li>
+              <li <?=(($base == ''.base_url().'datepickerform.php') ? 'class="menu__item menu__item--current"':"class='menu__item'")?>><a href="datepickerform.php" class="menu__link">Book Now</a></li>
 						</ul>
 					</nav>
 				</div>

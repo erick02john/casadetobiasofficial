@@ -25,7 +25,7 @@ include ('dbconn.php');
 
 	$numdays = abs(strtotime($CheckInDate) - strtotime($RevDate))/86400;
 	if ($numdays > 7) {
-	$ExpirationDate = date('Y-m-d', strtotime($RevDate. ' + 7 days'));
+	$ExpirationDate = date('Y-m-d', strtotime($RevDate. ' + 1 days'));
 	}else{
 		$ExpirationDate = $CheckOutDate;
 	}

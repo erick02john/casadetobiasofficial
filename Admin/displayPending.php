@@ -8,18 +8,18 @@
 <body>
 
 
-	<?php 
+	<?php
 	include 'dbconn.php';
 	include '../scriptvalidation.php';
-	
+
 	include 'reservationExpire.php';
-        
-                      
-                                
-	/*$query = mysqli_query($conn, "SELECT * FROM Guest g join Reservation r 
-								  on g.GuestID = r.GuestID join roominventory ri 
-								  on r.ReservationID = ri.ReservationID join Room rm 
-								  on ri.RoomID = rm.RoomID join RoomType rt 
+
+
+
+	/*$query = mysqli_query($conn, "SELECT * FROM Guest g join Reservation r
+								  on g.GuestID = r.GuestID join roominventory ri
+								  on r.ReservationID = ri.ReservationID join Room rm
+								  on ri.RoomID = rm.RoomID join RoomType rt
 								  on rm.RoomID = rt.RoomID");*/
 	$query = mysqli_query($conn, "SELECT * FROM guest g join reservation r on g.GuestID = r.GuestID where Status = 'Pending'") or die(); ?>
 
@@ -31,7 +31,7 @@
               <div class="table-responsive">
                 <table class="table table-striped table-hover" id="dataTable" width="100%" cellspacing="0" style="font-size: 13.5px;">
 
-	
+
 	<?php
 	echo "<thead>
 			<tr>
@@ -62,7 +62,7 @@
 			<td align='center'></td>";
 		}
 		echo"
-				
+
 				<td align='center'>{$row['ReservationID']}</td>
 				<td align='center'>{$row['GuestFName']} {$row['GuestMName']} {$row['GuestLName']}</td>
 				<td align='center'>{$row['RoomsReserved']}</td>
@@ -81,7 +81,7 @@
         <div class='modal-header'>
         <h4 class='modal-title'>Reservation</h4>
           <button type='button' class='close' data-dismiss='modal'>&times;</button>
-          
+
         </div>
         <div class='modal-body'>
         <div>
@@ -93,14 +93,14 @@
  		$result_set=mysqli_query($conn, "SELECT * FROM reservation r join billing b on r.ReservationID = b.ReservationID where r.ReservationID = '{$row['ReservationID']}'") or die ("error");
  		$rows=mysqli_fetch_array($result_set);
          echo "
-         <img src='../Guest/photo/upload/{$rows['Photo']}' width='420' height='420'>"; 
+         <img src='../Guest/photo/upload/{$rows['Photo']}' width='420' height='420'>";
 
 		echo "<tr>
 			<td><input class = 'form-control' type='hidden' name='reservationid' value='{$row['ReservationID']}' readonly /></td>
 		</tr>
 		<tr>
 			<td>Balance</td>
-			<td><input class = 'form-control' type='button' value='{$rows['Balance']}' readonly/></td>	
+			<td><input class = 'form-control' type='button' value='{$rows['Balance']}' readonly/></td>
 		</tr>
 		<tr>
 			<td>Billing</td>
@@ -116,12 +116,12 @@
         	</td>
 		</tr>
 
-		
+
 		</table>
 		</div>
 		</div>
-		</div>							
-       	
+		</div>
+
         <div class='modal-footer'>
         <a class='btn btn-default' data-dismiss='modal'/>Cancel</a>
 		<a href='#areyousure$i' data-toggle='modal' class='btn btn-success' >Update</a>
@@ -155,14 +155,14 @@
  				</table>
               </div>
            	</div>
-        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+      
     </div>
  <?php
 
   mysqli_close($conn);
 
 ?>
-  
+
 </body>
 </html>
    <!-- DataTables JavaScript -->
@@ -181,12 +181,12 @@
      });
 
      function refresh() {
-         if(new Date().getTime() - time >= 60000) 
+         if(new Date().getTime() - time >= 60000)
              window.location.reload(true);
-         else 
+         else
              setTimeout(refresh, 10000);
      }
-     
+
      setTimeout(refresh, 10000);
 
 </script>

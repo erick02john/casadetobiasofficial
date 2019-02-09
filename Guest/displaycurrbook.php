@@ -19,7 +19,8 @@
                         <div class="panel-body">
                             <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
               <thead>
-              <th>GuestName</th>
+                <th>Reservation ID</th>
+                <th>GuestName</th>
                 <th>Number of Guest</th>
                 <th>Check in Date</th>
                 <th>Check out Date</th>
@@ -73,7 +74,7 @@ echo "<td>";
       <div class='modal-content'>
         <div class='modal-header'>
           <button type='button' class='close' data-dismiss='modal'>&times;</button>
-          <h4 class='modal-title'>Edit Rooms</h4>
+          <h4 class='modal-title'>Review</h4>
         </div>
         <div class='modal-body'>
         <div>
@@ -95,6 +96,7 @@ echo "<td>";
     </div>
   </div>
 </div>";
+
 
           echo "</td> </tr>";
           $i++;

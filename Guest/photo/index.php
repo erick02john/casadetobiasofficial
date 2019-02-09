@@ -64,12 +64,12 @@
   display: inline-block;
   opacity: 0.6;
   transition: opacity ease 0.5s;
-} 
+}
 
 
   </style>
   </head>
-  
+
   <body>
 
 
@@ -83,7 +83,7 @@ session_start();
 
     $resID = $_POST['resID'];
     $_SESSION['resID'] = $resID;
-    
+
   echo "<div class='modal-dialog'>
         <div class='uploadmodal-container'>
           <form action='index.php' method='post' enctype='multipart/form-data'>
@@ -91,34 +91,34 @@ session_start();
             <button type='submit' name='submit'>Submit</button>
           </form>";
   }
-  
+
   if(isset($_POST['submit']))
-  {  
+  {
   include '../dbconn.php';
   $resID = $_SESSION['resID'];
-	
-	
+
+
  	$file = rand(1000,100000)."-".$_FILES['file']['name'];
     $file_loc = $_FILES['file']['tmp_name'];
- 
+
  	$folder="upload/";
- 
+
  move_uploaded_file($file_loc,$folder.$file);
  $sql="UPDATE Reservation SET Photo = '$file' WHERE ReservationID = '$resID'";
- mysqli_query($conn, $sql) or die ("errorimage"); 
+ mysqli_query($conn, $sql) or die ("errorimage");
 
  $sql="SELECT * FROM Reservation WHERE ReservationID = '$resID'";
  		$result_set=mysqli_query($conn, $sql) or die("error");
  		while($row=mysqli_fetch_array($result_set))
  		{
-         echo "<img src='upload/".$row['Photo']."' width= '200px' height= '200px'>"; 
+         echo "<img src='upload/".$row['Photo']."' width= '200px' height= '200px'>";
  		}
  	mysqli_close($conn);
 
  	echo "<form action ='../Reservationinfo.php'>
  			<input type='submit' value ='Done'></form>";
 }
-  
+
 
 if(isset($_POST['resched'])){
   include '../rescheduledate.php';
@@ -127,6 +127,6 @@ if(isset($_POST['resched'])){
   echo "</div></div>";
 ?>
 
-   
+
 </body>
 </html>
