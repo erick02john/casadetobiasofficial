@@ -69,79 +69,28 @@ session_start();
 
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <script src="../js/bootstrap.min.js"></script>
-
-<style type="text/css">
-  li.one a:hover {
-    background-color: #52697F;
-    color: #003366;
-  }
-  .navbar-nav li {
-    text-decoration: none;
-    font-size: 15px;
-    padding-top: 20px;
-    color: #ccc;
-  }
-
-
-.navbar-nav li a {
-  padding-top: 20px;
-
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover:not(.active) {
-    background-color: #ddd;
-    text-decoration: none;
-}
-
-.navbar-nav li a.active {
+    <link rel="stylesheet" type="text/css" media="screen" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="./css/prettify-1.0.css" rel="stylesheet">
+    <link href="./css/base.css" rel="stylesheet">
+    <link href="//cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/build/css/bootstrap-datetimepicker.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../css/font-awesome.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="../js/modernizr-2.6.2.min.js"></script>
+    <!--fonts-->
+    <link href="//fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Federo" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 
 
-    color: #000;
-    background-color: #fff;
-    text-decoration: none;
-}
-.lognav form {
-    background-color: #B6B6B4;
-    width:  80%;
-    padding:20px;
-    height: 250px;
-    margin: 40px auto;
-    border: none;
-    position: center;
-
-}
-
-
-.lognav form button {
-    font-family: Verdana;
-    cursor: pointer;
-}
-.lognav form button:hover{
-    background-color: #ccc
-}
-
-
-</style>
 
 
 </head>
 <body>
 
  <div class="wrap">
-  <nav class="nav-bar navbar-inverse" role="navigation">
-      <div id ="top-menu" class="container-fluid active">
-          <a class="navbar-brand" href="index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; margin-left: 80px;">Casa de Tobias Mountain Resort</a>
-          <div class="nav navbar-nav">
-
-
-              </div>
-      </div>
-  </nav>
+<?php include('navlinksguest.php') ?>
     <br><br><br>
 
     <div class="container">

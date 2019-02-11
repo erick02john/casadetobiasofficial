@@ -111,22 +111,30 @@ include('navlinks.php');
 </div>
 <br />
 <!-- /about -->
- 	<div class="about-wthree" id="about">
+
 		  <div class="container">
-				   <div class="ab-w3l-spa" style="font-size:25px;">
-                            <h3 class="title-w3-agileits title-black-wthree">Casa de Tobias</h3>
-														<h2>Casa de Tobias</h2>
-														<p>
-														Casa De Tobias Mountain Resort is located in Alibungbungan, Nagcarlan, Laguna. The resort established in 1998. There are series of episodes of renovations like repainting, landscaping, carpentry,
-														while keeping the resort is open. The resort has seventeen (17) rooms that can cater to the customer's need. Casa de Tobias has a huge adult pool, kiddie pool and a man-made river that usually use for team buildings.
-														The resort has a clubhouse which is rented to host group meetings, seminars, and trainings that typically accompanies corporate outings and whole family trips.
-														The resort have country-inspired cabins and nipa huts that are great for families, Barkadas get away and group retreats.</p>
-														<p>	Casa de Tobias Resort can give you a relaxing scenery that helps you to enjoy and forgot all the problems in workloads even the school works.
-														the ambiance of the resort is nature-friendly that you can experience a heaven and peaceful view with sounds of birds outside of the resort. you may also experience a breath taking view of mouintains near in the resort.
-														The resort is very far from the pollution in manila that you experience.
-														The environment is very natural and pure, when you go around the place the sounds of the water flowing coming from the man made river or called "Sapa".
-														</p>
-		          </div>
+					<div class="gallery-intro jumbotron">
+						 <div class="row">
+						 		<div class="col-lg-6">
+									<h2>Casa de Tobias</h2>
+									<p>
+									Casa De Tobias Mountain Resort is located in Alibungbungan, Nagcarlan, Laguna. The resort established in 1998. There are series of episodes of renovations like repainting, landscaping, carpentry,
+									while keeping the resort is open. The resort has seventeen (17) rooms that can cater to the customer's need. Casa de Tobias has a huge adult pool, kiddie pool and a man-made river that usually use for team buildings.
+									The resort has a clubhouse which is rented to host group meetings, seminars, and trainings that typically accompanies corporate outings and whole family trips.
+									The resort have country-inspired cabins and nipa huts that are great for families, Barkadas get away and group retreats.</p>
+									<p>	Casa de Tobias Resort can give you a relaxing scenery that helps you to enjoy and forgot all the problems in workloads even the school works.
+									the ambiance of the resort is nature-friendly that you can experience a heaven and peaceful view with sounds of birds outside of the resort. you may also experience a breath taking view of mouintains near in the resort.
+									The resort is very far from the pollution in manila that you experience.
+									The environment is very natural and pure, when you go around the place the sounds of the water flowing coming from the man made river or called "Sapa".
+									</p>
+						 </div>
+						 <div class="col-lg-6">
+	 						<img src="images/5.0.jpg" width="83%" alt="casa1"><br/><br/>
+	 						<img src="images/casabanner2.jpg" width="83%" width="15%" alt=""><br/><br/>
+							<img src="images/1 (2).jpg" width="83%" width="15%" alt="">
+	 					</div>
+ 					</div>
+
 		   	<div class="clearfix"> </div>
     </div>
 </div>
@@ -142,19 +150,19 @@ include('navlinks.php');
 						<div class="col-md-12 col-lg-6 m-5">
 							<ul class="list-unstyled">
 								<li>
-									<a href="/" target="_self">Home</a>
+									<a href="index.php" target="_self">Home</a>
 								</li>
 								<li>
-									<a href="/about" target="_self">The Resort</a>
+									<a href="about.php" target="_self">The Resort</a>
 								</li>
 								<li>
-									<a href="/gallery" target="_self">Gallery</a>
+									<a href="gallery.php" target="_self">Gallery</a>
 								</li>
 								<li>
-									<a href="/contact" target="_self">Contact Us</a>
+									<a href="contactus.php" target="_self">Contact Us</a>
 								</li>
 								<li>
-									<a href="/Rooms" target="_self">Rooms</a>
+									<a href="rooms.php" target="_self">Rooms</a>
 								</li>
 								<li class="list-inline-item">
 									<a href="/privacy-policy.html">Privacy Policy</a>

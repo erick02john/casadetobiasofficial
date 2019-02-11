@@ -382,7 +382,7 @@ include('navlinks.php');
 
 </div>
 <br>
-	<b><input type="submit" class="w3-btn w3-border w3-text-white w3-padding-large w3-block" name="reserve" value="Next >" style="font-size: 20px; background: #616161;"/></b>
+	<b><input type="submit" class="w3-btn w3-border w3-text-white w3-padding-large w3-block" name="reserve" value="PROCEED >" style="font-size: 20px; background: #616161;"/></b>
 
 </form>
 </div>

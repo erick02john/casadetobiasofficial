@@ -24,6 +24,17 @@
 <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 <!--//fonts-->
 </head>
+<style>
+p{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.jumbotron{
+	padding:25px;
+	margin:80px;
+	background-color: white;
+}
+</style>
 <body>
 <!-- header -->
 <?php
@@ -103,6 +114,49 @@ include('navlinks.php');
 								</div>
 							</div>
 						</div>
+
+
+
+
+						<table class="table table-striped table-bordered">
+<div class="jumbotron">
+	<h3 align="center" style="padding-bottom:30px;">Room Rates</h3>
+	<div class="row">
+
+
+		<div class="col-md-6">
+			<div align = "center">
+			<img src="Admin/upload/28741-3.0.jpg" alt="small room" class="form-controls" border="5" width="80%">
+			<h3> Small Kubo - &#x20b1;1500.00</h3>
+			</div>
+		</div>
+		<div class="col-md-6">
+		<div align="center">
+			<img src="Admin/upload/3711-dormitory2.jpg" alt="small room" class="form-controls" border="5" width="100%" >
+			<h3> Dormitory Clubhouse - &#x20b1;2000.00</h3>
+		</div><br><br><br><br><br>
+		</div><div class="col-md-6">
+		<div align="center">
+			<img src="Admin/upload/15505-bigkubo2.jpg" alt="small room" class="form-controls" border="5" width="80%">
+			<h3> Big Kubo House - &#x20b1;2000.00</h3>
+			</div>
+		</div><div class="col-md-6">
+
+		</div>
+	</div>
+
+
+
+	<a style="color:red;">
+	*Note:
+	<br>
+	Room reservation is available in this website. Furthermore, rooms are subject to availability.
+	<br>
+	ADDITIONAL BED = 800 pesos</a>
+
+</table>
+</div>
+
 
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 <!-- contact form -->
@@ -233,19 +287,19 @@ fit: true
 						<div class="col-md-12 col-lg-6 m-5">
 							<ul class="list-unstyled">
 								<li>
-									<a href="/" target="_self">Home</a>
+									<a href="index.php" target="_self">Home</a>
 								</li>
 								<li>
-									<a href="/about" target="_self">The Resort</a>
+									<a href="about.php" target="_self">The Resort</a>
 								</li>
 								<li>
-									<a href="/gallery" target="_self">Gallery</a>
+									<a href="gallery.php" target="_self">Gallery</a>
 								</li>
 								<li>
-									<a href="/contact" target="_self">Contact Us</a>
+									<a href="contactus.php" target="_self">Contact Us</a>
 								</li>
 								<li>
-									<a href="/Rooms" target="_self">Rooms</a>
+									<a href="rooms.php" target="_self">Rooms</a>
 								</li>
 								<li class="list-inline-item">
 									<a href="/privacy-policy.html">Privacy Policy</a>

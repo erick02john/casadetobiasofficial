@@ -6,6 +6,18 @@
     <!--WEBSITE CSS/JS -->
     <link rel= "stylesheet" href="css/mystyle.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/chocolat.css" type="text/css" media="screen">
+    <link href="../css/easy-responsive-tabs.css" rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen" property="" />
+    <link rel="stylesheet" href="../css/jquery-ui.css" />
+    <link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="../js/modernizr-2.6.2.min.js"></script>
+    <!--fonts-->
+    <link href="//fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Federo" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
@@ -105,9 +117,9 @@ html, body {
    text-align: center;
 }
 .fa {
-  padding: 20px;
+  padding: 8px;
   font-size: 15px;
-  width: 25px;
+  width: 30px;
   text-align: center;
   text-decoration: none;
   margin: 7px 4px;
@@ -134,45 +146,41 @@ html, body {
 <body>
     <div id="wrapper">
       <div id="header">
-       <div class="topnav" id="myTopnav">
-        <a class="navbar-brand" href="index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; float: left;margin-left: 10px;">Casa de Tobias Mountain Resort</a>
-  <a href="index.php">My Account</a>
-  <a href="contact.php">Contact</a>
-  <a href="gallery.html">Gallery</a>
-  <a href="rates.html">Rates</a>
-  <a href="about.php">About</a>
-
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
+        <?php
+        include('navlinksguest.php');
+        ?>
 </div>
 
-      <div id="content">
-        <div class="grid">
-    <div class="shadowundertop"></div>
-    <div class="row">
-
-        <h1 class="maintitle "><br>
-        <span >ABOUT THE COMPANY</span>
-        </h1>
-        <center>
-        <br>
-        <br>
-        <br>
-        <center><p>
-          Casa de Tobias Mountain Resort and Hotel offers services and facilities that has 18 hotel rooms, 1 swimming pool, restaurant, bar and functional rooms.<br> They have 32 regular employees. They have front desk clerks, room attendants, banquets and events crew, restaurant and bar employees and administration.<br>
-        </p></center>
-
-        <br><br><br>
-          <div class="clearfix">
-          </div>
-        </div>
+<div class="container">
+    <div class="gallery-intro jumbotron">
+       <div class="row">
+          <div class="col-lg-6">
+            <h2 style="padding-bottom:30px;">About the resort</h2>
+            <p>
+            Casa De Tobias Mountain Resort is located in Alibungbungan, Nagcarlan, Laguna. The resort established in 1998. There are series of episodes of renovations like repainting, landscaping, carpentry,
+            while keeping the resort is open. The resort has seventeen (17) rooms that can cater to the customer's need. Casa de Tobias has a huge adult pool, kiddie pool and a man-made river that usually use for team buildings.
+            The resort has a clubhouse which is rented to host group meetings, seminars, and trainings that typically accompanies corporate outings and whole family trips.
+            The resort have country-inspired cabins and nipa huts that are great for families, Barkadas get away and group retreats.</p>
+            <p>	Casa de Tobias Resort can give you a relaxing scenery that helps you to enjoy and forgot all the problems in workloads even the school works.
+            the ambiance of the resort is nature-friendly that you can experience a heaven and peaceful view with sounds of birds outside of the resort. you may also experience a breath taking view of mouintains near in the resort.
+            The resort is very far from the pollution in manila that you experience.
+            The environment is very natural and pure, when you go around the place the sounds of the water flowing coming from the man made river or called "Sapa".
+            </p>
+       </div>
+       <div class="col-lg-6">
+        <img src="../images/5.0.jpg" width="83%" alt="casa1"><br/><br/>
+        <img src="../images/casabanner2.jpg" width="83%" width="15%" alt=""><br/><br/>
+        <img src="../images/1 (2).jpg" width="83%" width="15%" alt="">
       </div>
     </div>
 
-    <div class="rows">
-  <a href="https://www.facebook.com/Casa-De-Tobias-Mountain-Resort-254137624658146/" class="fa fa-facebook" target="_blank"></a>
-  <a href="https://www.waze.com/en/directions/philippines/nagcarlan/casa-de-tobias-mountain-resort/79560845.795739526.5393912.html" class="fa fa-google" target="_blank"></a>
+  <div class="clearfix"> </div>
 </div>
+</div>
+    <div class="grid">
+      <a href="https://www.facebook.com/Casa-De-Tobias-Mountain-Resort-254137624658146/" class="fa fa-facebook style="font-size:48px"" target="_blank"></a>
+      <a href="https://www.waze.com/en/directions/philippines/nagcarlan/casa-de-tobias-mountain-resort/79560845.795739526.5393912.html" class="fa fa-google" target="_blank"></a>
+    </div>
     <div id="footer" class="footer">
       <div class="container">
         <div class="rowss">

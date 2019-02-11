@@ -17,14 +17,17 @@ if(!empty($_SESSION['Email'])){
 <html>
     <head>
         <title>Casa de Tobias Mountain Resort</title>
-    <link rel="stylesheet" type="text/css" href="../backext/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="../backext/css/admin.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-<link rel="stylesheet" href="../css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
+        <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../css/font-awesome.css" rel="stylesheet">
+        <link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+        <link rel="stylesheet" type="text/css" href="../backext/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../backext/css/admin.css">
+        <link href="//fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
+        <link href="//fonts.googleapis.com/css?family=Federo" rel="stylesheet">
+        <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
 
 <style type="text/css">
 .topnav {
@@ -84,26 +87,32 @@ if(!empty($_SESSION['Email'])){
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
-
+<link rel="stylesheet" type="text/css" media="screen" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link href="./css/prettify-1.0.css" rel="stylesheet">
+<link href="./css/base.css" rel="stylesheet">
+<link href="//cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/build/css/bootstrap-datetimepicker.css" rel="stylesheet">
+<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../css/font-awesome.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="../js/modernizr-2.6.2.min.js"></script>
+<!--fonts-->
+<link href="//fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Federo" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
   </head>
   <body>
+
     <script src="../backext/js/jquery.min.js"></script>
 <script src="../backext/js/bootstrap.min.js"></script>
 <script src = "../backext/js/admin.js"></script>
+
  <div class="wrap">
 
       <div id="wrapper">
+<?php include('navlinksguest.php') ?>
       <div id="header">
-        <div class="topnav" id="myTopnav">
-        <a class="navbar-brand" href="index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; float: left;margin-left: 10px; text-align: center;">Casa de Tobias Mountain Resort</a>
-  <a href="index.php">My Account</a>
-  <a href="contact.php">Contact</a>
-  <a href="gallery.html">Gallery</a>
-  <a href="rates.html">Rates</a>
-  <a href="about.php">About</a>
-  <a href="home.php" class="active">Home</a>
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
+
 
 <aside id="side-menu" class="aside" role="navigation">
     <ul class="nav nav-list accordion">

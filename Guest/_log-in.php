@@ -328,7 +328,7 @@ include('navlinks.php');
 				</div>
 			</div>
 <!-- FOOTER -->
-  <div class="grid">
+<div class="grid">
   <a href="https://www.facebook.com/Casa-De-Tobias-Mountain-Resort-254137624658146/" class="fa fa-facebook style="font-size:48px"" target="_blank"></a>
   <a href="https://www.waze.com/en/directions/philippines/nagcarlan/casa-de-tobias-mountain-resort/79560845.795739526.5393912.html" class="fa fa-google" target="_blank"></a>
 </div>

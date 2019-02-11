@@ -6,6 +6,18 @@
 	<!--CSS-->
 	<link rel= "stylesheet" href="../css/mystyle.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/chocolat.css" type="text/css" media="screen">
+    <link href="../css/easy-responsive-tabs.css" rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen" property="" />
+    <link rel="stylesheet" href="../css/jquery-ui.css" />
+    <link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="../js/modernizr-2.6.2.min.js"></script>
+    <!--fonts-->
+    <link href="//fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Federo" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
@@ -147,9 +159,9 @@ html, body {
    text-align: center;
 }
 .fa {
-  padding: 20px;
+  padding: 8px;
   font-size: 15px;
-  width: 25px;
+  width: 30px;
   text-align: center;
   text-decoration: none;
   margin: 7px 4px;
@@ -175,16 +187,9 @@ html, body {
 <body>
 	<div id="wrapper">
       <div id="header">
-        <div class="topnav" id="myTopnav">
-        <a class="navbar-brand" href="../index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; float: left;margin-left: 10px;">Casa de Tobias Mountain Resort</a>
-  <a href="index.php">My Account</a>
-  <a href="Contact.php">Contact</a>
-  <a href="gallery.html">Gallery</a>
-  <a href="rates.html">Rates</a>
-  <a href="about.php">About</a>
-  <a href="home.php" class="active">Home</a>
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
+				<?php
+				include('navlinksguest.php');
+				?>
 </div>
 
     <div id="contact" class="contact">
@@ -224,10 +229,10 @@ html, body {
 
     </div>
 
-    <div class="grid">
-  <a href="https://www.facebook.com/Casa-De-Tobias-Mountain-Resort-254137624658146/" class="fa fa-facebook" target="_blank"></a>
-  <a href="https://www.waze.com/en/directions/philippines/nagcarlan/casa-de-tobias-mountain-resort/79560845.795739526.5393912.html" class="fa fa-google" target="_blank"></a>
-</div>
+		<div class="grid">
+		  <a href="https://www.facebook.com/Casa-De-Tobias-Mountain-Resort-254137624658146/" class="fa fa-facebook style="font-size:48px"" target="_blank"></a>
+		  <a href="https://www.waze.com/en/directions/philippines/nagcarlan/casa-de-tobias-mountain-resort/79560845.795739526.5393912.html" class="fa fa-google" target="_blank"></a>
+		</div>
     <div id="footer" class="footer">
       <div class="container">
         <div class="row">

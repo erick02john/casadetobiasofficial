@@ -22,7 +22,18 @@ if(!empty($_SESSION['Email'])){
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/chocolat.css" type="text/css" media="screen">
+<link href="../css/easy-responsive-tabs.css" rel='stylesheet' type='text/css'/>
+<link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen" property="" />
+<link rel="stylesheet" href="../css/jquery-ui.css" />
+<link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="../js/modernizr-2.6.2.min.js"></script>
+<!--fonts-->
+<link href="//fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Federo" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 
@@ -75,7 +86,6 @@ if(!empty($_SESSION['Email'])){
     display: block;
     text-align: center;
   }
-
 }
 </style>
 
@@ -94,16 +104,10 @@ if(!empty($_SESSION['Email'])){
 
       <div id="wrapper">
       <div id="header">
-        <div class="topnav" id="myTopnav">
-        <a class="navbar-brand" href="index.php" style="color:#dfab21; font-family: Arial Black, Helvetica, sans-serif; float: left;margin-left: 10px; text-align: center;">Casa de Tobias Mountain Resort</a>
-  <a href="index.php">My Account</a>
-  <a href="contact.php">Contact</a>
-  <a href="gallery.html">Gallery</a>
-  <a href="rates.html">Rates</a>
-  <a href="about.php">About</a>
-  <a href="home.php" class="active">Home</a>
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
+
+<?php
+include('navlinksguest.php');
+?>
 
 <aside id="side-menu" class="aside" role="navigation">
     <ul class="nav nav-list accordion">

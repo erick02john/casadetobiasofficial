@@ -199,19 +199,19 @@ include('navlinks.php');
 						<div class="col-md-12 col-lg-6 m-5">
 							<ul class="list-unstyled">
 								<li>
-									<a href="/" target="_self">Home</a>
+									<a href="index.php" target="_self">Home</a>
 								</li>
 								<li>
-									<a href="/about" target="_self">The Resort</a>
+									<a href="about.php" target="_self">The Resort</a>
 								</li>
 								<li>
-									<a href="/gallery" target="_self">Gallery</a>
+									<a href="gallery.php" target="_self">Gallery</a>
 								</li>
 								<li>
-									<a href="/contact" target="_self">Contact Us</a>
+									<a href="contactus.php" target="_self">Contact Us</a>
 								</li>
 								<li>
-									<a href="/Rooms" target="_self">Rooms</a>
+									<a href="rooms.php" target="_self">Rooms</a>
 								</li>
 								<li class="list-inline-item">
 									<a href="/privacy-policy.html">Privacy Policy</a>

@@ -209,7 +209,7 @@
     left: 21em;
     right: 0;
   }
-  
+
 }
 
 /*OTHER */
@@ -217,9 +217,9 @@
     height: 80px;
   }
   .wrap #side-menu {
-    background: #52697F;
+    background: #000000e6;
   }
-  
+
   .one {
     background: transparent;
     font-size: 15px;
@@ -235,5 +235,3 @@
   .one a {
     color: #ccc;
   }
-
-  
