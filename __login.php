@@ -30,7 +30,7 @@ session_start();
                 }
              else if($dbUserType == 'Frontdesk'){
                 print ("<script language='JavaScript'>
-                  window.location.href='Admin/index.php';
+                  window.location.href='Frontdesk/index.php';
                   </SCRIPT>");
                   $_SESSION['Username'] = $dbUsername;
                   $_SESSION['Password'] = $dbPassword;

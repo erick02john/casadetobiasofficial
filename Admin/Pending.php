@@ -42,7 +42,8 @@ if($type != 'Admin' AND $type != 'Frontdesk'){
 
     <!-- Custom styles for this template-->
     <link href="../css/sb-admin.css" rel="stylesheet">
-
+    <script src="../bootstrap/js/dataTables.min.js"></script>
+    <script src="../bootstrap/js/dataTables.bootstrap.min.js"></script>
   </head>
 
   <body id="page-top">

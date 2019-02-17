@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 include("../dbconn.php");
 include("../scriptvalidation.php");
@@ -19,36 +19,32 @@ if($type != 'Frontdesk'){
 }
 
 
-$psNum = 0;
+
 $pdNum = 0;
 $ssNum = 0;
 $sdNum = 0;
 
 
-	$query1 = mysqli_query($conn, "SELECT RoomCapacity FROM roomtype WHERE RoomType = 'Presidential(Queen Sized-Bed)'");
+	$query1 = mysqli_query($conn, "SELECT RoomCapacity FROM roomtype WHERE RoomType = 'Small Kubo'");
 	while($row1 = mysqli_fetch_array($query1)){
 		$cpctyPQ = $row1['RoomCapacity'];
 	}
-	$query2 = mysqli_query($conn, "SELECT RoomCapacity FROM roomtype WHERE RoomType = 'Presidential(Twin Sized-Bed)'");
+	$query2 = mysqli_query($conn, "SELECT RoomCapacity FROM roomtype WHERE RoomType = 'Big Kubo House'");
 	while($row2 = mysqli_fetch_array($query2)){
 		$cpctyPT = $row2['RoomCapacity'];
 	}
-	$query3 = mysqli_query($conn, "SELECT RoomCapacity FROM roomtype WHERE RoomType = 'Superior(Queen Sized-Bed)'");
+	$query3 = mysqli_query($conn, "SELECT RoomCapacity FROM roomtype WHERE RoomType = 'Dormitory Clubhouse'");
 	while($row3 = mysqli_fetch_array($query3)){
 		$cpctySQ = $row3['RoomCapacity'];
 	}
-	$query4 = mysqli_query($conn, "SELECT RoomCapacity FROM roomtype WHERE RoomType = 'Superior(Twin Sized-Bed)'");
-	while($row4 = mysqli_fetch_array($query4)){
-		$cpctyST = $row4['RoomCapacity'];
-	}
-	
+
 
 
 		if($_SESSION['presSNum'] == ' '){
 				$psNum = 0;
 				$psExtra = 0;
 		}else{
-							
+
 				$psNum = $_SESSION['presSNum'] * 2;
 				$psExtra = $_SESSION['presSNum'] * $cpctyPQ;
 		}
@@ -66,16 +62,10 @@ $sdNum = 0;
 				$ssNum = $_SESSION['supSNum'] * 2;
 				$ssExtra = $_SESSION['supSNum'] * $cpctySQ;
 		}
-		if($_SESSION['supDNum'] == ' '){
-				$sdNum = 0;
-				$sdExtra = 0;
-		}else{
-				$sdNum = $_SESSION['supDNum'] * 2;
-				$sdExtra = $_SESSION['supDNum'] * $cpctyST;
-		}
-		
+
+
   $totalg = $psNum + $pdNum + $ssNum + $sdNum;
-  $totalExtra = (($psExtra - $psNum) + ($pdExtra - $pdNum) + ($ssExtra - $ssNum) + ($sdExtra - $sdNum));
+  $totalExtra = (($psExtra - $psNum) + ($pdExtra - $pdNum) + ($ssExtra - $ssNum));
 if (!empty($_POST)):
 
 
@@ -95,7 +85,7 @@ if (!empty($_POST)):
       </SCRIPT>");
 
   }else{
-    
+
     $_SESSION['firstName'] = $_POST['firstName'];
     $_SESSION['middleName'] = $_POST['middleName'];
     $_SESSION['lastName'] = $_POST['lastName'];
@@ -108,10 +98,10 @@ if (!empty($_POST)):
       $_SESSION['adultadd'] = 0;
     } else {
       $_SESSION['adultadd'] = $_POST['adultadd'];
-    } 
+    }
     $_SESSION['modeofpayment'] = $modeofpayment;
-    
-    
+
+
     echo ("<script language='JavaScript'>
       window.location.href='summary.php';
       </SCRIPT>");
@@ -164,7 +154,7 @@ if (!empty($_POST)):
     <div class='table-responsive'>
 
     <table class="table">
-                  
+
     <form method="Post" action = "guestform.php">
     <tr>
       <td><input type = "text" class = "form-input" name = "firstName" placeholder = "First Name" onfocus="this.select()" onkeypress="return restrictCharacters(this, event, alphaOnly);" autocomplete="off" REQUIRED/></td>
@@ -172,17 +162,17 @@ if (!empty($_POST)):
       <td><input type = "text" class = "form-input" name = "middleName" placeholder = "Middle Name" onfocus="this.select()" onkeypress="return restrictCharacters(this, event, alphaOnly);" autocomplete="off" REQUIRED/></td>
 
       <td><input type = "text" class = "form-input" name = "lastName" placeholder = "Last Name" onfocus="this.select()" onkeypress="return restrictCharacters(this, event, alphaOnly);" autocomplete="off" REQUIRED/></td>
-  
-      
+
+
     </tr>
-    
+
     <tr>
       <td><label>Gender: </label></td>
       <td><input type="radio" id="r1" name="gender" value="Female" />
           <label for="r1"><span></span>Female</label></td>
       <td><input type="radio" id="r2" name="gender" value="Male" />
           <label for="r2"><span></span>Male</label></td>
-      
+
     </tr>
 
     <tr>
@@ -196,7 +186,7 @@ if (!empty($_POST)):
       <td><label>Email:</label></th>
       <td colspan="2"><input type="email" name="email" class="form-input" placeholder="Email" onfocus="this.select()" autocomplete="off" REQUIRED /></td>
   </tr>
-  
+
   <tr>
   <td><label>Number of Guest: </label>
   <select style="width:100;" class="form-control" name="adult" REQUIRED>

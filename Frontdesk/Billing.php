@@ -127,5 +127,47 @@ if($type != 'Frontdesk'){
   </div>
 </div>
 </div>
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+$("#from").datepicker({
+    minDate: 0,
+    maxDate: "+365D",
+    numberOfMonths: 1,
+    onSelect: function(selected) {
+      $("#to").datepicker("option","minDate", selected)
+    }
+});
+$("#to").datepicker({
+    minDate: 0,
+    maxDate:"+365D",
+    numberOfMonths: 1,
+    onSelect: function(selected) {
+       $("#from").datepicker("option", selecd)
+    }
+});
+});
+
+</script>
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        $("#datepicker").datepicker({
+            shoeButtonPanel: true,
+            showOn: "button",
+            buttonImage: "Images/calendar.png",
+            buttonImageOnly: true,
+            buttonText: "Select date"
+         });
+    });
+
+</script>
+
 </body>
 </html>
+<?php endif; ?>

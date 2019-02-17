@@ -265,6 +265,35 @@ $reservation = trim($reservation, ",");
             </div>
           </div>
 
+          <div>
+           <div class=" col-md-6 col-lg-6" style="margin-bottom:20px; padding: 0px;width: 50%;">
+              <div class="home_div" style="width:90%; border:1px solid #bbb;">
+                  <div class="text-left" style="margin-bottom:15px;border-bottom:1px solid #aaa;margin-top:00px;background:#243545;height:40px;padding-top:10px;">
+                        <h5 style="margin-top:0px; color:#fff"><b>&nbsp;New Reservations</b></h5>
+                  </div>
+                    <div style="margin-left:10px;">
+                      <?php
+                        include('dbconn.php');
+                        $query = mysqli_query($conn,"SELECT * FROM reservation r Join guest g ON r.GuestID = g.GuestID WHERE Status = 'Reserved'  ORDER BY CheckInDate ASC LIMIT 0, 9;") or die(mysqli_error());
+                        $i = 1;
+
+                        while($row = mysqli_fetch_array($query)){
+                      ?>
+                        <tr>
+                          <td>
+                            <?php echo "<font size='3'> On <u>".$row['CheckInDate']."</u> <u>".$row['GuestFName']." ".$row['GuestMName']." ".$row['GuestLName']." </u> will be checking in at Room <u>".$row['RoomsReserved']."</u></font><br>";?>
+                            </td>
+                        </tr>
+
+                      <?php
+                        $i++;
+                        }
+                      ?>
+                </div>
+                    </div>
+                        <div class="height30 visible-xs"></div>
+      </div>
+      </div>
 
 
            <!-- Area Chart Example-->
@@ -284,6 +313,7 @@ $reservation = trim($reservation, ",");
     <?php include('DisplayGuest.php'); ?>
     </div>
         <!-- Sticky Footer -->
+
         <footer class="sticky-footer">
           <div class="container my-auto">
             <div class="copyright text-center my-auto">

@@ -7,7 +7,7 @@ $join = mysqli_query($conn, "SELECT RoomID from roominventory Where ReservationI
 
 if(isset($_POST['update'])){
 		if($_POST['status'] == 'Checked-out'){
-		
+
 		if(empty($_POST['amountentered'])){
 			$amountentered = 0;
 		}else{
@@ -34,7 +34,7 @@ if(isset($_POST['update'])){
 				window.location.href='Check-in.php';
 				</SCRIPT>";
 			}
-			if($balance >= 0){	
+			if($balance >= 0){
 			$totalbalance = $balance - $amountentered;
 			$totalamoutpaid = $amountentered + $pa;
 
@@ -71,8 +71,8 @@ if(isset($_POST['update'])){
  		print ("<script language='JavaScript'>
 		window.location.href='Check-in.php';
 		</SCRIPT>");
- 		}	
-}else{	
+ 		}
+}else{
 	print ("<script language='JavaScript'>
 	window.location.href='Check-in.php';
 	</SCRIPT>");

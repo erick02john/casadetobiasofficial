@@ -21,7 +21,9 @@
 
 //total amount
 	$amount = mysqli_query($conn, "SELECT * from billing where BillingID = '$bID'");
- $record = mysqli_query($conn, "SELECT DISTINCT RoomType FROM roomtype");
+  $record = mysqli_query($conn, "SELECT DISTINCT RoomType FROM roomtype");
+//Amount paid
+
 //amenity
 	$ame = mysqli_query($conn, "SELECT * from amenity where ReservationID = '$resID'") or die("nght");
 //night
@@ -37,7 +39,10 @@
 	$guest = mysqli_fetch_array($ress);
 
 
+
 	$bill = mysqli_fetch_array($amount);
+		$balanse1 = $bill['Balance'];
+		$bayad = $bill['PaidAmount'];
     $billing = $bill['TotalAmount'];
 
 
@@ -201,19 +206,36 @@ $pdf->Cell(34 ,5,number_format($totalBill,2),1,1,'R');
 			$pdf->Cell(25 ,5,' ',1,0,'C');
 			$pdf->Cell(34 ,5,'PHP',1,0,'R');
 			$pdf->Cell(34 ,5,number_format($billing,2) ,1,'R');
-
+			$pdf->Cell(59 ,5,'',0,1);
+			$pdf->Cell(59 ,5,'',0,1);
 
 		   }
 
-
-
+			 $pdf->Cell(80 ,5,'RECEIVE: ',1,0);
+ 		   	$pdf->Cell(15 ,5,'',1,0, 'C');
+ 			$pdf->Cell(25 ,5,' ',1,0,'C');
+ 			$pdf->Cell(34 ,5,'',1,0,'R');
+ 			$pdf->Cell(34 ,5,'',1,0);
+			$pdf->Cell(59 ,5,'',0,1);
+			$pdf->Cell(80 ,5,'Balance',1,0);
+ 		  $pdf->Cell(15 ,5,'',1,0, 'C');
+ 			$pdf->Cell(25 ,5,' ',1,0,'C');
+ 			$pdf->Cell(34 ,5,'PHP',1,0,'R');
+ 			$pdf->Cell(34 ,5,number_format($balanse1,2),1,1,'R');
+			$pdf->Cell(80 ,5,'Amount Paid',1,0);
+ 		  $pdf->Cell(15 ,5,'',1,0, 'C');
+ 			$pdf->Cell(25 ,5,' ',1,0,'C');
+ 			$pdf->Cell(34 ,5,'PHP',1,0,'R');
+ 			$pdf->Cell(34 ,5,number_format($bayad,2),1,1,'R');
 
 
 $pdf->Cell(130 ,5,'',0,0);
-$pdf->Cell(130,10, 'Prepared For: ',0,1);
+$pdf->Cell(59 ,5,'',0,1);
 $pdf->Cell(130,10, 'Prepared For: ',0,1);
 $pdf->Cell(130,10, '_________________',0,1);
 $pdf->Cell(130,0, '          Signature',0,1);//end of line
+
+
 
 	$pdf->Output();
 //}

@@ -33,19 +33,19 @@ include ('dbconn.php');
 	$ttlgst = $addadult + 	$adult;
 
 
-$roomSinglePre = mysqli_query($conn, "SELECT * FROM roomtype WHERE RoomType = 'Presidential(Queen Sized-Bed)'");
-$roomDoublePre = mysqli_query($conn, "SELECT * FROM roomtype WHERE RoomType = 'Presidential(Twin Sized-Bed)'");
-$roomSingleSup = mysqli_query($conn, "SELECT * FROM roomtype WHERE RoomType = 'Superior(Queen Sized-Bed)'");
+$roomSinglePre = mysqli_query($conn, "SELECT * FROM roomtype WHERE RoomType = 'Small Kubo'");
+$roomDoublePre = mysqli_query($conn, "SELECT * FROM roomtype WHERE RoomType = 'Big Kubo House'");
+$roomSingleSup = mysqli_query($conn, "SELECT * FROM roomtype WHERE RoomType = 'Dormitory Clubhouse'");
 $roomDoubleSup = mysqli_query($conn, "SELECT * FROM roomtype WHERE RoomType = 'Superior(Twin Sized-Bed)'");
 
 
-$countpsreserved = mysqli_query($conn, "SELECT * from roominventory ri join roomtype rt on ri.RoomID = rt.RoomID where (Status = 'Reserved' or Status = 'Pending' or Status = 'Checked-in') AND RoomType = 'Presidential(Queen Sized-Bed)'  AND
+$countpsreserved = mysqli_query($conn, "SELECT * from roominventory ri join roomtype rt on ri.RoomID = rt.RoomID where (Status = 'Reserved' or Status = 'Pending' or Status = 'Checked-in') AND RoomType = 'Small Kubo'  AND
               ((CheckInDate >= '$CheckInDate' and CheckInDate < '$CheckOutDate' )
             or (CheckOutDate > '$CheckInDate'and CheckOutDate < '$CheckOutDate' ) or (CheckOutDate >= '$CheckOutDate')and(CheckInDate < '$CheckInDate'))");
-$countpdreserved = mysqli_query($conn, "SELECT * from roominventory ri join roomtype rt on ri.RoomID = rt.RoomID where (Status = 'Reserved' or Status = 'Pending' or Status = 'Checked-in') AND RoomType = 'Presidential(Twin Sized-Bed)'  AND
+$countpdreserved = mysqli_query($conn, "SELECT * from roominventory ri join roomtype rt on ri.RoomID = rt.RoomID where (Status = 'Reserved' or Status = 'Pending' or Status = 'Checked-in') AND RoomType = 'Big Kubo House'  AND
               ((CheckInDate >= '$CheckInDate' and CheckInDate < '$CheckOutDate' )
             or (CheckOutDate > '$CheckInDate'and CheckOutDate < '$CheckOutDate' ) or (CheckOutDate >= '$CheckOutDate')and(CheckInDate < '$CheckInDate'))");
-$countssreserved = mysqli_query($conn, "SELECT * from roominventory ri join roomtype rt on ri.RoomID = rt.RoomID where (Status = 'Reserved' or Status = 'Pending' or Status = 'Checked-in') AND RoomType = 'Superior(Queen Sized-Bed)'  AND
+$countssreserved = mysqli_query($conn, "SELECT * from roominventory ri join roomtype rt on ri.RoomID = rt.RoomID where (Status = 'Reserved' or Status = 'Pending' or Status = 'Checked-in') AND RoomType = 'Dormitory Clubhouse'  AND
               ((CheckInDate >= '$CheckInDate' and CheckInDate < '$CheckOutDate' )
             or (CheckOutDate > '$CheckInDate'and CheckOutDate < '$CheckOutDate' ) or (CheckOutDate >= '$CheckOutDate')and(CheckInDate < '$CheckInDate'))");
 $countsdreserved = mysqli_query($conn, "SELECT * from roominventory ri join roomtype rt on ri.RoomID = rt.RoomID where (Status = 'Reserved' or Status = 'Pending' or Status = 'Checked-in') AND RoomType = 'Superior(Twin Sized-Bed)'  AND
@@ -82,7 +82,7 @@ $countsdreserved = mysqli_query($conn, "SELECT * from roominventory ri join room
 	$counterps = 0;
 
 
-	$roomSinglePre = mysqli_query($conn, "SELECT RoomID FROM roomtype WHERE RoomType = 'Presidential(Queen Sized-Bed)'");
+	$roomSinglePre = mysqli_query($conn, "SELECT RoomID FROM roomtype WHERE RoomType = 'Small Kubo'");
 	while($counterps < $_SESSION['presSNum']){
 	while ($rmsp = mysqli_fetch_assoc($roomSinglePre)){
 	if ($counterps < $_SESSION['presSNum']){
@@ -107,7 +107,7 @@ $countsdreserved = mysqli_query($conn, "SELECT * from roominventory ri join room
 
 	$counterpd = 0;
 
-	$roomDoublePre = mysqli_query($conn, "SELECT RoomID FROM roomtype WHERE RoomType = 'Presidential(Twin Sized-Bed)'");
+	$roomDoublePre = mysqli_query($conn, "SELECT RoomID FROM roomtype WHERE RoomType = 'Big Kubo House'");
 	while($counterpd < $_SESSION['presDNum']){
 	while ($rmdp = mysqli_fetch_assoc($roomDoublePre)){
 	if ($counterpd < $_SESSION['presDNum']){
@@ -133,7 +133,7 @@ $countsdreserved = mysqli_query($conn, "SELECT * from roominventory ri join room
 
 	$counterss = 0;
 
-	$roomSingleSup = mysqli_query($conn, "SELECT RoomID FROM roomtype WHERE RoomType = 'Superior(Queen Sized-Bed)'");
+	$roomSingleSup = mysqli_query($conn, "SELECT RoomID FROM roomtype WHERE RoomType = 'Dormitory Clubhouse'");
 	while($counterss < $_SESSION['supSNum']){
 	while ($rmss = mysqli_fetch_assoc($roomSingleSup)){
 	if ($counterss < $_SESSION['supSNum']){
