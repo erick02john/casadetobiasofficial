@@ -24,7 +24,7 @@ include ('../scriptvalidation.php');
               <div class="table-responsive">
                 <table class="table table-striped table-hover" id="dataTable" width="100%" cellspacing="0" style="font-size: 14px;">
 
-	
+
 	<?php
 	echo "<thead>
 			<tr>
@@ -52,7 +52,7 @@ include ('../scriptvalidation.php');
 				<td align = 'center'>
 
 			<a href='#myModal$i' data-placement='bottom' class='btn btn-outline-warning btn-sm' data-original-title='Edit' data-toggle='modal'><i class='fa fa-edit' style ='font-size:13px;'></i></a>
-	
+
 	<div class='modal fade' id='myModal$i' role='dialog'>
     <div class='modal-dialog modal-lg'>
       <div class='modal-content'>
@@ -71,7 +71,7 @@ include ('../scriptvalidation.php');
 			<td><input class = 'form-control' type='text' name='billingid' align='middle' value='{$row['BillingID']}' readonly /></td>
 		</tr>
 		<tr>
-		
+
 		<th>Guest Name:</th>
 			<td><input class = 'form-control' type='text' name='name' value='{$row['GuestFName']} {$row['GuestMName']} {$row['GuestLName']}' readonly/></td>
 		</tr>
@@ -104,12 +104,12 @@ include ('../scriptvalidation.php');
 
 			</td>
 			</tr>
-		
+
 		</table>
 		</div>
 		</div>
-		</div>							
-       	
+		</div>
+
         <div class='modal-footer'>
         <a class='btn btn-default' data-dismiss='modal'/>Cancel</a>
 		<a href='#areyousure$i' data-toggle='modal' class='btn btn-success' >Update</a>
@@ -134,7 +134,7 @@ include ('../scriptvalidation.php');
 							</div>
 						</div>
 </div>
-              
+
 			<a href='#modal$i' data-placement='bottom' class='btn btn-outline-info btn-sm' data-original-title='Edit' data-toggle='modal'><i class='fa fa-print' style ='font-size:13px;'></i></a>
 
 <div class='modal fade' id='modal$i' role='dialog'>
@@ -153,8 +153,8 @@ include ('../scriptvalidation.php');
 		"; ?> <?php include 'displayRecit.php' ?> <?php echo"
 		</div>
 		</div>
-		</div>							
-       	
+		</div>
+
         <div class='modal-footer'>
         <a class='btn btn-default' data-dismiss='modal'/>Cancel</a>
         <input type='submit' class='btn btn-warning' name='print' value='Print' />
@@ -174,7 +174,7 @@ include ('../scriptvalidation.php');
           <button type='button' class='close' data-dismiss='modal'>&times;</button>
         </div>
         <div class='modal-body'>
-        
+
         <div>
         <div id='msg$i'></div>
 		<div class='table-responsive'>
@@ -204,7 +204,7 @@ include ('../scriptvalidation.php');
 		</table>
 		</div>
 		</div>
-		</div>							
+		</div>
        	<script>
     $('#amn$i').submit( function sbmt(){
     	var bid = document.getElementById('bid$i').value;
@@ -225,7 +225,7 @@ include ('../scriptvalidation.php');
                     $('#description$i').val('');
                     $('#quantity$i').val('');
                     $('#price$i').val('');
-                   
+
             }
         });
         return false;
@@ -253,16 +253,16 @@ include ('../scriptvalidation.php');
         <div class='modal-body'>
         <div>
 		<div class='table-responsive'>
-		
+
 		<form method = 'Post' action='discount.php'>
 		<input class = 'form-control' type='hidden' name='bid' value='{$row['BillingID']}' readonly/>
 		<input class = 'form-control' type='hidden' name='rid' value='{$row['ReservationID']}' readonly/>
-		"; include 'displaydiscount.php'; 
+		"; include 'displaydiscount.php';
 		echo"
 		</div>
 		</div>
-		</div>							
-       	
+		</div>
+
         <div class='modal-footer'>
         <a class='btn btn-default' data-dismiss='modal'/>Cancel</a>
         <input type='submit' class='btn btn-warning' name='discount' value='Add' />
@@ -273,14 +273,43 @@ include ('../scriptvalidation.php');
   </div>
 </div>
 
+<a href='#modalssss$i' data-placement='bottom' class='btn btn-outline-info btn-sm' data-original-title='Edit' data-toggle='modal'><i class='fa fa-receipt' style ='font-size:13px;'></i></a>
+
+<div class='modal fade' id='modalssss$i' role='dialog'>
+<div class='modal-dialog modal-lg'>
+<div class='modal-content'>
+  <div class='modal-header'>
+    <h4 class='modal-title'>Official Receipt</h4>
+    <button type='button' class='close' data-dismiss='modal'>&times;</button>
+  </div>
+  <div class='modal-body'>
+  <div>
+<div class='table-responsive'>
+<form method = 'Post' target='_blank' action='../Admin/samplepdf2.php'>
+<input class = 'form-control' type='hidden' name='bid' value='{$row['BillingID']}' readonly/>
+<input class = 'form-control' type='hidden' name='rid' value='{$row['ReservationID']}' readonly/>
+"; ?> <?php include 'displayRecit2.php' ?> <?php echo"
+</div>
+</div>
+</div>
+
+  <div class='modal-footer'>
+  <a class='btn btn-default' data-dismiss='modal'/>Cancel</a>
+  <input type='submit' class='btn btn-warning' name='print' value='Print' />
+  </form>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
 			</tr>";
 			$i++;
 	}
 	echo "</tbody>"; ?>
  				</table>
               </div>
-           	</div>
-        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+        </div>
     </div>
 <?php
  	mysqli_close($conn);
@@ -297,9 +326,9 @@ include ('../scriptvalidation.php');
      });
 
      function refresh() {
-         if(new Date().getTime() - time >= 60000) 
+         if(new Date().getTime() - time >= 60000)
              window.location.reload(true);
-         else 
+         else
              setTimeout(refresh, 10000);
      }
 

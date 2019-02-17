@@ -26,9 +26,9 @@
                         <th>RoomType:</th>
                         <td>
                           <select  class='form-control'  name = 'roomtype'>
-                      <option value = 'Presidential(Queen Sized-Bed)'>Small Kubo House</option>
-                    <option value = 'Presidential(Twin Sized-Bed)'>Big Kubo House</option>
-                    <option value = 'Superior(Queen Sized-Bed)'>Clubhouse Dormitory</option>
+                      <option value = 'Small Kubo'>Small Kubo</option>
+                    <option value = 'Big Kubo House'>Big Kubo House</option>
+                    <option value = 'Dormitory Clubhouse'>Dormitory Clubhouse</option>
                     </select>
                         </td>
                       </tr>
@@ -68,19 +68,19 @@
                         <th>RoomType:</th>
                         <td>
                           <select  class='form-control'  name = 'roomtype'>
-														<option value = 'Presidential(Queen Sized-Bed)'>Small Kubo House</option>
-			                    <option value = 'Presidential(Twin Sized-Bed)'>Big Kubo House</option>
-			                    <option value = 'Superior(Queen Sized-Bed)'>Clubhouse Dormitory</option>
+														<option value = 'Small Kubo'>Small Kubo</option>
+			                    <option value = 'Big Kubo House'>Big Kubo House</option>
+			                    <option value = 'Dormitory Clubhouse'>Dormitory Clubhouse</option>
                     </select>
                         </td>
                       </tr>
                       <tr>
                         <th>RoomRate:</th>
-                        <td><input class="form-control" type="text" name="roomrate" onkeypress="return restrictCharacters(this, event, integerOnly);"></td>
+                        <td><input class="form-control" maxlength="5" type="text" name="roomrate" onkeypress="return restrictCharacters(this, event, integerOnly);"></td>
                       </tr>
                       <tr>
                         <th>RoomCapacity:</th>
-                        <td><input class="form-control" type="text" name="roomcapacity" onkeypress="return restrictCharacters(this, event, phoneOnly);" autocomplete="off" /></td>
+                        <td><input class="form-control" maxlength="3" type="text" name="roomcapacity" onkeypress="return restrictCharacters(this, event, phoneOnly);" autocomplete="off" /></td>
                       </tr>
                       <tr>
                         <th>Description:</th>

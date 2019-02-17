@@ -39,12 +39,9 @@ if($_SESSION['presSNum'] == ' '){
              if($_SESSION['supSNum'] == ' '){
                 $_SESSION['supSNum'] = 0;
             }
-             if($_SESSION['supDNum'] == ' '){
-                $_SESSION['supDNum'] = 0;
-            }
             echo  $_SESSION['supSNum'] ;
 
-            $ttlrms = $_SESSION['presSNum'] + $_SESSION['presDNum'] + $_SESSION['supSNum'] + $_SESSION['supDNum'];
+            $ttlrms = $_SESSION['presSNum'] + $_SESSION['presDNum'] + $_SESSION['supSNum'];
             $_SESSION['ttlrms'] = $ttlrms;
 
 

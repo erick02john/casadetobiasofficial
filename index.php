@@ -102,7 +102,8 @@ include('navlinks.php');
 										<h4>Casa de <span>Tobias</span></h4>
 										<img src="images/frontcasa.jpg" alt=" " class="img-responsive">
 										<h5>Your security is our Priority</h5>
-										<p></p>
+										<p>Recharge your batteries and come to Casa de Tobias in Nagcarlana 2nd class municipality in the province of Laguna
+</p>
 									</div>
 								</div>
 							</div>
@@ -192,46 +193,18 @@ include('navlinks.php');
 	<div class="gradient">
 		<div class="homepage globalpage_new page"></div>
 		<div class="row">
-			<div class="col-lg-6 col-md-3 m-5">
-				<div class="footer-block">
-					<h3 class="footer-block-title"><p>Site</p></h3>
-					<div class="row">
-						<div class="col-md-12 col-lg-6 m-5">
-							<ul class="list-unstyled">
-								<li>
-									<a href="index.php" target="_self">Home</a>
-								</li>
-								<li>
-									<a href="about.php" target="_self">The Resort</a>
-								</li>
-								<li>
-									<a href="gallery.php" target="_self">Gallery</a>
-								</li>
-								<li>
-									<a href="contactus.php" target="_self">Contact Us</a>
-								</li>
-								<li>
-									<a href="rooms.php" target="_self">Rooms</a>
-								</li>
-								<li class="list-inline-item">
-									<a href="/privacy-policy.html">Privacy Policy</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
+			
 			<div class="col-lg-4 col-md-6 col-sm-4">
-				<div class="footer-block">
-					<h3 class="footer-block-title"><p>RESERVATION</p></h3>
-					<ul class="list-unstyled">
-						<li><a class="icon-link icon-link-mobile" href="tel:+6566888888">(02) 794 3471
-						</a></li>
-						<li><a class="icon-link icon-link-mobile" href="tel:+6566888826">+63 917 9789 141</a></li>
-					</ul>
+			<div class="footer-block">
+				<h3 class="footer-block-title"><p>RESERVATION</p></h3>
+				<ul class="list-unstyled">
+					<li>(02) 794 3471
+					</li>
+					<li>+63 917 9789 141</li>
+				</ul>
 
-				</div>
 			</div>
+		</div>
 		</div>
 	<div class="row">
 		<div class="col"><br>

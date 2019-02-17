@@ -1,12 +1,12 @@
 <?php
 $paypal_url='https://www.sandbox.paypal.com/cgi-bin/webscr'; // Test Paypal API URL
-$paypal_id='davepaulgarciaaabiz@gmail.com'; // Business email ID
+$paypal_id='arraicx@gmail.com'; // Business email ID
 ?>
 <h4>Welcome, Guest</h4>
 
 <div class="product">
     <div class="image">
-        <img src="rrh.jpg" />
+        <img src="Casa.jpg" />
     </div>
     <div class="name">
         Casa de Tobias Mountain Resort Payment

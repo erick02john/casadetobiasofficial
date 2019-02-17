@@ -205,7 +205,7 @@ include('navlinks.php');
 	<form method="POST" action="selectroom.php">
 
 			<!-- Room Section -->
-			<div class="w3-container" style="padding:120px 16px">
+			<div class="container">
 			<div id="msform">
 
       			<ul id="progressbar">
@@ -215,8 +215,7 @@ include('navlinks.php');
         			<li>Summary</li>
       			</ul>
     		</div>
-  				<h2 class="w3-center">SELECT ROOMS</h2>
-  				<p class="w3-center w3-large"></p>
+  				<h2 class="header">SELECT ROOMS</h2>
  			 	<div class="w3-row-padding" style="margin-top:40px">
 
   					<?php

@@ -125,7 +125,7 @@ if(isset($_POST['update'])){
 
 		 		while($row = mysqli_fetch_assoc($join)){
 				$roomstat = $row['RoomID'];
-				$room = mysqli_query($conn, "UPDATE Room SET RoomStatus = 'Occupied' where RoomID = '$roomstat'") or die("error room");
+				$room = mysqli_query($conn, "UPDATE room SET RoomStatus = 'Occupied' where RoomID = '$roomstat'") or die("error room");
 				}
 		 		mysqli_close($conn);
 				print ("<script language='JavaScript'>
@@ -138,7 +138,7 @@ if(isset($_POST['update'])){
 
 		 	while($row = mysqli_fetch_assoc($join)){
 				$roomstat = $row['RoomID'];
-				$room = mysqli_query($conn, "UPDATE Room SET RoomStatus = 'Occupied' where RoomID = '$roomstat'") or die("error room");
+				$room = mysqli_query($conn, "UPDATE room SET RoomStatus = 'Occupied' where RoomID = '$roomstat'") or die("error room");
 			}
 			mysqli_close($conn);
 			print ("<script language='JavaScript'>

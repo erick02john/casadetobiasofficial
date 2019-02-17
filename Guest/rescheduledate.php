@@ -1,6 +1,6 @@
 <?php
 
-include('../scriptvalidation.php');
+include '../scriptvalidation.php';
 include 'dbconn.php';
 
 
@@ -197,7 +197,7 @@ li a:hover:not(.active) {
         maxDate:"+365D",
         numberOfMonths: 1,
         onSelect: function(selected) {
-           $("#from").datepicker("option", selecd)
+           $("#from").datepicker("option", selected)
         }
     });
 });

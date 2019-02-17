@@ -314,7 +314,9 @@ include('navlinks.php');
 				<div class="loginmodal-container">
 					<h1>Log-in</h1><br>
 				  <form  action='_log-in.php' method='POST'>
+				      <label><i class="fa fa-address-book-o"></i> Email</label>
 					<input type="text" name="Email" placeholder="Email">
+					<label><i class="fa fa-lock"></i> Password</label>
 					<input type="password" name="password" placeholder="Password">
 					<input type="submit" name="login" class="login loginmodal-submit" value="Login">
 				  </form>

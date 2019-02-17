@@ -113,63 +113,17 @@ include('navlinks.php');
 <!-- contact -->
 <section class="contact-w3ls" id="contact">
 	<div class="container">
-		<div class="col-lg-6 col-md-6 col-sm-6 contact-w3-agile2" data-aos="flip-left">
-			<div class="contact-agileits">
-				<h4>Contact Us</h4>
-				<p class="contact-agile2">Sign Up For Our News Letters</p>
-				<form  method="post" name="sentMessage" id="contactForm" >
-					<div class="control-group form-group">
-
-                            <label class="contact-p1">Full Name:</label>
-                            <input type="text" class="form-control" name="name" id="name" required >
-                            <p class="help-block"></p>
-
-                    </div>
-                    <div class="control-group form-group">
-
-                            <label class="contact-p1">Phone Number:</label>
-                            <input type="tel" class="form-control" name="phone" id="phone" required >
-							<p class="help-block"></p>
-
-                    </div>
-                    <div class="control-group form-group">
-
-                            <label class="contact-p1">Email Address:</label>
-                            <input type="email" class="form-control" name="email" id="email" required >
-							<p class="help-block"></p>
-
-                    </div>
-
-
-                    <input type="submit" name="sub" value="Send Now" class="btn btn-primary">
-				</form>
-				<?php
-				if(isset($_POST['sub']))
-				{
-					$name =$_POST['name'];
-					$phone = $_POST['phone'];
-					$email = $_POST['email'];
-					$approval = "Not Allowed";
-					$sql = "INSERT INTO `contact`(`fullname`, `phoneno`, `email`,`cdate`,`approval`) VALUES ('$name','$phone','$email',now(),'$approval')" ;
-
-
-					if(mysqli_query($con,$sql))
-					echo"OK";
-
-				}
-				?>
-			</div>
-		</div>
-		<div class="col-lg-6 col-md-6 col-sm-6 contact-w3-agile1" data-aos="flip-right">
+		<div align="center" class="col-lg-6 col-md-6 col-sm-6 contact-w3-agile1" data-aos="flip-right">
 			<h4>Connect With Us</h4>
 			<p class="contact-agile1"><strong>Phone :</strong>(02) 794 3471</p>
+			<p class="contact-agile1"><strong>Mobile Number :</strong>+63 917 9789 141</p>
 			<p class="contact-agile1"><strong>Email :</strong> <a href="mailto:casadetobiasmountainresort@gmail.com"> casadetobiasmountainresort@gmail.com</a></p>
 			<p class="contact-agile1"><strong>Address :</strong> Alibungbungan, Nagcarlan, Laguna</p>
 
+		</div>
+		<div align="center" class="col-lg-6 col-md-6 col-sm-6 contact-w3-agile1" data-aos="flip-right">
 			<div class="social-bnr-agileits footer-icons-agileinfo">
-				<ul class="social-icons3">
-								<li><a href="https://www.facebook.com/Casa-De-Tobias-Mountain-Resort-254137624658146/" class="fa fa-facebook icon-border facebook"> </a></li>
-							</ul>
+				
 			</div>
 			<iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d16122.454019686036!2d121.40985074751899!3d14.153485976700352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x33bd59965aaaaaab%3A0xbd2e2e6cb805ecdd!2sCasa+De+Tobias+Mountain+Resort%2C+Alibungbungan%2C+Nagcarlan%2C+Laguna!3m2!1d14.153554499999998!2d121.4149029!5e1!3m2!1sen!2sph!4v1548942171554" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</div>
@@ -181,42 +135,14 @@ include('navlinks.php');
 <div class="gradient">
 	<div class="homepage globalpage_new page"></div>
 	<div class="row">
-		<div class="col-lg-6 col-md-3 m-5">
-			<div class="footer-block">
-				<h3 class="footer-block-title"><p>Site</p></h3>
-				<div class="row">
-					<div class="col-md-12 col-lg-6 m-5">
-						<ul class="list-unstyled">
-							<li>
-								<a href="index.php" target="_self">Home</a>
-							</li>
-							<li>
-								<a href="about.php" target="_self">The Resort</a>
-							</li>
-							<li>
-								<a href="gallery.php" target="_self">Gallery</a>
-							</li>
-							<li>
-								<a href="contactus.php" target="_self">Contact Us</a>
-							</li>
-							<li>
-								<a href="rooms.php" target="_self">Rooms</a>
-							</li>
-							<li class="list-inline-item">
-								<a href="/privacy-policy.html">Privacy Policy</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
+
 		<div class="col-lg-4 col-md-6 col-sm-4">
 			<div class="footer-block">
 				<h3 class="footer-block-title"><p>RESERVATION</p></h3>
 				<ul class="list-unstyled">
-					<li><a class="icon-link icon-link-mobile" href="tel:+6566888888">(02) 794 3471
-					</a></li>
-					<li><a class="icon-link icon-link-mobile" href="tel:+6566888826">+63 917 9789 141</a></li>
+					<li>(02) 794 3471
+					</li>
+					<li>+63 917 9789 141</li>
 				</ul>
 
 			</div>

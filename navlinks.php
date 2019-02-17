@@ -1,5 +1,5 @@
  <?php
-include ('baseurl.php');
+include ('BaseUrl.php');
  ?>
 
 <?php
@@ -27,12 +27,12 @@ $base = 'http://'.$_SERVER['SERVER_NAME'].''.$_SERVER['REQUEST_URI'];
 					<nav class="menu menu--iris">
 						<ul class="nav navbar-nav menu__list">
 							<li <?=(($base == ''.base_url().'index.php' || $base == base_url()) ? 'class="menu__item menu__item--current"':"class='menu__item'")?>><a href="index.php" class="menu__link">Home</a></li>
-							<li <?=(($base == ''.base_url().'about.php') ? 'class="menu__item menu__item--current"':"class='menu__item'")?>><a href="about.php" class="menu__link">About</a></li>
+							<li <?=(($base == ''.base_url().'About.php') ? 'class="menu__item menu__item--current"':"class='menu__item'")?>><a href="About.php" class="menu__link">About</a></li>
 							<!--<li class="menu__item"><a href="#team" class="menu__link scroll">Team</a></li> -->
 							<li <?=(($base == ''.base_url().'gallery.php') ? 'class="menu__item menu__item--current"':"class='menu__item'")?>><a href="gallery.php" class="menu__link">Gallery</a></li>
 							<li <?=(($base == ''.base_url().'rooms.php') ? 'class="menu__item menu__item--current"':"class='menu__item'")?>><a href="rooms.php" class="menu__link">Rooms</a></li>
 							<li <?=(($base == ''.base_url().'contactus.php') ? 'class="menu__item menu__item--current"':"class='menu__item'")?>><a href="contactus.php" class="menu__link">Contact Us</a></li>
-              <li <?=(($base == ''.base_url().'guest/_log-in.php') ? 'class="menu__item menu__item--current"':"class='menu__item'")?>><a href="guest/_log-in.php" class="menu__link">Log-in</a></li>
+              <li <?=(($base == ''.base_url().'Guest/_log-in.php') ? 'class="menu__item menu__item--current"':"class='menu__item'")?>><a href="Guest/_log-in.php" class="menu__link">Log-in</a></li>
               <li <?=(($base == ''.base_url().'datepickerform.php') ? 'class="menu__item menu__item--current"':"class='menu__item'")?>><a href="datepickerform.php" class="menu__link">Book Now</a></li>
 						</ul>
 					</nav>

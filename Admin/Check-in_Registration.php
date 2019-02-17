@@ -27,7 +27,7 @@ include ('dbconn.php');
 	if ($numdays > 7) {
 	$ExpirationDate = date('Y-m-d', strtotime($RevDate. ' + 1 days'));
 	}else{
-		$ExpirationDate = $CheckOutDate;
+		$ExpirationDate = date('Y-m-d', strtotime($RevDate. '+ 1 days'));
 	}
 
 	$ttlgst = $addadult + 	$adult;

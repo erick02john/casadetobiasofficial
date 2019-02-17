@@ -157,7 +157,7 @@ include('navlinksguest.php');
     </div>
     <section class="content-inner">
     <h2>Overview</h2>
-    <?php include 'displayRecords.php';
+    <?php include 'displaycurrbook.php';
      ?>
     </section>
   </div>

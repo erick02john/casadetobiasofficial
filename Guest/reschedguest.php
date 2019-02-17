@@ -17,27 +17,20 @@ if(!empty($_SESSION['Email'])){
 $psNum = 0;
 $pdNum = 0;
 $ssNum = 0;
-$sdNum = 0;
 
 
-	$query1 = mysqli_query($conn, "SELECT RoomCapacity FROM roomtype WHERE RoomType = 'Presidential(Queen Sized-Bed)'");
+	$query1 = mysqli_query($conn, "SELECT RoomCapacity FROM roomtype WHERE RoomType = 'Small Kubo'");
 	while($row1 = mysqli_fetch_array($query1)){
 		$cpctyPQ = $row1['RoomCapacity'];
 	}
-	$query2 = mysqli_query($conn, "SELECT RoomCapacity FROM roomtype WHERE RoomType = 'Presidential(Twin Sized-Bed)'");
+	$query2 = mysqli_query($conn, "SELECT RoomCapacity FROM roomtype WHERE RoomType = 'Big Kubo House'");
 	while($row2 = mysqli_fetch_array($query2)){
 		$cpctyPT = $row2['RoomCapacity'];
 	}
-	$query3 = mysqli_query($conn, "SELECT RoomCapacity FROM roomtype WHERE RoomType = 'Superior(Queen Sized-Bed)'");
+	$query3 = mysqli_query($conn, "SELECT RoomCapacity FROM roomtype WHERE RoomType = 'Dormitory Clubhouse'");
 	while($row3 = mysqli_fetch_array($query3)){
 		$cpctySQ = $row3['RoomCapacity'];
 	}
-	$query4 = mysqli_query($conn, "SELECT RoomCapacity FROM roomtype WHERE RoomType = 'Superior(Twin Sized-Bed)'");
-	while($row4 = mysqli_fetch_array($query4)){
-		$cpctyST = $row4['RoomCapacity'];
-	}
-
-
 
 		if($_SESSION['presSNum'] == ' '){
 				$psNum = 0;
@@ -110,7 +103,7 @@ if (!empty($_POST)):
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <title>Walk-in</title>
+  <title>Reservation Information</title>
 
   <link rel= "stylesheet" href="../css/mystyle.css">
   <link rel="stylesheet" href="../css/bootstrap.min.css">

@@ -51,7 +51,7 @@
 		  <tbody>";
 		 $i=1;
 	while($row = mysqli_fetch_array($query)){
-		$message = mysqli_query($conn, "SELECT Photo from Reservation where ReservationID = '{$row['ReservationID']}' AND Status = 'Pending'");
+		$message = mysqli_query($conn, "SELECT Photo from reservation where ReservationID = '{$row['ReservationID']}' AND Status = 'Pending'");
 		$count = mysqli_fetch_array($message);
 		$photo = $count['Photo'];
 		if($photo != NULL){
