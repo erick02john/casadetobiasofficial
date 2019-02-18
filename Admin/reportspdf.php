@@ -65,7 +65,7 @@ class PDF extends FPDF {
 				$countr = mysqli_num_rows($roomcount);
 				$sum+=$countr;
 				$sumguest += $row['NumberOfAdult'];
-				$sums += $row['TotalAmount'];
+				$sums += $row['PaidAmount'];
 		}
 
   	}
@@ -105,11 +105,12 @@ $pdf->SetFont('Arial','B',14);
 //make a dummy empty cell as a vertical spacer
 $pdf->Cell(189 ,10,'',0,1);//end of line
 $pdf->Cell(300 ,5,'Total number of '. $_POST['status'] ,0,1);//end of line
-$pdf->Cell(300 ,5,'for '.$from."to" . "$to : " . $count,0,1);//end of line
+$pdf->Cell(300 ,5,'for '.$from." to " . "$to : " . $count,0,1);//end of line
 $pdf->Cell(189 ,10,'',0,1);//end of line
 $pdf->Cell(300 ,5,'Total Rooms Reserved:		' . $sum,0,1);
 $pdf->Cell(300 ,5,'Total Number Of Guest:		' . $sumguest,0,1);
 $pdf->Cell(300 ,5,'Total Revenue Amount:		' . $sums,0,1);
+
 //billing address
 // $pdf->Cell(100 ,5,'Bill to',0,1);//end of line
 
@@ -128,15 +129,16 @@ $pdf->Cell(189 ,10,'',0,1);//end of line
 
 //invoice contents
 $pdf->SetFont('Arial','B',5);
-	$pdf->Cell(21,5,'ReservationID',1,0,'C');
-	$pdf->Cell(20,5,'GuestID',1,0,'C');
-	$pdf->Cell(21,5,'GuestName',1,0,'C');
-	$pdf->Cell(21,5,'RoomsReserved',1,0,'C');
-	$pdf->Cell(20,5,'NumberOfGuest',1,0,'C');
-	$pdf->Cell(21,5,'CheckInDate',1,0,'C');
-	$pdf->Cell(21,5,'CheckOutDate',1,0,'C');
-	$pdf->Cell(20,5,'Status',1,0,'C');
-	$pdf->Cell(20,5,'TotalAmount',1,0,'C');
+	$pdf->Cell(19,5,'ReservationID',1,0,'C');
+	$pdf->Cell(19,5,'GuestID',1,0,'C');
+	$pdf->Cell(19,5,'GuestName',1,0,'C');
+	$pdf->Cell(19,5,'RoomsReserved',1,0,'C');
+	$pdf->Cell(19,5,'NumberOfGuest',1,0,'C');
+	$pdf->Cell(19,5,'CheckInDate',1,0,'C');
+	$pdf->Cell(19,5,'CheckOutDate',1,0,'C');
+	$pdf->Cell(19,5,'Status',1,0,'C');
+	$pdf->Cell(19,5,'TotalAmount',1,0,'C');
+	$pdf->Cell(19,5,'Room Number',1,0,'C');
 	$pdf->ln();
 
 	$sum = 0;
@@ -148,20 +150,22 @@ $pdf->SetFont('Arial','B',5);
     $query = mysqli_query($conn, "SELECT * FROM reservation r join billing b on r.ReservationID=b.ReservationID join guest g on g.GuestID=r.GuestID where (ReservationDate >= '$from' and ReservationDate <= '$to') and Status LIKE '%{$status}%'") or die("error");
 
     while($row = mysqli_fetch_array($query)){
-	$pdf->Cell(21,5,$row['ReservationID'],1,0,'C');
-	$pdf->Cell(20,5,$row['GuestID'],1,0,'C');
-	$pdf->Cell(21,5,$row['GuestFName'],1,0,'C');
+	$pdf->Cell(19,5,$row['ReservationID'],1,0,'C');
+	$pdf->Cell(19,5,$row['GuestID'],1,0,'C');
+	$pdf->Cell(19,5,$row['GuestFName'],1,0,'C');
 	$roomcount = mysqli_query($conn, "SELECT * FROM roominventory where ReservationID = '{$row['ReservationID']}'");
 	$count = mysqli_num_rows($roomcount);
 	$sum+=$count;
-	$pdf->Cell(21,5,$count,1,0,'C');
-	$pdf->Cell(20,5,$row['NumberOfAdult'],1,0,'C');
+
+	$pdf->Cell(19,5,$count,1,0,'C');
+	$pdf->Cell(19,5,$row['NumberOfAdult'],1,0,'C');
 	$sumguest += $row['NumberOfAdult'];
-	$pdf->Cell(21,5,$row['CheckInDate'],1,0,'C');
-	$pdf->Cell(21,5,$row['CheckOutDate'],1,0,'C');
-	$pdf->Cell(20,5,$row['Status'],1,0,'C');
-	$pdf->Cell(20,5,$row['TotalAmount'],1,0,'C');
-	$sums += $row['TotalAmount'];
+	$pdf->Cell(19,5,$row['CheckInDate'],1,0,'C');
+	$pdf->Cell(19,5,$row['CheckOutDate'],1,0,'C');
+	$pdf->Cell(19,5,$row['Status'],1,0,'C');
+	$pdf->Cell(19,5,$row['TotalAmount'],1,0,'C');
+	$sums += $row['PaidAmount'];
+	$pdf->Cell(19,5,$row['RoomID'],1,0,'C');
 	$pdf->ln();
 	}
 

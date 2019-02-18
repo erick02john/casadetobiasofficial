@@ -130,7 +130,7 @@ session_start();
   $(document).ready(function(){
 
     $("#from").datepicker({
-        minDate: 0,
+        minDate: +3,
         maxDate: "+365D",
         numberOfMonths: 1,
         onSelect: function(selected) {
